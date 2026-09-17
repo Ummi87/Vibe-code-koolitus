@@ -8,7 +8,7 @@ const html = document.documentElement;
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const canvas = $('#skyCanvas');
 const ctx = canvas.getContext('2d');
-const state = { yaw: 0.2, pitch: 0.12, zoom: 1, selected: 'aries', birthMethod: 'date', dragging: false, dragDistance: 0, lastX: 0, lastY: 0, targetYaw: null, targetPitch: null, frame: 0 };
+const state = { yaw: 0.2, pitch: 0.12, zoom: 1, selected: 'aries', selectedStar: null, birthMethod: 'date', dragging: false, dragDistance: 0, lastX: 0, lastY: 0, targetYaw: null, targetPitch: null, frame: 0 };
 const motionModes = ['reduced', 'standard', 'enhanced'];
 const motionLabels = { reduced: 'Vähendatud', standard: 'Standard', enhanced: 'Täiustatud' };
 
@@ -122,7 +122,8 @@ function drawConstellation(group, width, height, isLight, selected) {
   points.forEach((p, index) => {
     if (!p.visible) return;
     const star = group.points[index];
-    const size = Math.max(1.15, 4.6 - star.mag * .85) * (selected ? 1.25 : .78);
+    const isSelectedStar = state.selectedStar?.groupId === group.id && state.selectedStar.starId === star.id;
+    const size = Math.max(1.15, 4.6 - star.apparentMagnitude * .85) * (selected ? 1.25 : .78) * (isSelectedStar ? 1.45 : 1);
     if (selected && size > 1.8) {
       const glow = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, size * 4);
       glow.addColorStop(0, isLight ? 'rgba(0,121,184,.35)' : 'rgba(88,225,255,.48)');
@@ -131,7 +132,12 @@ function drawConstellation(group, width, height, isLight, selected) {
     }
     ctx.fillStyle = selected ? (isLight ? '#073d9d' : '#f4fbff') : (isLight ? 'rgba(28,70,125,.6)' : 'rgba(206,230,255,.72)');
     ctx.beginPath(); ctx.arc(p.x, p.y, size, 0, Math.PI * 2); ctx.fill();
-    if (selected && star.mag < 3.1) {
+    if (isSelectedStar) {
+      ctx.strokeStyle = isLight ? 'rgba(0,105,205,.95)' : 'rgba(115,230,255,.95)';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.arc(p.x, p.y, size + 6, 0, Math.PI * 2); ctx.stroke();
+    }
+    if (selected && (star.apparentMagnitude < 3.1 || isSelectedStar)) {
       ctx.font = '600 11px Inter, system-ui, sans-serif';
       ctx.fillStyle = isLight ? 'rgba(11,48,93,.82)' : 'rgba(223,243,255,.82)';
       ctx.fillText(star.name, p.x + size + 6, p.y - size - 3);
@@ -184,6 +190,8 @@ function updateMapSelection(group, openMenu = false) {
 function focusConstellation(id, scroll = false, openMenu = true) {
   const group = skyData.find(c => c.id === id) || skyData[0];
   state.selected = group.id;
+  state.selectedStar = null;
+  $('#starMenu').hidden = true;
   const average = group.points.reduce((acc, p) => ({ x: acc.x + p.x, y: acc.y + p.y, z: acc.z + p.z }), { x: 0, y: 0, z: 0 });
   const length = Math.hypot(average.x, average.y, average.z);
   const vector = { x: average.x / length, y: average.y / length, z: average.z / length };
@@ -228,9 +236,56 @@ function findConstellationAt(clientX, clientY) {
   return closest?.group || null;
 }
 
+function findStarAt(clientX, clientY) {
+  const rect = canvas.getBoundingClientRect();
+  const x = clientX - rect.left, y = clientY - rect.top;
+  const radius = matchMedia('(pointer: coarse)').matches ? 34 : 24;
+  let closest = null;
+
+  skyData.forEach(group => group.points.forEach(star => {
+    const point = project(star, rect.width, rect.height);
+    if (!point.visible) return;
+    const distance = Math.hypot(x - point.x, y - point.y);
+    if (distance <= radius && (!closest || distance < closest.distance)) closest = { group, star, distance };
+  }));
+
+  return closest;
+}
+
 function openConstellationMenu(group) {
   state.selected = group.id;
+  state.selectedStar = null;
+  $('#starMenu').hidden = true;
   updateMapSelection(group, true);
+}
+
+function formatCatalogName(value) {
+  const greek = { alf: 'α', bet: 'β', gam: 'γ', del: 'δ', eps: 'ε', zet: 'ζ', eta: 'η', tet: 'θ', iot: 'ι', kap: 'κ', lam: 'λ', mu: 'μ', nu: 'ν', ksi: 'ξ', omi: 'ο', pi: 'π', rho: 'ρ', sig: 'σ', tau: 'τ', ups: 'υ', phi: 'φ', khi: 'χ', psi: 'ψ', ome: 'ω' };
+  return (value || 'Kataloogitähis puudub').replace(/^\*\s*/, '').replace(/\b(alf|bet|gam|del|eps|zet|eta|tet|iot|kap|lam|mu|nu|ksi|omi|pi|rho|sig|tau|ups|phi|khi|psi|ome)\b/gi, match => greek[match.toLowerCase()]);
+}
+
+function formatStarCoordinates(star) {
+  const totalMinutes = Math.round(star.raHours * 60);
+  const hours = Math.floor(totalMinutes / 60) % 24;
+  const minutes = totalMinutes % 60;
+  const declination = `${star.declinationDegrees >= 0 ? '+' : '−'}${Math.abs(star.declinationDegrees).toFixed(2).replace('.', ',')}°`;
+  return `RA ${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m · DEC ${declination}`;
+}
+
+function openStarMenu(group, star) {
+  state.selected = group.id;
+  state.selectedStar = { groupId: group.id, starId: star.id };
+  updateMapSelection(group, false);
+  $('#starName').textContent = star.name;
+  $('#starCatalogName').textContent = `${formatCatalogName(star.catalogName)} · ${group.name}`;
+  $('#starDescription').textContent = star.description;
+  $('#starMagnitude').textContent = star.apparentMagnitude.toFixed(2).replace('.', ',');
+  $('#starDistance').textContent = star.distanceLightYears ? `${star.distanceLightYears.toLocaleString('et-EE')} valgusaastat` : 'Kataloogis puudub';
+  $('#starSpectralType').textContent = star.spectralType || 'Kataloogis puudub';
+  $('#starCoordinates').textContent = formatStarCoordinates(star);
+  $('#constellationMenu').hidden = true;
+  $('#starMenu').hidden = false;
+  updateDetails(group);
 }
 
 function updateDetails(group) {
@@ -240,9 +295,9 @@ function updateDetails(group) {
   $('#latinName').textContent = `${group.latinName} · ${group.abbreviation}`;
   $('#detailName').textContent = group.name;
   $('#mythText').textContent = group.myth;
-  const brightest = [...group.stars].sort((a, b) => a[3] - b[3])[0];
-  $('#brightestStar').textContent = brightest[0];
-  $('#brightestMagnitude').textContent = `${brightest[3].toFixed(2).replace('.', ',')} tähesuurust`;
+  const brightest = [...group.stars].sort((a, b) => a.apparentMagnitude - b.apparentMagnitude)[0];
+  $('#brightestStar').textContent = brightest.name;
+  $('#brightestMagnitude').textContent = `${brightest.apparentMagnitude.toFixed(2).replace('.', ',')} tähesuurust`;
   $('#bestMonth').textContent = group.best;
   $('#hemisphere').textContent = group.location;
   $('#constellationArea').textContent = `${group.area} ruutkraadi`;
@@ -371,6 +426,8 @@ function setupControls() {
   $('#birthDate').addEventListener('input', () => { $('#dateError').textContent = ''; $('#birthDate').removeAttribute('aria-invalid'); });
   $('#showOnMap').addEventListener('click', event => focusConstellation(event.currentTarget.dataset.sign, true));
   $('#closeConstellationMenu').addEventListener('click', () => $('#constellationMenu').hidden = true);
+  $('#closeStarMenu').addEventListener('click', () => { $('#starMenu').hidden = true; state.selectedStar = null; });
+  $('#backToConstellation').addEventListener('click', () => openConstellationMenu(skyData.find(group => group.id === state.selected)));
   $('#openConstellationDetails').addEventListener('click', () => $('#details').scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth' }));
 
   $('#zoomIn').addEventListener('click', () => state.zoom = Math.min(1.85, state.zoom + .14));
@@ -380,7 +437,7 @@ function setupControls() {
   canvas.addEventListener('pointerdown', event => { state.dragging = true; state.dragDistance = 0; state.lastX = event.clientX; state.lastY = event.clientY; state.targetYaw = null; canvas.setPointerCapture(event.pointerId); });
   canvas.addEventListener('pointermove', event => {
     if (!state.dragging) {
-      canvas.style.cursor = findConstellationAt(event.clientX, event.clientY) ? 'pointer' : 'grab';
+      canvas.style.cursor = findStarAt(event.clientX, event.clientY) || findConstellationAt(event.clientX, event.clientY) ? 'pointer' : 'grab';
       return;
     }
     const dx = event.clientX - state.lastX;
@@ -393,6 +450,8 @@ function setupControls() {
   canvas.addEventListener('pointerup', event => {
     state.dragging = false;
     if (state.dragDistance < 8) {
+      const starTarget = findStarAt(event.clientX, event.clientY);
+      if (starTarget) { openStarMenu(starTarget.group, starTarget.star); return; }
       const group = findConstellationAt(event.clientX, event.clientY);
       if (group) openConstellationMenu(group);
     }
@@ -444,9 +503,10 @@ async function init() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     CONSTELLATIONS = await response.json();
     const valid = Array.isArray(CONSTELLATIONS) && CONSTELLATIONS.length === 12 && CONSTELLATIONS.every(item =>
-      item.id && item.name && item.latinName && item.abbreviation && item.description && item.location && Array.isArray(item.stars) && Array.isArray(item.lines));
+      item.id && item.name && item.latinName && item.abbreviation && item.description && item.location && Array.isArray(item.stars) && item.stars.every(star =>
+        star.id && star.name && Number.isFinite(star.raHours) && Number.isFinite(star.declinationDegrees) && Number.isFinite(star.apparentMagnitude) && star.description) && Array.isArray(item.lines));
     if (!valid) throw new Error('Vigane tähtkujude andmestik');
-    skyData = CONSTELLATIONS.map(c => ({ ...c, points: c.stars.map(s => ({ ...starVector(s[1], s[2]), name: s[0], mag: s[3] })) }));
+    skyData = CONSTELLATIONS.map(c => ({ ...c, points: c.stars.map(star => ({ ...starVector(star.raHours, star.declinationDegrees), ...star })) }));
     setupControls();
     focusConstellation('aries', false, false);
     drawSky();

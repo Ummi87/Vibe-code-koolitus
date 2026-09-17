@@ -93,8 +93,26 @@
                   <button type="button" id="openConstellationDetails">Vaata täielikke andmeid <span aria-hidden="true">↓</span></button>
                 </div>
               </aside>
+              <aside class="star-menu" id="starMenu" aria-label="Valitud tähe andmed" aria-live="polite" hidden>
+                <button class="star-menu-close" id="closeStarMenu" type="button" aria-label="Sulge tähe andmed">×</button>
+                <div class="star-menu-heading">
+                  <span class="star-menu-symbol" aria-hidden="true">✦</span>
+                  <div>
+                    <h3 id="starName"></h3>
+                    <p id="starCatalogName"></p>
+                  </div>
+                </div>
+                <p class="star-menu-description" id="starDescription"></p>
+                <dl class="star-facts">
+                  <div><dt>Näiv heledus</dt><dd id="starMagnitude"></dd></div>
+                  <div><dt>Kaugus</dt><dd id="starDistance"></dd></div>
+                  <div><dt>Spektriklass</dt><dd id="starSpectralType"></dd></div>
+                  <div><dt>Asukoht</dt><dd id="starCoordinates"></dd></div>
+                </dl>
+                <button class="star-menu-back" type="button" id="backToConstellation">Vaata tähtkuju <span aria-hidden="true">→</span></button>
+              </aside>
               <p class="map-data-error" id="mapDataError" role="alert" hidden>Taevakaardi andmeid ei õnnestunud laadida.</p>
-              <div class="map-hint">Lohista pööramiseks · klõpsa tähtkujul · keri suumimiseks</div>
+              <div class="map-hint">Lohista pööramiseks · klõpsa tähel või tähtkujul · keri suumimiseks</div>
             </div>
 
             <div class="sky-footer">

@@ -28,42 +28,78 @@
     "location": "Põhjataevas",
     "area": 441,
     "stars": [
-      [
-        "Hamal",
-        2.119,
-        23.46,
-        2
-      ],
-      [
-        "Sheratan",
-        1.911,
-        20.81,
-        2.64
-      ],
-      [
-        "Mesarthim",
-        1.892,
-        19.29,
-        3.88
-      ],
-      [
-        "Bharani",
-        2.834,
-        27.26,
-        4.35
-      ],
-      [
-        "Botein",
-        3.194,
-        19.73,
-        4.35
-      ],
-      [
-        "41 Ari",
-        2.833,
-        27.26,
-        3.61
-      ]
+      {
+        "id": "aries-1",
+        "name": "Hamal",
+        "catalogName": "* alf Ari",
+        "raHours": 2.119557,
+        "declinationDegrees": 23.462418,
+        "apparentMagnitude": 2,
+        "distanceLightYears": 66,
+        "spectralType": "K2-IIIbCa-1",
+        "description": "Hamal on Jäära tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 2,00 ja see asub ligikaudu 66 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aries-2",
+        "name": "Sheratan",
+        "catalogName": "* bet Ari",
+        "raHours": 1.91067,
+        "declinationDegrees": 20.808031,
+        "apparentMagnitude": 2.64,
+        "distanceLightYears": 59,
+        "spectralType": "kA4hA5mA5Va",
+        "description": "Sheratan on Jäära tähtkuju joonisesse kuuluv oranžikas peajada täht. Tähe näiv tähesuurus on 2,64 ja see asub ligikaudu 59 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aries-3",
+        "name": "Mesarthim",
+        "catalogName": "* gam Ari",
+        "raHours": 1.892171,
+        "declinationDegrees": 19.293855,
+        "apparentMagnitude": 3.88,
+        "distanceLightYears": 164,
+        "spectralType": "kA0hA3(IV)SiSr+B9.5IV",
+        "description": "Mesarthim on Jäära tähtkuju joonisesse kuuluv oranžikas allhiid. Tähe näiv tähesuurus on 3,88 ja see asub ligikaudu 164 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aries-4",
+        "name": "Bharani",
+        "catalogName": "*  41 Ari",
+        "raHours": 2.833065,
+        "declinationDegrees": 27.260507,
+        "apparentMagnitude": 4.35,
+        "distanceLightYears": 166,
+        "spectralType": "B8Vn",
+        "description": "Bharani on Jäära tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 4,35 ja see asub ligikaudu 166 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aries-5",
+        "name": "Botein",
+        "catalogName": "* del Ari",
+        "raHours": 3.193824,
+        "declinationDegrees": 19.726673,
+        "apparentMagnitude": 4.35,
+        "distanceLightYears": 165,
+        "spectralType": "G9.5IIIb",
+        "description": "Botein on Jäära tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,35 ja see asub ligikaudu 165 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aries-6",
+        "name": "41 Ari",
+        "catalogName": "*  41 Ari",
+        "raHours": 2.833065,
+        "declinationDegrees": 27.260507,
+        "apparentMagnitude": 3.61,
+        "distanceLightYears": 166,
+        "spectralType": "B8Vn",
+        "description": "41 Ari on Jäära tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 3,61 ja see asub ligikaudu 166 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -117,54 +153,102 @@
     "location": "Taevaekvaatori lähedal",
     "area": 797,
     "stars": [
-      [
-        "Aldebaran",
-        4.599,
-        16.51,
-        0.86
-      ],
-      [
-        "Elnath",
-        5.438,
-        28.61,
-        1.65
-      ],
-      [
-        "Alcyone",
-        3.791,
-        24.11,
-        2.87
-      ],
-      [
-        "Ain",
-        4.477,
-        19.18,
-        3.53
-      ],
-      [
-        "Hyadum I",
-        4.33,
-        15.63,
-        3.65
-      ],
-      [
-        "Tianguan",
-        5.627,
-        21.14,
-        3
-      ],
-      [
-        "Atlas",
-        3.82,
-        24.05,
-        3.62
-      ],
-      [
-        "Electra",
-        3.748,
-        24.11,
-        3.7
-      ]
+      {
+        "id": "taurus-1",
+        "name": "Aldebaran",
+        "catalogName": "* alf Tau",
+        "raHours": 4.598678,
+        "declinationDegrees": 16.509302,
+        "apparentMagnitude": 0.86,
+        "distanceLightYears": 67,
+        "spectralType": "K5+III",
+        "description": "Aldebaran on Sõnni tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 0,86 ja see asub ligikaudu 67 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "taurus-2",
+        "name": "Elnath",
+        "catalogName": "* bet Tau",
+        "raHours": 5.438198,
+        "declinationDegrees": 28.607452,
+        "apparentMagnitude": 1.65,
+        "distanceLightYears": 134,
+        "spectralType": "B7III",
+        "description": "Elnath on Sõnni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 1,65 ja see asub ligikaudu 134 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "taurus-3",
+        "name": "Alcyone",
+        "catalogName": "* eta Tau",
+        "raHours": 3.79141,
+        "declinationDegrees": 24.105136,
+        "apparentMagnitude": 2.87,
+        "distanceLightYears": 403,
+        "spectralType": "B7III",
+        "description": "Alcyone on Sõnni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 2,87 ja see asub ligikaudu 403 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "taurus-4",
+        "name": "Ain",
+        "catalogName": "* eps Tau",
+        "raHours": 4.476945,
+        "declinationDegrees": 19.180434,
+        "apparentMagnitude": 3.53,
+        "distanceLightYears": 146,
+        "spectralType": "G9.5IIICN0.5",
+        "description": "Ain on Sõnni tähtkuju joonisesse kuuluv kollane hiidtäht. Tähe näiv tähesuurus on 3,53 ja see asub ligikaudu 146 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "taurus-5",
+        "name": "Hyadum I",
+        "catalogName": "* gam Tau",
+        "raHours": 4.32989,
+        "declinationDegrees": 15.627642,
+        "apparentMagnitude": 3.65,
+        "distanceLightYears": 151,
+        "spectralType": "G9.5IIIabCN0.5",
+        "description": "Hyadum I on Sõnni tähtkuju joonisesse kuuluv kollane hiidtäht. Tähe näiv tähesuurus on 3,65 ja see asub ligikaudu 151 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "taurus-6",
+        "name": "Tianguan",
+        "catalogName": "* zet Tau",
+        "raHours": 5.627413,
+        "declinationDegrees": 21.142544,
+        "apparentMagnitude": 3,
+        "distanceLightYears": 445,
+        "spectralType": "B1IVe_shell",
+        "description": "Tianguan on Sõnni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 3,00 ja see asub ligikaudu 445 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "taurus-7",
+        "name": "Atlas",
+        "catalogName": "*  27 Tau",
+        "raHours": 3.819373,
+        "declinationDegrees": 24.053417,
+        "apparentMagnitude": 3.62,
+        "distanceLightYears": 402,
+        "spectralType": "B8III",
+        "description": "Atlas on Sõnni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 3,62 ja see asub ligikaudu 402 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "taurus-8",
+        "name": "Electra",
+        "catalogName": "*  17 Tau",
+        "raHours": 3.747927,
+        "declinationDegrees": 24.113338,
+        "apparentMagnitude": 3.7,
+        "distanceLightYears": 391,
+        "spectralType": "B6IIIe",
+        "description": "Electra on Sõnni tähtkuju joonisesse kuuluv sinakasvalge hiidtäht. Tähe näiv tähesuurus on 3,70 ja see asub ligikaudu 391 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -222,48 +306,90 @@
     "location": "Põhjataevas",
     "area": 514,
     "stars": [
-      [
-        "Pollux",
-        7.755,
-        28.03,
-        1.14
-      ],
-      [
-        "Castor",
-        7.577,
-        31.89,
-        1.58
-      ],
-      [
-        "Alhena",
-        6.629,
-        16.4,
-        1.93
-      ],
-      [
-        "Tejat",
-        6.383,
-        22.51,
-        2.88
-      ],
-      [
-        "Mebsuta",
-        6.732,
-        25.13,
-        3.06
-      ],
-      [
-        "Mekbuda",
-        7.068,
-        20.57,
-        3.79
-      ],
-      [
-        "Wasat",
-        7.335,
-        21.98,
-        3.53
-      ]
+      {
+        "id": "gemini-1",
+        "name": "Pollux",
+        "catalogName": "* bet Gem",
+        "raHours": 7.755264,
+        "declinationDegrees": 28.026199,
+        "apparentMagnitude": 1.14,
+        "distanceLightYears": 34,
+        "spectralType": "K0IIIb",
+        "description": "Pollux on Kaksikute tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 1,14 ja see asub ligikaudu 34 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "gemini-2",
+        "name": "Castor",
+        "catalogName": "* alf Gem",
+        "raHours": 7.576631,
+        "declinationDegrees": 31.888282,
+        "apparentMagnitude": 1.58,
+        "distanceLightYears": 51,
+        "spectralType": "A1V+A2Vm",
+        "description": "Castor on Kaksikute tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 1,58 ja see asub ligikaudu 51 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "gemini-3",
+        "name": "Alhena",
+        "catalogName": "* gam Gem",
+        "raHours": 6.628531,
+        "declinationDegrees": 16.39928,
+        "apparentMagnitude": 1.93,
+        "distanceLightYears": 109,
+        "spectralType": "A1.5IV+",
+        "description": "Alhena on Kaksikute tähtkuju joonisesse kuuluv valge allhiid. Tähe näiv tähesuurus on 1,93 ja see asub ligikaudu 109 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "gemini-4",
+        "name": "Tejat",
+        "catalogName": "* mu. Gem",
+        "raHours": 6.382674,
+        "declinationDegrees": 22.513583,
+        "apparentMagnitude": 2.88,
+        "distanceLightYears": 232,
+        "spectralType": "M3IIIab",
+        "description": "Tejat on Kaksikute tähtkuju joonisesse kuuluv punakas hiidtäht. Tähe näiv tähesuurus on 2,88 ja see asub ligikaudu 232 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "gemini-5",
+        "name": "Mebsuta",
+        "catalogName": "* eps Gem",
+        "raHours": 6.732202,
+        "declinationDegrees": 25.131127,
+        "apparentMagnitude": 3.06,
+        "distanceLightYears": 870,
+        "spectralType": "G8Ib",
+        "description": "Mebsuta on Kaksikute tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,06 ja see asub ligikaudu 870 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "gemini-6",
+        "name": "Mekbuda",
+        "catalogName": "* zet Gem",
+        "raHours": 7.068481,
+        "declinationDegrees": 20.570298,
+        "apparentMagnitude": 3.79,
+        "distanceLightYears": 1061,
+        "spectralType": "G1Ib",
+        "description": "Mekbuda on Kaksikute tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,79 ja see asub ligikaudu 1061 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "gemini-7",
+        "name": "Wasat",
+        "catalogName": "* del Gem",
+        "raHours": 7.335382,
+        "declinationDegrees": 21.982304,
+        "apparentMagnitude": 3.53,
+        "distanceLightYears": 61,
+        "spectralType": "F2VkF0mF0",
+        "description": "Wasat on Kaksikute tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 3,53 ja see asub ligikaudu 61 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -325,42 +451,78 @@
     "location": "Põhjataevas",
     "area": 506,
     "stars": [
-      [
-        "Altarf",
-        8.275,
-        9.19,
-        3.52
-      ],
-      [
-        "Asellus Australis",
-        8.745,
-        18.15,
-        3.94
-      ],
-      [
-        "Acubens",
-        8.975,
-        11.86,
-        4.26
-      ],
-      [
-        "Asellus Borealis",
-        8.722,
-        21.47,
-        4.66
-      ],
-      [
-        "Tegmine",
-        8.204,
-        17.65,
-        4.64
-      ],
-      [
-        "Iota Cnc",
-        8.778,
-        28.76,
-        4.02
-      ]
+      {
+        "id": "cancer-1",
+        "name": "Altarf",
+        "catalogName": "* bet Cnc",
+        "raHours": 8.275256,
+        "declinationDegrees": 9.185544,
+        "apparentMagnitude": 3.52,
+        "distanceLightYears": 323,
+        "spectralType": "K4IIIBa0.5:",
+        "description": "Altarf on Vähi tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 3,52 ja see asub ligikaudu 323 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "cancer-2",
+        "name": "Asellus Australis",
+        "catalogName": "* del Cnc",
+        "raHours": 8.74475,
+        "declinationDegrees": 18.154308,
+        "apparentMagnitude": 3.94,
+        "distanceLightYears": 137,
+        "spectralType": "K0+IIIb",
+        "description": "Asellus Australis on Vähi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 3,94 ja see asub ligikaudu 137 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "cancer-3",
+        "name": "Acubens",
+        "catalogName": "* alf Cnc",
+        "raHours": 8.974779,
+        "declinationDegrees": 11.85768,
+        "apparentMagnitude": 4.26,
+        "distanceLightYears": 178,
+        "spectralType": "kA7VmF0/2III/IVSr",
+        "description": "Acubens on Vähi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 4,26 ja see asub ligikaudu 178 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "cancer-4",
+        "name": "Asellus Borealis",
+        "catalogName": "* gam Cnc",
+        "raHours": 8.72143,
+        "declinationDegrees": 21.468499,
+        "apparentMagnitude": 4.66,
+        "distanceLightYears": 175,
+        "spectralType": "A1Va",
+        "description": "Asellus Borealis on Vähi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 4,66 ja see asub ligikaudu 175 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "cancer-5",
+        "name": "Tegmine",
+        "catalogName": "* zet Cnc",
+        "raHours": 8.203535,
+        "declinationDegrees": 17.647767,
+        "apparentMagnitude": 4.64,
+        "distanceLightYears": 82,
+        "spectralType": "F8V+G0V",
+        "description": "Tegmine on Vähi tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,64 ja see asub ligikaudu 82 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "cancer-6",
+        "name": "Iota Cnc",
+        "catalogName": "* iot Cnc",
+        "raHours": 8.778283,
+        "declinationDegrees": 28.759893,
+        "apparentMagnitude": 4.02,
+        "distanceLightYears": 347,
+        "spectralType": "G8IIIaBa0.2",
+        "description": "Iota Cnc on Vähi tähtkuju joonisesse kuuluv kollane hiidtäht. Tähe näiv tähesuurus on 4,02 ja see asub ligikaudu 347 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -414,54 +576,102 @@
     "location": "Taevaekvaatori lähedal",
     "area": 947,
     "stars": [
-      [
-        "Regulus",
-        10.139,
-        11.97,
-        1.35
-      ],
-      [
-        "Denebola",
-        11.818,
-        14.57,
-        2.14
-      ],
-      [
-        "Algieba",
-        10.333,
-        19.84,
-        2.28
-      ],
-      [
-        "Zosma",
-        11.235,
-        20.52,
-        2.56
-      ],
-      [
-        "Chertan",
-        11.237,
-        15.43,
-        3.33
-      ],
-      [
-        "Rasalas",
-        9.879,
-        26.01,
-        3.88
-      ],
-      [
-        "Adhafera",
-        10.278,
-        23.42,
-        3.44
-      ],
-      [
-        "Subra",
-        9.685,
-        9.89,
-        3.52
-      ]
+      {
+        "id": "leo-1",
+        "name": "Regulus",
+        "catalogName": "* alf Leo",
+        "raHours": 10.139531,
+        "declinationDegrees": 11.967209,
+        "apparentMagnitude": 1.35,
+        "distanceLightYears": 79,
+        "spectralType": "B8IVn",
+        "description": "Regulus on Lõvi tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 1,35 ja see asub ligikaudu 79 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "leo-2",
+        "name": "Denebola",
+        "catalogName": "* bet Leo",
+        "raHours": 11.817661,
+        "declinationDegrees": 14.572058,
+        "apparentMagnitude": 2.14,
+        "distanceLightYears": 36,
+        "spectralType": "A3Va",
+        "description": "Denebola on Lõvi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 2,14 ja see asub ligikaudu 36 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "leo-3",
+        "name": "Algieba",
+        "catalogName": "* gam Leo",
+        "raHours": 10.332875,
+        "declinationDegrees": 19.841485,
+        "apparentMagnitude": 2.28,
+        "distanceLightYears": 130,
+        "spectralType": "K1-III+G7IIIb",
+        "description": "Algieba on Lõvi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,28 ja see asub ligikaudu 130 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "leo-4",
+        "name": "Zosma",
+        "catalogName": "* del Leo",
+        "raHours": 11.235139,
+        "declinationDegrees": 20.523718,
+        "apparentMagnitude": 2.56,
+        "distanceLightYears": 58,
+        "spectralType": "A5IV(n)",
+        "description": "Zosma on Lõvi tähtkuju joonisesse kuuluv valge allhiid. Tähe näiv tähesuurus on 2,56 ja see asub ligikaudu 58 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "leo-5",
+        "name": "Chertan",
+        "catalogName": "* tet Leo",
+        "raHours": 11.237335,
+        "declinationDegrees": 15.429571,
+        "apparentMagnitude": 3.33,
+        "distanceLightYears": 161,
+        "spectralType": "A2IV",
+        "description": "Chertan on Lõvi tähtkuju joonisesse kuuluv valge allhiid. Tähe näiv tähesuurus on 3,33 ja see asub ligikaudu 161 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "leo-6",
+        "name": "Rasalas",
+        "catalogName": "* mu. Leo",
+        "raHours": 9.879394,
+        "declinationDegrees": 26.006951,
+        "apparentMagnitude": 3.88,
+        "distanceLightYears": 125,
+        "spectralType": "K2IIIbCN1Ca1",
+        "description": "Rasalas on Lõvi tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 3,88 ja see asub ligikaudu 125 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "leo-7",
+        "name": "Adhafera",
+        "catalogName": "* zet Leo",
+        "raHours": 10.278171,
+        "declinationDegrees": 23.417317,
+        "apparentMagnitude": 3.44,
+        "distanceLightYears": 232,
+        "spectralType": "F0IIIa",
+        "description": "Adhafera on Lõvi tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 3,44 ja see asub ligikaudu 232 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "leo-8",
+        "name": "Subra",
+        "catalogName": "* omi Leo",
+        "raHours": 9.685842,
+        "declinationDegrees": 9.892308,
+        "apparentMagnitude": 3.52,
+        "distanceLightYears": 135,
+        "spectralType": "F8-G0III+A7m",
+        "description": "Subra on Lõvi tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 3,52 ja see asub ligikaudu 135 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -527,48 +737,90 @@
     "location": "Taevaekvaatori lähedal",
     "area": 1294,
     "stars": [
-      [
-        "Spica",
-        13.42,
-        -11.16,
-        0.98
-      ],
-      [
-        "Porrima",
-        12.694,
-        -1.45,
-        2.74
-      ],
-      [
-        "Vindemiatrix",
-        13.036,
-        10.96,
-        2.83
-      ],
-      [
-        "Heze",
-        13.578,
-        -0.6,
-        3.38
-      ],
-      [
-        "Zavijava",
-        11.845,
-        1.76,
-        3.61
-      ],
-      [
-        "Minelauva",
-        12.927,
-        3.4,
-        3.38
-      ],
-      [
-        "Syrma",
-        14.267,
-        -6,
-        4.08
-      ]
+      {
+        "id": "virgo-1",
+        "name": "Spica",
+        "catalogName": "* alf Vir",
+        "raHours": 13.419883,
+        "declinationDegrees": -11.161319,
+        "apparentMagnitude": 0.98,
+        "distanceLightYears": 250,
+        "spectralType": "B1V",
+        "description": "Spica on Neitsi tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 0,98 ja see asub ligikaudu 250 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "virgo-2",
+        "name": "Porrima",
+        "catalogName": "* gam Vir",
+        "raHours": 12.694341,
+        "declinationDegrees": -1.449404,
+        "apparentMagnitude": 2.74,
+        "distanceLightYears": 39,
+        "spectralType": "F1-F2V",
+        "description": "Porrima on Neitsi tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 2,74 ja see asub ligikaudu 39 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "virgo-3",
+        "name": "Vindemiatrix",
+        "catalogName": "* eps Vir",
+        "raHours": 13.036277,
+        "declinationDegrees": 10.959149,
+        "apparentMagnitude": 2.83,
+        "distanceLightYears": 108,
+        "spectralType": "G8III-IIIb",
+        "description": "Vindemiatrix on Neitsi tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 2,83 ja see asub ligikaudu 108 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "virgo-4",
+        "name": "Heze",
+        "catalogName": "* zet Vir",
+        "raHours": 13.57822,
+        "declinationDegrees": -0.595816,
+        "apparentMagnitude": 3.38,
+        "distanceLightYears": 75,
+        "spectralType": "A2Van",
+        "description": "Heze on Neitsi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 3,38 ja see asub ligikaudu 75 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "virgo-5",
+        "name": "Zavijava",
+        "catalogName": "* bet Vir",
+        "raHours": 11.844922,
+        "declinationDegrees": 1.764723,
+        "apparentMagnitude": 3.61,
+        "distanceLightYears": 36,
+        "spectralType": "F9V",
+        "description": "Zavijava on Neitsi tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 3,61 ja see asub ligikaudu 36 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "virgo-6",
+        "name": "Minelauva",
+        "catalogName": "* del Vir",
+        "raHours": 12.926725,
+        "declinationDegrees": 3.397469,
+        "apparentMagnitude": 3.38,
+        "distanceLightYears": 187,
+        "spectralType": "M3+III",
+        "description": "Minelauva on Neitsi tähtkuju joonisesse kuuluv punakas ülisuur täht. Tähe näiv tähesuurus on 3,38 ja see asub ligikaudu 187 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "virgo-7",
+        "name": "Syrma",
+        "catalogName": "* iot Vir",
+        "raHours": 14.266908,
+        "declinationDegrees": -6.000547,
+        "apparentMagnitude": 4.08,
+        "distanceLightYears": 72,
+        "spectralType": "F7III",
+        "description": "Syrma on Neitsi tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 4,08 ja see asub ligikaudu 72 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -626,42 +878,78 @@
     "location": "Lõunataevas",
     "area": 538,
     "stars": [
-      [
-        "Zubeneschamali",
-        15.283,
-        -9.38,
-        2.61
-      ],
-      [
-        "Zubenelgenubi",
-        14.848,
-        -16.04,
-        2.75
-      ],
-      [
-        "Brachium",
-        15.068,
-        -25.28,
-        3.29
-      ],
-      [
-        "Zubenelhakrabi",
-        15.592,
-        -14.79,
-        3.91
-      ],
-      [
-        "Theta Lib",
-        15.898,
-        -16.73,
-        4.14
-      ],
-      [
-        "Upsilon Lib",
-        15.618,
-        -28.14,
-        3.58
-      ]
+      {
+        "id": "libra-1",
+        "name": "Zubeneschamali",
+        "catalogName": "* bet Lib",
+        "raHours": 15.283448,
+        "declinationDegrees": -9.382914,
+        "apparentMagnitude": 2.61,
+        "distanceLightYears": 185,
+        "spectralType": "B8Vn",
+        "description": "Zubeneschamali on Kaalude tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,61 ja see asub ligikaudu 185 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "libra-2",
+        "name": "Zubenelgenubi",
+        "catalogName": "* alf02 Lib",
+        "raHours": 14.847976,
+        "declinationDegrees": -16.041777,
+        "apparentMagnitude": 2.75,
+        "distanceLightYears": 76,
+        "spectralType": "kA2hA5mA4IV-V",
+        "description": "Zubenelgenubi on Kaalude tähtkuju joonisesse kuuluv oranžikas allhiid. Tähe näiv tähesuurus on 2,75 ja see asub ligikaudu 76 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "libra-3",
+        "name": "Brachium",
+        "catalogName": "* sig Lib",
+        "raHours": 15.067837,
+        "declinationDegrees": -25.28197,
+        "apparentMagnitude": 3.29,
+        "distanceLightYears": 260,
+        "spectralType": "M2.5III",
+        "description": "Brachium on Kaalude tähtkuju joonisesse kuuluv punakas ülisuur täht. Tähe näiv tähesuurus on 3,29 ja see asub ligikaudu 260 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "libra-4",
+        "name": "Zubenelhakrabi",
+        "catalogName": "* gam Lib",
+        "raHours": 15.592105,
+        "declinationDegrees": -14.789536,
+        "apparentMagnitude": 3.91,
+        "distanceLightYears": 161,
+        "spectralType": "G8.5III",
+        "description": "Zubenelhakrabi on Kaalude tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,91 ja see asub ligikaudu 161 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "libra-5",
+        "name": "Theta Lib",
+        "catalogName": "* tet Lib",
+        "raHours": 15.897094,
+        "declinationDegrees": -16.729297,
+        "apparentMagnitude": 4.14,
+        "distanceLightYears": 167,
+        "spectralType": "G9IIIb",
+        "description": "Theta Lib on Kaalude tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,14 ja see asub ligikaudu 167 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "libra-6",
+        "name": "Upsilon Lib",
+        "catalogName": "* ups Lib",
+        "raHours": 15.617069,
+        "declinationDegrees": -28.13511,
+        "apparentMagnitude": 3.58,
+        "distanceLightYears": 210,
+        "spectralType": "K3.5III",
+        "description": "Upsilon Lib on Kaalude tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 3,58 ja see asub ligikaudu 210 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -719,54 +1007,102 @@
     "location": "Lõunataevas",
     "area": 497,
     "stars": [
-      [
-        "Antares",
-        16.49,
-        -26.43,
-        1.06
-      ],
-      [
-        "Shaula",
-        17.56,
-        -37.1,
-        1.62
-      ],
-      [
-        "Sargas",
-        17.622,
-        -42.99,
-        1.86
-      ],
-      [
-        "Dschubba",
-        16.006,
-        -22.62,
-        2.31
-      ],
-      [
-        "Acrab",
-        16.091,
-        -19.81,
-        2.56
-      ],
-      [
-        "Lesath",
-        17.512,
-        -37.3,
-        2.7
-      ],
-      [
-        "Alniyat",
-        16.353,
-        -25.59,
-        2.89
-      ],
-      [
-        "Fang",
-        15.981,
-        -26.11,
-        2.89
-      ]
+      {
+        "id": "scorpius-1",
+        "name": "Antares",
+        "catalogName": "* alf Sco",
+        "raHours": 16.490128,
+        "declinationDegrees": -26.432003,
+        "apparentMagnitude": 1.06,
+        "distanceLightYears": 554,
+        "spectralType": "M1.5Iab+B2Vn",
+        "description": "Antares on Skorpioni tähtkuju joonisesse kuuluv punakas peajada täht. Tähe näiv tähesuurus on 1,06 ja see asub ligikaudu 554 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "scorpius-2",
+        "name": "Shaula",
+        "catalogName": "* lam Sco",
+        "raHours": 17.560144,
+        "declinationDegrees": -37.103824,
+        "apparentMagnitude": 1.62,
+        "distanceLightYears": 571,
+        "spectralType": "B2IV+DA7.9",
+        "description": "Shaula on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 1,62 ja see asub ligikaudu 571 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "scorpius-3",
+        "name": "Sargas",
+        "catalogName": "* tet Sco",
+        "raHours": 17.621981,
+        "declinationDegrees": -42.997828,
+        "apparentMagnitude": 1.86,
+        "distanceLightYears": 300,
+        "spectralType": "F1III",
+        "description": "Sargas on Skorpioni tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 1,86 ja see asub ligikaudu 300 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "scorpius-4",
+        "name": "Dschubba",
+        "catalogName": "* del Sco",
+        "raHours": 16.005557,
+        "declinationDegrees": -22.621706,
+        "apparentMagnitude": 2.31,
+        "distanceLightYears": 491,
+        "spectralType": "B0.3IV",
+        "description": "Dschubba on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 2,31 ja see asub ligikaudu 491 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "scorpius-5",
+        "name": "Acrab",
+        "catalogName": "* bet Sco",
+        "raHours": 16.090619,
+        "declinationDegrees": -19.805389,
+        "apparentMagnitude": 2.56,
+        "distanceLightYears": null,
+        "spectralType": "B1V+B2V",
+        "description": "Acrab on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,56.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "scorpius-6",
+        "name": "Lesath",
+        "catalogName": "* ups Sco",
+        "raHours": 17.512733,
+        "declinationDegrees": -37.295813,
+        "apparentMagnitude": 2.7,
+        "distanceLightYears": 576,
+        "spectralType": "B2IV",
+        "description": "Lesath on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 2,70 ja see asub ligikaudu 576 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "scorpius-7",
+        "name": "Alniyat",
+        "catalogName": "* sig Sco",
+        "raHours": 16.353143,
+        "declinationDegrees": -25.592792,
+        "apparentMagnitude": 2.89,
+        "distanceLightYears": 697,
+        "spectralType": "B1III+B1:V",
+        "description": "Alniyat on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 2,89 ja see asub ligikaudu 697 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "scorpius-8",
+        "name": "Fang",
+        "catalogName": "* pi. Sco",
+        "raHours": 15.980865,
+        "declinationDegrees": -26.114108,
+        "apparentMagnitude": 2.89,
+        "distanceLightYears": 586,
+        "spectralType": "B1V+B2:V:",
+        "description": "Fang on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,89 ja see asub ligikaudu 586 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -828,48 +1164,90 @@
     "location": "Lõunataevas",
     "area": 867,
     "stars": [
-      [
-        "Kaus Australis",
-        18.403,
-        -34.38,
-        1.79
-      ],
-      [
-        "Nunki",
-        18.921,
-        -26.3,
-        2.05
-      ],
-      [
-        "Ascella",
-        19.043,
-        -29.88,
-        2.6
-      ],
-      [
-        "Kaus Media",
-        18.35,
-        -29.83,
-        2.72
-      ],
-      [
-        "Kaus Borealis",
-        18.466,
-        -25.42,
-        2.82
-      ],
-      [
-        "Alnasl",
-        18.096,
-        -30.42,
-        2.98
-      ],
-      [
-        "Arkab Prior",
-        19.377,
-        -44.46,
-        3.96
-      ]
+      {
+        "id": "sagittarius-1",
+        "name": "Kaus Australis",
+        "catalogName": "* eps Sgr",
+        "raHours": 18.402866,
+        "declinationDegrees": -34.384616,
+        "apparentMagnitude": 1.79,
+        "distanceLightYears": 143,
+        "spectralType": "B9IVp_lB?",
+        "description": "Kaus Australis on Amburi tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 1,79 ja see asub ligikaudu 143 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "sagittarius-2",
+        "name": "Nunki",
+        "catalogName": "* sig Sgr",
+        "raHours": 18.921091,
+        "declinationDegrees": -26.296724,
+        "apparentMagnitude": 2.05,
+        "distanceLightYears": 228,
+        "spectralType": "B2.5V",
+        "description": "Nunki on Amburi tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,05 ja see asub ligikaudu 228 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "sagittarius-3",
+        "name": "Ascella",
+        "catalogName": "* zet Sgr",
+        "raHours": 19.043536,
+        "declinationDegrees": -29.880063,
+        "apparentMagnitude": 2.6,
+        "distanceLightYears": 88,
+        "spectralType": "A2.5Va",
+        "description": "Ascella on Amburi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 2,60 ja see asub ligikaudu 88 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "sagittarius-4",
+        "name": "Kaus Media",
+        "catalogName": "* del Sgr",
+        "raHours": 18.349901,
+        "declinationDegrees": -29.828102,
+        "apparentMagnitude": 2.72,
+        "distanceLightYears": 416,
+        "spectralType": "K2.5IIIaCN0.5",
+        "description": "Kaus Media on Amburi tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 2,72 ja see asub ligikaudu 416 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "sagittarius-5",
+        "name": "Kaus Borealis",
+        "catalogName": "* lam Sgr",
+        "raHours": 18.466178,
+        "declinationDegrees": -25.421699,
+        "apparentMagnitude": 2.82,
+        "distanceLightYears": 76,
+        "spectralType": "K1IIIb",
+        "description": "Kaus Borealis on Amburi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,82 ja see asub ligikaudu 76 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "sagittarius-6",
+        "name": "Alnasl",
+        "catalogName": "* gam02 Sgr",
+        "raHours": 18.096802,
+        "declinationDegrees": -30.42409,
+        "apparentMagnitude": 2.98,
+        "distanceLightYears": 101,
+        "spectralType": "K0+III",
+        "description": "Alnasl on Amburi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,98 ja see asub ligikaudu 101 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "sagittarius-7",
+        "name": "Arkab Prior",
+        "catalogName": "* bet01 Sgr",
+        "raHours": 19.377305,
+        "declinationDegrees": -44.458958,
+        "apparentMagnitude": 3.96,
+        "distanceLightYears": 389,
+        "spectralType": "B9V",
+        "description": "Arkab Prior on Amburi tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 3,96 ja see asub ligikaudu 389 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -931,42 +1309,78 @@
     "location": "Lõunataevas",
     "area": 414,
     "stars": [
-      [
-        "Deneb Algedi",
-        21.784,
-        -16.13,
-        2.85
-      ],
-      [
-        "Dabih",
-        20.35,
-        -14.78,
-        3.05
-      ],
-      [
-        "Nashira",
-        21.669,
-        -16.66,
-        3.68
-      ],
-      [
-        "Algedi",
-        20.294,
-        -12.51,
-        3.58
-      ],
-      [
-        "Omega Cap",
-        20.864,
-        -26.92,
-        4.11
-      ],
-      [
-        "Psi Cap",
-        20.768,
-        -25.27,
-        4.13
-      ]
+      {
+        "id": "capricornus-1",
+        "name": "Deneb Algedi",
+        "catalogName": "* del Cap",
+        "raHours": 21.784012,
+        "declinationDegrees": -16.127287,
+        "apparentMagnitude": 2.85,
+        "distanceLightYears": 39,
+        "spectralType": "kA5hF0mF2III",
+        "description": "Deneb Algedi on Kaljukitse tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,85 ja see asub ligikaudu 39 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "capricornus-2",
+        "name": "Dabih",
+        "catalogName": "* bet01 Cap",
+        "raHours": 20.350185,
+        "declinationDegrees": -14.781408,
+        "apparentMagnitude": 3.05,
+        "distanceLightYears": 388,
+        "spectralType": "G9II:+B8p:Si:",
+        "description": "Dabih on Kaljukitse tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,05 ja see asub ligikaudu 388 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "capricornus-3",
+        "name": "Nashira",
+        "catalogName": "* gam Cap",
+        "raHours": 21.668179,
+        "declinationDegrees": -16.662371,
+        "apparentMagnitude": 3.68,
+        "distanceLightYears": 171,
+        "spectralType": "kF0hF1VmF2",
+        "description": "Nashira on Kaljukitse tähtkuju joonisesse kuuluv oranžikas peajada täht. Tähe näiv tähesuurus on 3,68 ja see asub ligikaudu 171 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "capricornus-4",
+        "name": "Algedi",
+        "catalogName": "* alf02 Cap",
+        "raHours": 20.300904,
+        "declinationDegrees": -12.544852,
+        "apparentMagnitude": 3.58,
+        "distanceLightYears": 109,
+        "spectralType": "G9III",
+        "description": "Algedi on Kaljukitse tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,58 ja see asub ligikaudu 109 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "capricornus-5",
+        "name": "Omega Cap",
+        "catalogName": "* ome Cap",
+        "raHours": 20.863692,
+        "declinationDegrees": -26.919135,
+        "apparentMagnitude": 4.11,
+        "distanceLightYears": 553,
+        "spectralType": "M0IIIBa0.5",
+        "description": "Omega Cap on Kaljukitse tähtkuju joonisesse kuuluv punakas hiidtäht. Tähe näiv tähesuurus on 4,11 ja see asub ligikaudu 553 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "capricornus-6",
+        "name": "Psi Cap",
+        "catalogName": "* psi Cap",
+        "raHours": 20.768259,
+        "declinationDegrees": -25.270898,
+        "apparentMagnitude": 4.13,
+        "distanceLightYears": 48,
+        "spectralType": "F5V",
+        "description": "Psi Cap on Kaljukitse tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,13 ja see asub ligikaudu 48 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -1024,48 +1438,90 @@
     "location": "Taevaekvaatori lähedal",
     "area": 980,
     "stars": [
-      [
-        "Sadalsuud",
-        21.526,
-        -5.57,
-        2.87
-      ],
-      [
-        "Sadalmelik",
-        22.096,
-        -0.32,
-        2.95
-      ],
-      [
-        "Skat",
-        22.911,
-        -15.82,
-        3.27
-      ],
-      [
-        "Albali",
-        20.795,
-        -9.5,
-        3.77
-      ],
-      [
-        "Sadachbia",
-        22.361,
-        -1.39,
-        3.86
-      ],
-      [
-        "Ancha",
-        22.28,
-        -7.78,
-        4.17
-      ],
-      [
-        "Hydor",
-        22.877,
-        -7.58,
-        3.74
-      ]
+      {
+        "id": "aquarius-1",
+        "name": "Sadalsuud",
+        "catalogName": "* bet Aqr",
+        "raHours": 21.525981,
+        "declinationDegrees": -5.571175,
+        "apparentMagnitude": 2.87,
+        "distanceLightYears": 546,
+        "spectralType": "G0Ib",
+        "description": "Sadalsuud on Veevalaja tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 2,87 ja see asub ligikaudu 546 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aquarius-2",
+        "name": "Sadalmelik",
+        "catalogName": "* alf Aqr",
+        "raHours": 22.096399,
+        "declinationDegrees": -0.319851,
+        "apparentMagnitude": 2.95,
+        "distanceLightYears": 660,
+        "spectralType": "G2Ib",
+        "description": "Sadalmelik on Veevalaja tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 2,95 ja see asub ligikaudu 660 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aquarius-3",
+        "name": "Skat",
+        "catalogName": "* del Aqr",
+        "raHours": 22.910835,
+        "declinationDegrees": -15.82082,
+        "apparentMagnitude": 3.27,
+        "distanceLightYears": 141,
+        "spectralType": "A3Vp",
+        "description": "Skat on Veevalaja tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 3,27 ja see asub ligikaudu 141 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aquarius-4",
+        "name": "Albali",
+        "catalogName": "* eps Aqr",
+        "raHours": 20.794597,
+        "declinationDegrees": -9.495777,
+        "apparentMagnitude": 3.77,
+        "distanceLightYears": 244,
+        "spectralType": "B9.5V",
+        "description": "Albali on Veevalaja tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 3,77 ja see asub ligikaudu 244 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aquarius-5",
+        "name": "Sadachbia",
+        "catalogName": "* gam Aqr",
+        "raHours": 22.360937,
+        "declinationDegrees": -1.387349,
+        "apparentMagnitude": 3.86,
+        "distanceLightYears": 126,
+        "spectralType": "A0V",
+        "description": "Sadachbia on Veevalaja tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 3,86 ja see asub ligikaudu 126 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aquarius-6",
+        "name": "Ancha",
+        "catalogName": "* tet Aqr",
+        "raHours": 22.280566,
+        "declinationDegrees": -7.783289,
+        "apparentMagnitude": 4.17,
+        "distanceLightYears": 191,
+        "spectralType": "G9II",
+        "description": "Ancha on Veevalaja tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,17 ja see asub ligikaudu 191 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "aquarius-7",
+        "name": "Hydor",
+        "catalogName": "* lam Aqr",
+        "raHours": 22.876909,
+        "declinationDegrees": -7.579597,
+        "apparentMagnitude": 3.74,
+        "distanceLightYears": 365,
+        "spectralType": "M2.5IIIFe-0.5",
+        "description": "Hydor on Veevalaja tähtkuju joonisesse kuuluv punakas hiidtäht. Tähe näiv tähesuurus on 3,74 ja see asub ligikaudu 365 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [
@@ -1123,48 +1579,90 @@
     "location": "Taevaekvaatori lähedal",
     "area": 889,
     "stars": [
-      [
-        "Alpherg",
-        1.23,
-        15.35,
-        3.62
-      ],
-      [
-        "Alrescha",
-        2.034,
-        2.76,
-        3.82
-      ],
-      [
-        "Fumalsamakah",
-        23.665,
-        5.63,
-        4.01
-      ],
-      [
-        "Torcular",
-        1.195,
-        3.81,
-        4.26
-      ],
-      [
-        "Kullat Nunu",
-        1.524,
-        15.35,
-        4.5
-      ],
-      [
-        "Iota Psc",
-        23.666,
-        5.63,
-        4.13
-      ],
-      [
-        "Omega Psc",
-        23.989,
-        6.86,
-        4.01
-      ]
+      {
+        "id": "pisces-1",
+        "name": "Alpherg",
+        "catalogName": "SDSS J011353.55+152447.9",
+        "raHours": 1.231542,
+        "declinationDegrees": 15.413304,
+        "apparentMagnitude": 3.62,
+        "distanceLightYears": 4359,
+        "spectralType": "F9",
+        "description": "Alpherg on Kalade tähtkuju joonisesse kuuluv kollakasvalge täht. Tähe näiv tähesuurus on 3,62 ja see asub ligikaudu 4359 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "pisces-2",
+        "name": "Alrescha",
+        "catalogName": "* alf Psc",
+        "raHours": 2.034117,
+        "declinationDegrees": 2.763761,
+        "apparentMagnitude": 3.82,
+        "distanceLightYears": 151,
+        "spectralType": "kA0hA7Sr+kA2hF2mF2(IV)",
+        "description": "Alrescha on Kalade tähtkuju joonisesse kuuluv oranžikas allhiid. Tähe näiv tähesuurus on 3,82 ja see asub ligikaudu 151 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "pisces-3",
+        "name": "Fumalsamakah",
+        "catalogName": "* iot Psc",
+        "raHours": 23.665845,
+        "declinationDegrees": 5.626293,
+        "apparentMagnitude": 4.01,
+        "distanceLightYears": 45,
+        "spectralType": "F7V",
+        "description": "Fumalsamakah on Kalade tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,01 ja see asub ligikaudu 45 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "pisces-4",
+        "name": "Torcular",
+        "catalogName": "UCAC4 470-001664",
+        "raHours": 1.206906,
+        "declinationDegrees": 3.913751,
+        "apparentMagnitude": 4.26,
+        "distanceLightYears": 859,
+        "spectralType": "G9",
+        "description": "Torcular on Kalade tähtkuju joonisesse kuuluv kollane täht. Tähe näiv tähesuurus on 4,26 ja see asub ligikaudu 859 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "pisces-5",
+        "name": "Kullat Nunu",
+        "catalogName": "* eta Psc",
+        "raHours": 1.524724,
+        "declinationDegrees": 15.345832,
+        "apparentMagnitude": 4.5,
+        "distanceLightYears": 373,
+        "spectralType": "G7IIIa",
+        "description": "Kullat Nunu on Kalade tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,50 ja see asub ligikaudu 373 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "pisces-6",
+        "name": "Iota Psc",
+        "catalogName": "* iot Psc",
+        "raHours": 23.665845,
+        "declinationDegrees": 5.626293,
+        "apparentMagnitude": 4.13,
+        "distanceLightYears": 45,
+        "spectralType": "F7V",
+        "description": "Iota Psc on Kalade tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,13 ja see asub ligikaudu 45 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      },
+      {
+        "id": "pisces-7",
+        "name": "Omega Psc",
+        "catalogName": "* ome Psc",
+        "raHours": 23.988525,
+        "declinationDegrees": 6.863322,
+        "apparentMagnitude": 4.01,
+        "distanceLightYears": 108,
+        "spectralType": "F4V",
+        "description": "Omega Psc on Kalade tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,01 ja see asub ligikaudu 108 valgusaasta kaugusel.",
+        "source": "SIMBAD"
+      }
     ],
     "lines": [
       [

@@ -8,7 +8,7 @@ const html = document.documentElement;
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const canvas = $('#skyCanvas');
 const ctx = canvas.getContext('2d');
-const state = { yaw: 0.2, pitch: 0.12, zoom: 1, selected: 'aries', dragging: false, dragDistance: 0, lastX: 0, lastY: 0, targetYaw: null, targetPitch: null, frame: 0 };
+const state = { yaw: 0.2, pitch: 0.12, zoom: 1, selected: 'aries', birthMethod: 'date', dragging: false, dragDistance: 0, lastX: 0, lastY: 0, targetYaw: null, targetPitch: null, frame: 0 };
 const motionModes = ['reduced', 'standard', 'enhanced'];
 const motionLabels = { reduced: 'Vähendatud', standard: 'Standard', enhanced: 'Täiustatud' };
 
@@ -272,19 +272,98 @@ function showResult(sign) {
   focusConstellation(sign.id);
 }
 
+function toIsoDate(year, month, day) {
+  return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+}
+
+function estimateBirthDate(age, month, day, today = new Date()) {
+  if (!Number.isInteger(age) || age < 0 || age > 120 || !Number.isInteger(month) || month < 1 || month > 12 || !Number.isInteger(day)) return null;
+  const birthdayPassed = month < today.getMonth() + 1 || month === today.getMonth() + 1 && day <= today.getDate();
+  const year = today.getFullYear() - age - (birthdayPassed ? 0 : 1);
+  const candidate = new Date(year, month - 1, day);
+  if (candidate.getFullYear() !== year || candidate.getMonth() !== month - 1 || candidate.getDate() !== day) return null;
+  return {
+    year, month, day,
+    iso: toIsoDate(year, month, day),
+    label: new Intl.DateTimeFormat('et-EE', { day: 'numeric', month: 'long', year: 'numeric' }).format(candidate)
+  };
+}
+
+function updateEstimatedBirthDate() {
+  const estimate = estimateBirthDate(Number($('#ageInput').value), Number($('#birthMonth').value), Number($('#birthDay').value));
+  $('#estimatedDate').hidden = !estimate;
+  if (!estimate) return null;
+  $('#estimatedDateText').textContent = `${estimate.label} · kontrolli ja kinnita alloleva nupuga.`;
+  $('#birthDate').value = estimate.iso;
+  return estimate;
+}
+
+function setBirthMethod(method) {
+  state.birthMethod = method;
+  const useAge = method === 'age';
+  $('#dateFields').hidden = useAge;
+  $('#ageFields').hidden = !useAge;
+  $('#dateMethodButton').classList.toggle('active', !useAge);
+  $('#ageMethodButton').classList.toggle('active', useAge);
+  $('#dateMethodButton').setAttribute('aria-pressed', String(!useAge));
+  $('#ageMethodButton').setAttribute('aria-pressed', String(useAge));
+  $('#birthSubmitLabel').textContent = useAge ? 'Kinnita kuupäev ja leia märk' : 'Leia minu tähtkuju';
+  $('#dateError').textContent = '';
+  document.querySelectorAll('#birthForm [aria-invalid="true"]').forEach(field => field.removeAttribute('aria-invalid'));
+  if (useAge) updateEstimatedBirthDate();
+}
+
 function setupControls() {
   $('#constellationSelect').innerHTML = CONSTELLATIONS.map(c => `<option value="${c.id}">${c.glyph} ${c.name}</option>`).join('');
   $('#starCount').textContent = `${CONSTELLATIONS.reduce((sum, c) => sum + c.stars.length, 0)} kaardistatud tähte`;
   $('#constellationSelect').addEventListener('change', event => focusConstellation(event.target.value, false, true));
 
+  $('#dateMethodButton').addEventListener('click', () => setBirthMethod('date'));
+  $('#ageMethodButton').addEventListener('click', () => setBirthMethod('age'));
+  ['#ageInput', '#birthMonth', '#birthDay'].forEach(selector => $(selector).addEventListener('input', () => {
+    $('#dateError').textContent = '';
+    $(selector).removeAttribute('aria-invalid');
+    updateEstimatedBirthDate();
+  }));
+
+  const today = new Date();
+  $('#birthDate').max = toIsoDate(today.getFullYear(), today.getMonth() + 1, today.getDate());
+
   $('#birthForm').addEventListener('submit', event => {
     event.preventDefault();
     const input = $('#birthDate');
-    if (!input.value) {
-      $('#dateError').textContent = 'Vali kõigepealt sünnikuupäev.';
-      input.setAttribute('aria-invalid', 'true'); input.focus(); return;
+    let month, day;
+
+    if (state.birthMethod === 'age') {
+      const age = Number($('#ageInput').value);
+      const selectedMonth = Number($('#birthMonth').value);
+      const selectedDay = Number($('#birthDay').value);
+      const estimate = updateEstimatedBirthDate();
+      if (!Number.isInteger(age) || age < 0 || age > 120) {
+        $('#dateError').textContent = 'Sisesta vanus vahemikus 0–120.';
+        $('#ageInput').setAttribute('aria-invalid', 'true'); $('#ageInput').focus(); return;
+      }
+      if (!selectedMonth) {
+        $('#dateError').textContent = 'Vali sünnikuu.';
+        $('#birthMonth').setAttribute('aria-invalid', 'true'); $('#birthMonth').focus(); return;
+      }
+      if (!estimate) {
+        $('#dateError').textContent = 'Sisesta selle kuu jaoks kehtiv sünnipäev.';
+        $('#birthDay').setAttribute('aria-invalid', 'true'); $('#birthDay').focus(); return;
+      }
+      month = selectedMonth; day = selectedDay;
+    } else {
+      if (!input.value) {
+        $('#dateError').textContent = 'Vali kõigepealt sünnikuupäev.';
+        input.setAttribute('aria-invalid', 'true'); input.focus(); return;
+      }
+      if (input.value > input.max) {
+        $('#dateError').textContent = 'Sünnikuupäev ei saa olla tulevikus.';
+        input.setAttribute('aria-invalid', 'true'); input.focus(); return;
+      }
+      [, month, day] = input.value.split('-').map(Number);
     }
-    const [, month, day] = input.value.split('-').map(Number);
+
     const sign = getZodiac(month, day);
     if (!sign) { $('#dateError').textContent = 'Kuupäeva ei õnnestunud tõlgendada.'; return; }
     $('#dateError').textContent = ''; input.removeAttribute('aria-invalid'); showResult(sign);

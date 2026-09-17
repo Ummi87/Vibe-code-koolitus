@@ -113,22 +113,63 @@
             </div>
 
             <form id="birthForm" novalidate>
-              <label for="birthDate">Sünnikuupäev</label>
-              <div class="date-control">
-                <input id="birthDate" name="birthDate" type="date" required aria-describedby="dateHelp dateError">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/></svg>
+              <div class="birth-method" role="group" aria-label="Vali sisestusviis">
+                <button class="active" id="dateMethodButton" type="button" aria-pressed="true">Sünnikuupäev</button>
+                <button id="ageMethodButton" type="button" aria-pressed="false">Vanuse järgi</button>
               </div>
-              <p class="field-help" id="dateHelp">Kasutame lääne astroloogia päikesemärki.</p>
+
+              <div id="dateFields">
+                <label for="birthDate">Sünnikuupäev</label>
+                <div class="date-control">
+                  <input id="birthDate" name="birthDate" type="date" required aria-describedby="dateHelp dateError">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/></svg>
+                </div>
+                <p class="field-help" id="dateHelp">Kasuta täpset sünnikuupäeva.</p>
+              </div>
+
+              <div class="age-fields" id="ageFields" hidden>
+                <label for="ageInput">Vanus</label>
+                <input class="field-control" id="ageInput" name="age" type="number" min="0" max="120" inputmode="numeric" placeholder="Näiteks 32">
+                <div class="birth-day-row">
+                  <label> sünnikuu
+                    <select class="field-control" id="birthMonth" name="birthMonth">
+                      <option value="">Vali kuu</option>
+                      <option value="1">Jaanuar</option><option value="2">Veebruar</option><option value="3">Märts</option>
+                      <option value="4">Aprill</option><option value="5">Mai</option><option value="6">Juuni</option>
+                      <option value="7">Juuli</option><option value="8">August</option><option value="9">September</option>
+                      <option value="10">Oktoober</option><option value="11">November</option><option value="12">Detsember</option>
+                    </select>
+                  </label>
+                  <label> sünnipäev
+                    <input class="field-control" id="birthDay" name="birthDay" type="number" min="1" max="31" inputmode="numeric" placeholder="Päev">
+                  </label>
+                </div>
+                <div class="estimated-date" id="estimatedDate" hidden>
+                  <span aria-hidden="true">✓</span>
+                  <div><strong>Pakutud sünnikuupäev</strong><p id="estimatedDateText"></p></div>
+                </div>
+              </div>
+
+              <label for="genderSelect">Sugu <span class="optional-label">valikuline</span></label>
+              <select class="field-control" id="genderSelect" name="gender">
+                <option value="">Ei soovi öelda</option>
+                <option value="female">Naine</option>
+                <option value="male">Mees</option>
+                <option value="nonbinary">Mittebinaarne</option>
+                <option value="self-described">Muu / enesemääratlus</option>
+              </select>
+              <p class="field-help">Soo valik ei mõjuta tähtkuju arvutust.</p>
+
               <p class="field-error" id="dateError" role="alert"></p>
               <button class="primary-button" type="submit">
-                <span>Leia minu tähtkuju</span>
+                <span id="birthSubmitLabel">Leia minu tähtkuju</span>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </button>
             </form>
 
             <div class="result-empty" id="resultEmpty">
               <span aria-hidden="true">✦</span>
-              <p>Sisesta kuupäev, et avada sinu märgi iseloom, tugevused ja arengusuund.</p>
+              <p>Sisesta kuupäev või vanus, et avada sinu märgi iseloom, tugevused ja arengusuund.</p>
             </div>
 
             <div class="zodiac-result" id="zodiacResult" hidden aria-live="polite">

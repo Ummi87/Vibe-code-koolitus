@@ -110,8 +110,23 @@ h1 em { color:var(--signal); font-style:normal; }
 .birth-orbit { width:34px; height:34px; border:1px solid color-mix(in srgb,var(--energy) 60%,transparent); border-radius:50%; box-shadow:0 0 24px color-mix(in srgb,var(--energy) 20%,transparent); position:relative; }.birth-orbit::after { content:""; position:absolute; width:5px; height:5px; border-radius:50%; top:2px; left:4px; background:var(--energy); box-shadow:0 0 8px var(--energy); }
 #birthForm { padding:5px 22px 18px; border-bottom:1px solid var(--border); }
 #birthForm label { display:block; margin-bottom:8px; font-size:.76rem; font-weight:650; }
+.birth-method { display:grid; grid-template-columns:1fr 1fr; gap:4px; margin:0 0 18px; padding:4px; border:1px solid var(--border); border-radius:13px; background:var(--surface-alt); }
+.birth-method button { min-height:38px; padding:0 10px; border:0; border-radius:9px; background:transparent; color:var(--muted); font-size:.72rem; font-weight:650; }
+.birth-method button.active { background:var(--solid); color:var(--signal); box-shadow:0 5px 16px rgba(25,57,101,.1); }
 .date-control { position:relative; }.date-control input { width:100%; height:50px; padding:0 46px 0 14px; border:1px solid var(--border); border-radius:12px; background:var(--solid); color:var(--text); font-size:.86rem; }.date-control input:focus { border-color:var(--signal); box-shadow:var(--focus); outline:0; }.date-control input[aria-invalid="true"] { border-color:#de254f; }
 .date-control svg { position:absolute; right:15px; top:16px; color:var(--muted); pointer-events:none; }
+.field-control { width:100%; height:48px; padding:0 13px; border:1px solid var(--border); border-radius:12px; background:var(--solid); color:var(--text); font-size:.8rem; }
+.field-control:focus { border-color:var(--signal); box-shadow:var(--focus); outline:0; }
+.field-control[aria-invalid="true"] { border-color:#de254f; }
+.age-fields { margin-bottom:17px; }
+.birth-day-row { display:grid; grid-template-columns:1.4fr .8fr; gap:9px; margin-top:12px; }
+.birth-day-row label { color:var(--muted); font-size:.68rem !important; font-weight:600 !important; }
+.birth-day-row .field-control { margin-top:7px; }
+.estimated-date { display:flex; align-items:flex-start; gap:10px; margin-top:12px; padding:11px 12px; border:1px solid color-mix(in srgb,#14be81 32%,var(--border)); border-radius:12px; background:color-mix(in srgb,#14be81 8%,var(--solid)); }
+.estimated-date > span { display:grid; place-items:center; flex:0 0 auto; width:22px; height:22px; border-radius:50%; background:#14be81; color:#fff; font-size:.7rem; }
+.estimated-date strong { display:block; margin-bottom:2px; font-size:.68rem; }.estimated-date p { margin:0; color:var(--muted); font-size:.66rem; line-height:1.4; }
+.optional-label { margin-left:5px; color:var(--muted); font-size:.63rem; font-weight:500; }
+#genderSelect { margin-bottom:0; }
 .field-help,.field-error { min-height:16px; margin:7px 1px 0; color:var(--muted); font-size:.64rem; line-height:1.4; }.field-error { color:#de254f; font-weight:600; }.field-error:not(:empty) + .primary-button { margin-top:6px; }
 .primary-button { width:100%; height:51px; margin-top:14px; display:flex; align-items:center; justify-content:space-between; padding:0 17px; border:0; border-radius:12px; color:#fff; background:linear-gradient(120deg,var(--signal-deep),#0a42d8 65%,#0668cb); box-shadow:0 12px 28px rgba(7,46,159,.24); font-size:.78rem; font-weight:650; transition:transform 160ms ease,box-shadow 160ms ease; }.primary-button:hover { transform:translateY(-1px); box-shadow:0 15px 35px rgba(7,46,159,.34); }.primary-button svg { width:18px; fill:none; stroke:currentColor; stroke-width:1.8; }
 .result-empty { flex:1; display:grid; place-items:center; align-content:center; gap:12px; min-height:230px; padding:24px; text-align:center; color:var(--muted); }.result-empty span { color:var(--energy); font-size:1.5rem; text-shadow:0 0 18px var(--energy); }.result-empty p { max-width:260px; margin:0; font-size:.77rem; line-height:1.65; }

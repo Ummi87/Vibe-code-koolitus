@@ -29,100 +29,108 @@
     "area": 441,
     "stars": [
       {
-        "id": "aries-1",
-        "name": "Hamal",
-        "catalogName": "* alf Ari",
-        "raHours": 2.119557,
-        "declinationDegrees": 23.462418,
-        "apparentMagnitude": 2,
-        "distanceLightYears": 66,
-        "spectralType": "K2-IIIbCa-1",
-        "description": "Hamal on Jäära tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 2,00 ja see asub ligikaudu 66 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aries-2",
-        "name": "Sheratan",
-        "catalogName": "* bet Ari",
-        "raHours": 1.91067,
-        "declinationDegrees": 20.808031,
-        "apparentMagnitude": 2.64,
-        "distanceLightYears": 59,
-        "spectralType": "kA4hA5mA5Va",
-        "description": "Sheratan on Jäära tähtkuju joonisesse kuuluv oranžikas peajada täht. Tähe näiv tähesuurus on 2,64 ja see asub ligikaudu 59 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aries-3",
-        "name": "Mesarthim",
-        "catalogName": "* gam Ari",
-        "raHours": 1.892171,
-        "declinationDegrees": 19.293855,
-        "apparentMagnitude": 3.88,
-        "distanceLightYears": 164,
-        "spectralType": "kA0hA3(IV)SiSr+B9.5IV",
-        "description": "Mesarthim on Jäära tähtkuju joonisesse kuuluv oranžikas allhiid. Tähe näiv tähesuurus on 3,88 ja see asub ligikaudu 164 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aries-4",
+        "id": "hip-13209",
+        "hip": 13209,
         "name": "Bharani",
-        "catalogName": "*  41 Ari",
-        "raHours": 2.833065,
-        "declinationDegrees": 27.260507,
-        "apparentMagnitude": 4.35,
-        "distanceLightYears": 166,
-        "spectralType": "B8Vn",
-        "description": "Bharani on Jäära tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 4,35 ja see asub ligikaudu 166 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aries-5",
-        "name": "Botein",
-        "catalogName": "* del Ari",
-        "raHours": 3.193824,
-        "declinationDegrees": 19.726673,
-        "apparentMagnitude": 4.35,
-        "distanceLightYears": 165,
-        "spectralType": "G9.5IIIb",
-        "description": "Botein on Jäära tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,35 ja see asub ligikaudu 165 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aries-6",
-        "name": "41 Ari",
-        "catalogName": "*  41 Ari",
-        "raHours": 2.833065,
+        "catalogName": "HIP 13209",
+        "designation": "41 Ari",
+        "aliases": [
+          "41 Ari"
+        ],
+        "raHours": 2.833063,
         "declinationDegrees": 27.260507,
         "apparentMagnitude": 3.61,
         "distanceLightYears": 166,
         "spectralType": "B8Vn",
-        "description": "41 Ari on Jäära tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 3,61 ja see asub ligikaudu 166 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Bharani paikneb tähtkujus Jäär. Näiv tähesuurus on 3,61 ja spektriklass B8Vn. Kataloogi kaugushinnang on ligikaudu 166 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2013209"
+      },
+      {
+        "id": "hip-9884",
+        "hip": 9884,
+        "name": "Hamal",
+        "catalogName": "HIP 9884",
+        "designation": "α Ari",
+        "aliases": [],
+        "raHours": 2.119555,
+        "declinationDegrees": 23.462423,
+        "apparentMagnitude": 2.01,
+        "distanceLightYears": 66,
+        "spectralType": "K2III",
+        "description": "Hamal paikneb tähtkujus Jäär. Näiv tähesuurus on 2,01 ja spektriklass K2III. Kataloogi kaugushinnang on ligikaudu 66 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%209884"
+      },
+      {
+        "id": "hip-8903",
+        "hip": 8903,
+        "name": "Sheratan",
+        "catalogName": "HIP 8903",
+        "designation": "β Ari",
+        "aliases": [],
+        "raHours": 1.910668,
+        "declinationDegrees": 20.808035,
+        "apparentMagnitude": 2.64,
+        "distanceLightYears": 59,
+        "spectralType": "A5V...",
+        "description": "Sheratan paikneb tähtkujus Jäär. Näiv tähesuurus on 2,64 ja spektriklass A5V.... Kataloogi kaugushinnang on ligikaudu 59 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%208903"
+      },
+      {
+        "id": "hip-8832",
+        "hip": 8832,
+        "name": "γ 2 Ari",
+        "catalogName": "HIP 8832",
+        "designation": "γ 2 Ari",
+        "aliases": [],
+        "raHours": 1.89217,
+        "declinationDegrees": 19.293852,
+        "apparentMagnitude": 3.88,
+        "distanceLightYears": 164,
+        "spectralType": "A1p Si",
+        "description": "γ 2 Ari paikneb tähtkujus Jäär. Näiv tähesuurus on 3,88 ja spektriklass A1p Si. Kataloogi kaugushinnang on ligikaudu 164 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%208832"
+      },
+      {
+        "id": "hip-14838",
+        "hip": 14838,
+        "name": "Botein",
+        "catalogName": "HIP 14838",
+        "designation": "δ Ari",
+        "aliases": [],
+        "raHours": 3.193822,
+        "declinationDegrees": 19.726677,
+        "apparentMagnitude": 4.35,
+        "distanceLightYears": 170,
+        "spectralType": "K2IIIvar",
+        "description": "Botein paikneb tähtkujus Jäär. Näiv tähesuurus on 4,35 ja spektriklass K2IIIvar. Kataloogi kaugushinnang on ligikaudu 170 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2014838"
       }
     ],
     "lines": [
       [
-        2,
+        0,
         1
       ],
       [
         1,
-        0
+        2
       ],
       [
-        0,
-        4
-      ],
-      [
-        0,
+        2,
         3
-      ],
-      [
-        3,
-        5
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "taurus",
@@ -154,128 +162,288 @@
     "area": 797,
     "stars": [
       {
-        "id": "taurus-1",
-        "name": "Aldebaran",
-        "catalogName": "* alf Tau",
-        "raHours": 4.598678,
-        "declinationDegrees": 16.509302,
-        "apparentMagnitude": 0.86,
-        "distanceLightYears": 67,
-        "spectralType": "K5+III",
-        "description": "Aldebaran on Sõnni tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 0,86 ja see asub ligikaudu 67 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "taurus-2",
+        "id": "hip-25428",
+        "hip": 25428,
         "name": "Elnath",
-        "catalogName": "* bet Tau",
+        "catalogName": "HIP 25428",
+        "designation": "β Tau",
+        "aliases": [],
         "raHours": 5.438198,
-        "declinationDegrees": 28.607452,
+        "declinationDegrees": 28.60745,
         "apparentMagnitude": 1.65,
         "distanceLightYears": 134,
         "spectralType": "B7III",
-        "description": "Elnath on Sõnni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 1,65 ja see asub ligikaudu 134 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Elnath paikneb tähtkujus Sõnn. Näiv tähesuurus on 1,65 ja spektriklass B7III. Kataloogi kaugushinnang on ligikaudu 134 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2025428"
       },
       {
-        "id": "taurus-3",
-        "name": "Alcyone",
-        "catalogName": "* eta Tau",
-        "raHours": 3.79141,
-        "declinationDegrees": 24.105136,
-        "apparentMagnitude": 2.87,
-        "distanceLightYears": 403,
-        "spectralType": "B7III",
-        "description": "Alcyone on Sõnni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 2,87 ja see asub ligikaudu 403 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-21881",
+        "hip": 21881,
+        "name": "Gaja",
+        "catalogName": "HIP 21881",
+        "designation": "τ Tau",
+        "aliases": [],
+        "raHours": 4.704084,
+        "declinationDegrees": 22.956926,
+        "apparentMagnitude": 4.27,
+        "distanceLightYears": 398,
+        "spectralType": "B3V",
+        "description": "Gaja paikneb tähtkujus Sõnn. Näiv tähesuurus on 4,27 ja spektriklass B3V. Kataloogi kaugushinnang on ligikaudu 398 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2021881"
       },
       {
-        "id": "taurus-4",
+        "id": "hip-20889",
+        "hip": 20889,
         "name": "Ain",
-        "catalogName": "* eps Tau",
-        "raHours": 4.476945,
-        "declinationDegrees": 19.180434,
+        "catalogName": "HIP 20889",
+        "designation": "ε Tau",
+        "aliases": [],
+        "raHours": 4.476943,
+        "declinationDegrees": 19.180431,
         "apparentMagnitude": 3.53,
-        "distanceLightYears": 146,
-        "spectralType": "G9.5IIICN0.5",
-        "description": "Ain on Sõnni tähtkuju joonisesse kuuluv kollane hiidtäht. Tähe näiv tähesuurus on 3,53 ja see asub ligikaudu 146 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 147,
+        "spectralType": "K0III",
+        "description": "Ain paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,53 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 147 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2020889"
       },
       {
-        "id": "taurus-5",
-        "name": "Hyadum I",
-        "catalogName": "* gam Tau",
-        "raHours": 4.32989,
+        "id": "hip-21421",
+        "hip": 21421,
+        "name": "Aldebaran",
+        "catalogName": "HIP 21421",
+        "designation": "α Tau",
+        "aliases": [],
+        "raHours": 4.598677,
+        "declinationDegrees": 16.509301,
+        "apparentMagnitude": 0.87,
+        "distanceLightYears": 67,
+        "spectralType": "K5III",
+        "description": "Aldebaran paikneb tähtkujus Sõnn. Näiv tähesuurus on 0,87 ja spektriklass K5III. Kataloogi kaugushinnang on ligikaudu 67 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2021421"
+      },
+      {
+        "id": "hip-26451",
+        "hip": 26451,
+        "name": "Tianguan",
+        "catalogName": "HIP 26451",
+        "designation": "ζ Tau",
+        "aliases": [],
+        "raHours": 5.627413,
+        "declinationDegrees": 21.142549,
+        "apparentMagnitude": 2.97,
+        "distanceLightYears": 445,
+        "spectralType": "B4IIIp",
+        "description": "Tianguan paikneb tähtkujus Sõnn. Näiv tähesuurus on 2,97 ja spektriklass B4IIIp. Kataloogi kaugushinnang on ligikaudu 445 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2026451"
+      },
+      {
+        "id": "hip-20205",
+        "hip": 20205,
+        "name": "Prima Hyadum",
+        "catalogName": "HIP 20205",
+        "designation": "γ Tau",
+        "aliases": [
+          "Hyadum I"
+        ],
+        "raHours": 4.329889,
         "declinationDegrees": 15.627642,
         "apparentMagnitude": 3.65,
-        "distanceLightYears": 151,
-        "spectralType": "G9.5IIIabCN0.5",
-        "description": "Hyadum I on Sõnni tähtkuju joonisesse kuuluv kollane hiidtäht. Tähe näiv tähesuurus on 3,65 ja see asub ligikaudu 151 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 162,
+        "spectralType": "G8III",
+        "description": "Prima Hyadum paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,65 ja spektriklass G8III. Kataloogi kaugushinnang on ligikaudu 162 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2020205"
       },
       {
-        "id": "taurus-6",
-        "name": "Tianguan",
-        "catalogName": "* zet Tau",
-        "raHours": 5.627413,
-        "declinationDegrees": 21.142544,
-        "apparentMagnitude": 3,
-        "distanceLightYears": 445,
-        "spectralType": "B1IVe_shell",
-        "description": "Tianguan on Sõnni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 3,00 ja see asub ligikaudu 445 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-20455",
+        "hip": 20455,
+        "name": "Secunda Hyadum",
+        "catalogName": "HIP 20455",
+        "designation": "δ 1 Tau",
+        "aliases": [],
+        "raHours": 4.382247,
+        "declinationDegrees": 17.542514,
+        "apparentMagnitude": 3.77,
+        "distanceLightYears": 156,
+        "spectralType": "G8III",
+        "description": "Secunda Hyadum paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,77 ja spektriklass G8III. Kataloogi kaugushinnang on ligikaudu 156 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2020455"
       },
       {
-        "id": "taurus-7",
+        "id": "hip-18724",
+        "hip": 18724,
+        "name": "Bibing",
+        "catalogName": "HIP 18724",
+        "designation": "λ Tau",
+        "aliases": [],
+        "raHours": 4.011338,
+        "declinationDegrees": 12.490347,
+        "apparentMagnitude": 3.41,
+        "distanceLightYears": 484,
+        "spectralType": "B3V + A",
+        "description": "Bibing paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,41 ja spektriklass B3V + A. Kataloogi kaugushinnang on ligikaudu 484 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2018724"
+      },
+      {
+        "id": "hip-15900",
+        "hip": 15900,
+        "name": "ο Tau",
+        "catalogName": "HIP 15900",
+        "designation": "ο Tau",
+        "aliases": [],
+        "raHours": 3.413554,
+        "declinationDegrees": 9.02887,
+        "apparentMagnitude": 3.61,
+        "distanceLightYears": 291,
+        "spectralType": "G8III",
+        "description": "ο Tau paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,61 ja spektriklass G8III. Kataloogi kaugushinnang on ligikaudu 291 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2015900"
+      },
+      {
+        "id": "hip-20894",
+        "hip": 20894,
+        "name": "Chamukuy",
+        "catalogName": "HIP 20894",
+        "designation": "θ 2 Tau",
+        "aliases": [],
+        "raHours": 4.477705,
+        "declinationDegrees": 15.870883,
+        "apparentMagnitude": 3.4,
+        "distanceLightYears": 150,
+        "spectralType": "A7III",
+        "description": "Chamukuy paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,40 ja spektriklass A7III. Kataloogi kaugushinnang on ligikaudu 150 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2020894"
+      },
+      {
+        "id": "hip-20648",
+        "hip": 20648,
+        "name": "δ 3 Tau",
+        "catalogName": "HIP 20648",
+        "designation": "δ 3 Tau",
+        "aliases": [],
+        "raHours": 4.424828,
+        "declinationDegrees": 17.92791,
+        "apparentMagnitude": 4.3,
+        "distanceLightYears": 149,
+        "spectralType": "A2IV",
+        "description": "δ 3 Tau paikneb tähtkujus Sõnn. Näiv tähesuurus on 4,30 ja spektriklass A2IV. Kataloogi kaugushinnang on ligikaudu 149 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2020648"
+      },
+      {
+        "id": "hip-17847",
+        "hip": 17847,
         "name": "Atlas",
-        "catalogName": "*  27 Tau",
+        "catalogName": "HIP 17847",
+        "designation": "27 Tau",
+        "aliases": [],
         "raHours": 3.819373,
-        "declinationDegrees": 24.053417,
+        "declinationDegrees": 24.053415,
         "apparentMagnitude": 3.62,
-        "distanceLightYears": 402,
+        "distanceLightYears": 382,
         "spectralType": "B8III",
-        "description": "Atlas on Sõnni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 3,62 ja see asub ligikaudu 402 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Atlas paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,62 ja spektriklass B8III. Kataloogi kaugushinnang on ligikaudu 382 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2017847"
       },
       {
-        "id": "taurus-8",
+        "id": "hip-17702",
+        "hip": 17702,
+        "name": "Alcyone",
+        "catalogName": "HIP 17702",
+        "designation": "η Tau",
+        "aliases": [],
+        "raHours": 3.79141,
+        "declinationDegrees": 24.105137,
+        "apparentMagnitude": 2.85,
+        "distanceLightYears": 403,
+        "spectralType": "B7III",
+        "description": "Alcyone paikneb tähtkujus Sõnn. Näiv tähesuurus on 2,85 ja spektriklass B7III. Kataloogi kaugushinnang on ligikaudu 403 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2017702"
+      },
+      {
+        "id": "hip-17499",
+        "hip": 17499,
         "name": "Electra",
-        "catalogName": "*  17 Tau",
+        "catalogName": "HIP 17499",
+        "designation": "17 Tau",
+        "aliases": [],
         "raHours": 3.747927,
-        "declinationDegrees": 24.113338,
-        "apparentMagnitude": 3.7,
-        "distanceLightYears": 391,
-        "spectralType": "B6IIIe",
-        "description": "Electra on Sõnni tähtkuju joonisesse kuuluv sinakasvalge hiidtäht. Tähe näiv tähesuurus on 3,70 ja see asub ligikaudu 391 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "declinationDegrees": 24.113339,
+        "apparentMagnitude": 3.72,
+        "distanceLightYears": 405,
+        "spectralType": "B6III",
+        "description": "Electra paikneb tähtkujus Sõnn. Näiv tähesuurus on 3,72 ja spektriklass B6III. Kataloogi kaugushinnang on ligikaudu 405 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2017499"
       }
     ],
     "lines": [
       [
-        4,
-        0
-      ],
-      [
         0,
-        3
-      ],
-      [
-        3,
         1
       ],
       [
+        1,
+        2
+      ],
+      [
         3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        9,
         5
       ],
       [
         2,
+        10
+      ],
+      [
+        10,
         6
       ],
       [
-        2,
-        7
+        6,
+        11
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "gemini",
@@ -307,120 +475,350 @@
     "area": 514,
     "stars": [
       {
-        "id": "gemini-1",
-        "name": "Pollux",
-        "catalogName": "* bet Gem",
-        "raHours": 7.755264,
-        "declinationDegrees": 28.026199,
-        "apparentMagnitude": 1.14,
-        "distanceLightYears": 34,
-        "spectralType": "K0IIIb",
-        "description": "Pollux on Kaksikute tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 1,14 ja see asub ligikaudu 34 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "gemini-2",
-        "name": "Castor",
-        "catalogName": "* alf Gem",
-        "raHours": 7.576631,
-        "declinationDegrees": 31.888282,
-        "apparentMagnitude": 1.58,
-        "distanceLightYears": 51,
-        "spectralType": "A1V+A2Vm",
-        "description": "Castor on Kaksikute tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 1,58 ja see asub ligikaudu 51 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "gemini-3",
+        "id": "hip-31681",
+        "hip": 31681,
         "name": "Alhena",
-        "catalogName": "* gam Gem",
-        "raHours": 6.628531,
-        "declinationDegrees": 16.39928,
+        "catalogName": "HIP 31681",
+        "designation": "γ Gem",
+        "aliases": [],
+        "raHours": 6.628528,
+        "declinationDegrees": 16.399252,
         "apparentMagnitude": 1.93,
         "distanceLightYears": 109,
-        "spectralType": "A1.5IV+",
-        "description": "Alhena on Kaksikute tähtkuju joonisesse kuuluv valge allhiid. Tähe näiv tähesuurus on 1,93 ja see asub ligikaudu 109 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "A0IV",
+        "description": "Alhena paikneb tähtkujus Kaksikud. Näiv tähesuurus on 1,93 ja spektriklass A0IV. Kataloogi kaugushinnang on ligikaudu 109 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2031681"
       },
       {
-        "id": "gemini-4",
-        "name": "Tejat",
-        "catalogName": "* mu. Gem",
-        "raHours": 6.382674,
-        "declinationDegrees": 22.513583,
-        "apparentMagnitude": 2.88,
-        "distanceLightYears": 232,
-        "spectralType": "M3IIIab",
-        "description": "Tejat on Kaksikute tähtkuju joonisesse kuuluv punakas hiidtäht. Tähe näiv tähesuurus on 2,88 ja see asub ligikaudu 232 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "gemini-5",
-        "name": "Mebsuta",
-        "catalogName": "* eps Gem",
-        "raHours": 6.732202,
-        "declinationDegrees": 25.131127,
-        "apparentMagnitude": 3.06,
-        "distanceLightYears": 870,
-        "spectralType": "G8Ib",
-        "description": "Mebsuta on Kaksikute tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,06 ja see asub ligikaudu 870 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "gemini-6",
+        "id": "hip-34088",
+        "hip": 34088,
         "name": "Mekbuda",
-        "catalogName": "* zet Gem",
+        "catalogName": "HIP 34088",
+        "designation": "ζ Gem",
+        "aliases": [],
         "raHours": 7.068481,
-        "declinationDegrees": 20.570298,
-        "apparentMagnitude": 3.79,
-        "distanceLightYears": 1061,
-        "spectralType": "G1Ib",
-        "description": "Mekbuda on Kaksikute tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,79 ja see asub ligikaudu 1061 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "declinationDegrees": 20.570297,
+        "apparentMagnitude": 4.01,
+        "distanceLightYears": 1376,
+        "spectralType": "G3Ibv SB",
+        "description": "Mekbuda paikneb tähtkujus Kaksikud. Näiv tähesuurus on 4,01 ja spektriklass G3Ibv SB. Kataloogi kaugushinnang on ligikaudu 1376 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2034088"
       },
       {
-        "id": "gemini-7",
+        "id": "hip-35550",
+        "hip": 35550,
         "name": "Wasat",
-        "catalogName": "* del Gem",
-        "raHours": 7.335382,
-        "declinationDegrees": 21.982304,
-        "apparentMagnitude": 3.53,
-        "distanceLightYears": 61,
-        "spectralType": "F2VkF0mF0",
-        "description": "Wasat on Kaksikute tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 3,53 ja see asub ligikaudu 61 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "catalogName": "HIP 35550",
+        "designation": "δ Gem",
+        "aliases": [],
+        "raHours": 7.335383,
+        "declinationDegrees": 21.98232,
+        "apparentMagnitude": 3.5,
+        "distanceLightYears": 60,
+        "spectralType": "F0IV...",
+        "description": "Wasat paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,50 ja spektriklass F0IV.... Kataloogi kaugushinnang on ligikaudu 60 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2035550"
+      },
+      {
+        "id": "hip-35350",
+        "hip": 35350,
+        "name": "λ Gem",
+        "catalogName": "HIP 35350",
+        "designation": "λ Gem",
+        "aliases": [],
+        "raHours": 7.30155,
+        "declinationDegrees": 16.540383,
+        "apparentMagnitude": 3.58,
+        "distanceLightYears": 101,
+        "spectralType": "A3V...",
+        "description": "λ Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,58 ja spektriklass A3V.... Kataloogi kaugushinnang on ligikaudu 101 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2035350"
+      },
+      {
+        "id": "hip-32362",
+        "hip": 32362,
+        "name": "Alzirr",
+        "catalogName": "HIP 32362",
+        "designation": "ξ Gem",
+        "aliases": [],
+        "raHours": 6.754824,
+        "declinationDegrees": 12.895591,
+        "apparentMagnitude": 3.35,
+        "distanceLightYears": 59,
+        "spectralType": "F5IV",
+        "description": "Alzirr paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,35 ja spektriklass F5IV. Kataloogi kaugushinnang on ligikaudu 59 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2032362"
+      },
+      {
+        "id": "hip-36962",
+        "hip": 36962,
+        "name": "υ Gem",
+        "catalogName": "HIP 36962",
+        "designation": "υ Gem",
+        "aliases": [],
+        "raHours": 7.598708,
+        "declinationDegrees": 26.895741,
+        "apparentMagnitude": 4.06,
+        "distanceLightYears": 271,
+        "spectralType": "K5III",
+        "description": "υ Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 4,06 ja spektriklass K5III. Kataloogi kaugushinnang on ligikaudu 271 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2036962"
+      },
+      {
+        "id": "hip-37740",
+        "hip": 37740,
+        "name": "κ Gem",
+        "catalogName": "HIP 37740",
+        "designation": "κ Gem",
+        "aliases": [],
+        "raHours": 7.740793,
+        "declinationDegrees": 24.397993,
+        "apparentMagnitude": 3.57,
+        "distanceLightYears": 141,
+        "spectralType": "G8III",
+        "description": "κ Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,57 ja spektriklass G8III. Kataloogi kaugushinnang on ligikaudu 141 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2037740"
+      },
+      {
+        "id": "hip-37826",
+        "hip": 37826,
+        "name": "Pollux",
+        "catalogName": "HIP 37826",
+        "designation": "β Gem",
+        "aliases": [],
+        "raHours": 7.755277,
+        "declinationDegrees": 28.026199,
+        "apparentMagnitude": 1.16,
+        "distanceLightYears": 34,
+        "spectralType": "K0IIIvar",
+        "description": "Pollux paikneb tähtkujus Kaksikud. Näiv tähesuurus on 1,16 ja spektriklass K0IIIvar. Kataloogi kaugushinnang on ligikaudu 34 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2037826"
+      },
+      {
+        "id": "hip-36046",
+        "hip": 36046,
+        "name": "ι Gem",
+        "catalogName": "HIP 36046",
+        "designation": "ι Gem",
+        "aliases": [],
+        "raHours": 7.428779,
+        "declinationDegrees": 27.79808,
+        "apparentMagnitude": 3.78,
+        "distanceLightYears": 120,
+        "spectralType": "G9III+...",
+        "description": "ι Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,78 ja spektriklass G9III+.... Kataloogi kaugushinnang on ligikaudu 120 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2036046"
+      },
+      {
+        "id": "hip-34693",
+        "hip": 34693,
+        "name": "τ Gem",
+        "catalogName": "HIP 34693",
+        "designation": "τ Gem",
+        "aliases": [],
+        "raHours": 7.185659,
+        "declinationDegrees": 30.245163,
+        "apparentMagnitude": 4.41,
+        "distanceLightYears": 321,
+        "spectralType": "K2III",
+        "description": "τ Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 4,41 ja spektriklass K2III. Kataloogi kaugushinnang on ligikaudu 321 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2034693"
+      },
+      {
+        "id": "hip-36850",
+        "hip": 36850,
+        "name": "Castor",
+        "catalogName": "HIP 36850",
+        "designation": "α Gem",
+        "aliases": [],
+        "raHours": 7.576634,
+        "declinationDegrees": 31.888276,
+        "apparentMagnitude": 1.58,
+        "distanceLightYears": 51,
+        "spectralType": "A2Vm",
+        "description": "Castor paikneb tähtkujus Kaksikud. Näiv tähesuurus on 1,58 ja spektriklass A2Vm. Kataloogi kaugushinnang on ligikaudu 51 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2036850"
+      },
+      {
+        "id": "hip-33018",
+        "hip": 33018,
+        "name": "θ Gem",
+        "catalogName": "HIP 33018",
+        "designation": "θ Gem",
+        "aliases": [],
+        "raHours": 6.879816,
+        "declinationDegrees": 33.961254,
+        "apparentMagnitude": 3.6,
+        "distanceLightYears": 189,
+        "spectralType": "A3III",
+        "description": "θ Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,60 ja spektriklass A3III. Kataloogi kaugushinnang on ligikaudu 189 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2033018"
+      },
+      {
+        "id": "hip-32246",
+        "hip": 32246,
+        "name": "Mebsuta",
+        "catalogName": "HIP 32246",
+        "designation": "ε Gem",
+        "aliases": [],
+        "raHours": 6.732202,
+        "declinationDegrees": 25.131124,
+        "apparentMagnitude": 3.06,
+        "distanceLightYears": 845,
+        "spectralType": "A3mA6-A9",
+        "description": "Mebsuta paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,06 ja spektriklass A3mA6-A9. Kataloogi kaugushinnang on ligikaudu 845 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2032246"
+      },
+      {
+        "id": "hip-30883",
+        "hip": 30883,
+        "name": "ν Gem",
+        "catalogName": "HIP 30883",
+        "designation": "ν Gem",
+        "aliases": [],
+        "raHours": 6.482719,
+        "declinationDegrees": 20.212133,
+        "apparentMagnitude": 4.13,
+        "distanceLightYears": 545,
+        "spectralType": "B6III",
+        "description": "ν Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 4,13 ja spektriklass B6III. Kataloogi kaugushinnang on ligikaudu 545 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2030883"
+      },
+      {
+        "id": "hip-30343",
+        "hip": 30343,
+        "name": "Tejat",
+        "catalogName": "HIP 30343",
+        "designation": "μ Gem",
+        "aliases": [],
+        "raHours": 6.382673,
+        "declinationDegrees": 22.513586,
+        "apparentMagnitude": 2.87,
+        "distanceLightYears": 232,
+        "spectralType": "M3IIIvar",
+        "description": "Tejat paikneb tähtkujus Kaksikud. Näiv tähesuurus on 2,87 ja spektriklass M3IIIvar. Kataloogi kaugushinnang on ligikaudu 232 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2030343"
+      },
+      {
+        "id": "hip-29655",
+        "hip": 29655,
+        "name": "Propus",
+        "catalogName": "HIP 29655",
+        "designation": "η Gem",
+        "aliases": [],
+        "raHours": 6.247961,
+        "declinationDegrees": 22.506799,
+        "apparentMagnitude": 3.31,
+        "distanceLightYears": 385,
+        "spectralType": "M3III",
+        "description": "Propus paikneb tähtkujus Kaksikud. Näiv tähesuurus on 3,31 ja spektriklass M3III. Kataloogi kaugushinnang on ligikaudu 385 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2029655"
+      },
+      {
+        "id": "hip-28734",
+        "hip": 28734,
+        "name": "1 Gem",
+        "catalogName": "HIP 28734",
+        "designation": "1 Gem",
+        "aliases": [],
+        "raHours": 6.068671,
+        "declinationDegrees": 23.263341,
+        "apparentMagnitude": 4.16,
+        "distanceLightYears": 155,
+        "spectralType": "G7III",
+        "description": "1 Gem paikneb tähtkujus Kaksikud. Näiv tähesuurus on 4,16 ja spektriklass G7III. Kataloogi kaugushinnang on ligikaudu 155 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2028734"
       }
     ],
     "lines": [
       [
+        0,
+        1
+      ],
+      [
         1,
-        4
+        2
       ],
       [
-        4,
-        6
-      ],
-      [
-        6,
-        0
-      ],
-      [
-        4,
+        2,
         3
       ],
       [
         3,
-        2
+        4
       ],
       [
-        6,
+        2,
         5
       ],
       [
         5,
-        2
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "cancer",
@@ -452,100 +850,148 @@
     "area": 506,
     "stars": [
       {
-        "id": "cancer-1",
-        "name": "Altarf",
-        "catalogName": "* bet Cnc",
-        "raHours": 8.275256,
-        "declinationDegrees": 9.185544,
-        "apparentMagnitude": 3.52,
-        "distanceLightYears": 323,
-        "spectralType": "K4IIIBa0.5:",
-        "description": "Altarf on Vähi tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 3,52 ja see asub ligikaudu 323 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-43103",
+        "hip": 43103,
+        "name": "Yuyu",
+        "catalogName": "HIP 43103",
+        "designation": "ι Cnc",
+        "aliases": [],
+        "raHours": 8.778284,
+        "declinationDegrees": 28.759898,
+        "apparentMagnitude": 4.03,
+        "distanceLightYears": 331,
+        "spectralType": "G8Iab:",
+        "description": "Yuyu paikneb tähtkujus Vähk. Näiv tähesuurus on 4,03 ja spektriklass G8Iab:. Kataloogi kaugushinnang on ligikaudu 331 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2043103"
       },
       {
-        "id": "cancer-2",
-        "name": "Asellus Australis",
-        "catalogName": "* del Cnc",
-        "raHours": 8.74475,
-        "declinationDegrees": 18.154308,
-        "apparentMagnitude": 3.94,
-        "distanceLightYears": 137,
-        "spectralType": "K0+IIIb",
-        "description": "Asellus Australis on Vähi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 3,94 ja see asub ligikaudu 137 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "cancer-3",
-        "name": "Acubens",
-        "catalogName": "* alf Cnc",
-        "raHours": 8.974779,
-        "declinationDegrees": 11.85768,
-        "apparentMagnitude": 4.26,
-        "distanceLightYears": 178,
-        "spectralType": "kA7VmF0/2III/IVSr",
-        "description": "Acubens on Vähi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 4,26 ja see asub ligikaudu 178 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "cancer-4",
+        "id": "hip-42806",
+        "hip": 42806,
         "name": "Asellus Borealis",
-        "catalogName": "* gam Cnc",
-        "raHours": 8.72143,
-        "declinationDegrees": 21.468499,
+        "catalogName": "HIP 42806",
+        "designation": "γ Cnc",
+        "aliases": [],
+        "raHours": 8.721431,
+        "declinationDegrees": 21.468501,
         "apparentMagnitude": 4.66,
-        "distanceLightYears": 175,
-        "spectralType": "A1Va",
-        "description": "Asellus Borealis on Vähi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 4,66 ja see asub ligikaudu 175 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 181,
+        "spectralType": "A1IV",
+        "description": "Asellus Borealis paikneb tähtkujus Vähk. Näiv tähesuurus on 4,66 ja spektriklass A1IV. Kataloogi kaugushinnang on ligikaudu 181 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2042806"
       },
       {
-        "id": "cancer-5",
+        "id": "hip-40843",
+        "hip": 40843,
+        "name": "χ Cnc",
+        "catalogName": "HIP 40843",
+        "designation": "χ Cnc",
+        "aliases": [],
+        "raHours": 8.334406,
+        "declinationDegrees": 27.217707,
+        "apparentMagnitude": 5.13,
+        "distanceLightYears": 60,
+        "spectralType": "F6V",
+        "description": "χ Cnc paikneb tähtkujus Vähk. Näiv tähesuurus on 5,13 ja spektriklass F6V. Kataloogi kaugushinnang on ligikaudu 60 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2040843"
+      },
+      {
+        "id": "hip-42911",
+        "hip": 42911,
+        "name": "Asellus Australis",
+        "catalogName": "HIP 42911",
+        "designation": "δ Cnc",
+        "aliases": [],
+        "raHours": 8.74475,
+        "declinationDegrees": 18.154309,
+        "apparentMagnitude": 3.94,
+        "distanceLightYears": 131,
+        "spectralType": "K0III",
+        "description": "Asellus Australis paikneb tähtkujus Vähk. Näiv tähesuurus on 3,94 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 131 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2042911"
+      },
+      {
+        "id": "hip-40526",
+        "hip": 40526,
+        "name": "Tarf",
+        "catalogName": "HIP 40526",
+        "designation": "β Cnc",
+        "aliases": [
+          "Altarf"
+        ],
+        "raHours": 8.275256,
+        "declinationDegrees": 9.185545,
+        "apparentMagnitude": 3.53,
+        "distanceLightYears": 303,
+        "spectralType": "K4III",
+        "description": "Tarf paikneb tähtkujus Vähk. Näiv tähesuurus on 3,53 ja spektriklass K4III. Kataloogi kaugushinnang on ligikaudu 303 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2040526"
+      },
+      {
+        "id": "hip-44066",
+        "hip": 44066,
+        "name": "Acubens",
+        "catalogName": "HIP 44066",
+        "designation": "α Cnc",
+        "aliases": [],
+        "raHours": 8.974784,
+        "declinationDegrees": 11.857701,
+        "apparentMagnitude": 4.26,
+        "distanceLightYears": 188,
+        "spectralType": "A5m",
+        "description": "Acubens paikneb tähtkujus Vähk. Näiv tähesuurus on 4,26 ja spektriklass A5m. Kataloogi kaugushinnang on ligikaudu 188 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2044066"
+      },
+      {
+        "id": "hip-40167",
+        "hip": 40167,
         "name": "Tegmine",
-        "catalogName": "* zet Cnc",
+        "catalogName": "HIP 40167",
+        "designation": "ζ 2 Cnc",
+        "aliases": [],
         "raHours": 8.203535,
-        "declinationDegrees": 17.647767,
-        "apparentMagnitude": 4.64,
+        "declinationDegrees": 17.647771,
+        "apparentMagnitude": 4.67,
         "distanceLightYears": 82,
-        "spectralType": "F8V+G0V",
-        "description": "Tegmine on Vähi tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,64 ja see asub ligikaudu 82 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "cancer-6",
-        "name": "Iota Cnc",
-        "catalogName": "* iot Cnc",
-        "raHours": 8.778283,
-        "declinationDegrees": 28.759893,
-        "apparentMagnitude": 4.02,
-        "distanceLightYears": 347,
-        "spectralType": "G8IIIaBa0.2",
-        "description": "Iota Cnc on Vähi tähtkuju joonisesse kuuluv kollane hiidtäht. Tähe näiv tähesuurus on 4,02 ja see asub ligikaudu 347 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "G0V",
+        "description": "Tegmine paikneb tähtkujus Vähk. Näiv tähesuurus on 4,67 ja spektriklass G0V. Kataloogi kaugushinnang on ligikaudu 82 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2040167"
       }
     ],
     "lines": [
       [
-        4,
-        3
-      ],
-      [
-        3,
+        0,
         1
-      ],
-      [
-        1,
-        0
       ],
       [
         1,
         2
       ],
       [
+        1,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
         3,
         5
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "leo",
@@ -577,118 +1023,174 @@
     "area": 947,
     "stars": [
       {
-        "id": "leo-1",
-        "name": "Regulus",
-        "catalogName": "* alf Leo",
-        "raHours": 10.139531,
-        "declinationDegrees": 11.967209,
-        "apparentMagnitude": 1.35,
-        "distanceLightYears": 79,
-        "spectralType": "B8IVn",
-        "description": "Regulus on Lõvi tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 1,35 ja see asub ligikaudu 79 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "leo-2",
+        "id": "hip-57632",
+        "hip": 57632,
         "name": "Denebola",
-        "catalogName": "* bet Leo",
-        "raHours": 11.817661,
-        "declinationDegrees": 14.572058,
+        "catalogName": "HIP 57632",
+        "designation": "β Leo",
+        "aliases": [],
+        "raHours": 11.817663,
+        "declinationDegrees": 14.57206,
         "apparentMagnitude": 2.14,
         "distanceLightYears": 36,
-        "spectralType": "A3Va",
-        "description": "Denebola on Lõvi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 2,14 ja see asub ligikaudu 36 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "A3Vvar",
+        "description": "Denebola paikneb tähtkujus Lõvi. Näiv tähesuurus on 2,14 ja spektriklass A3Vvar. Kataloogi kaugushinnang on ligikaudu 36 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2057632"
       },
       {
-        "id": "leo-3",
+        "id": "hip-54879",
+        "hip": 54879,
+        "name": "Chertan",
+        "catalogName": "HIP 54879",
+        "designation": "θ Leo",
+        "aliases": [],
+        "raHours": 11.237335,
+        "declinationDegrees": 15.42957,
+        "apparentMagnitude": 3.33,
+        "distanceLightYears": 165,
+        "spectralType": "A2V",
+        "description": "Chertan paikneb tähtkujus Lõvi. Näiv tähesuurus on 3,33 ja spektriklass A2V. Kataloogi kaugushinnang on ligikaudu 165 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2054879"
+      },
+      {
+        "id": "hip-49669",
+        "hip": 49669,
+        "name": "Regulus",
+        "catalogName": "HIP 49669",
+        "designation": "α Leo",
+        "aliases": [],
+        "raHours": 10.139532,
+        "declinationDegrees": 11.967207,
+        "apparentMagnitude": 1.36,
+        "distanceLightYears": 79,
+        "spectralType": "B7V",
+        "description": "Regulus paikneb tähtkujus Lõvi. Näiv tähesuurus on 1,36 ja spektriklass B7V. Kataloogi kaugushinnang on ligikaudu 79 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2049669"
+      },
+      {
+        "id": "hip-49583",
+        "hip": 49583,
+        "name": "η Leo",
+        "catalogName": "HIP 49583",
+        "designation": "η Leo",
+        "aliases": [],
+        "raHours": 10.122209,
+        "declinationDegrees": 16.762664,
+        "apparentMagnitude": 3.48,
+        "distanceLightYears": 1269,
+        "spectralType": "A0Ib",
+        "description": "η Leo paikneb tähtkujus Lõvi. Näiv tähesuurus on 3,48 ja spektriklass A0Ib. Kataloogi kaugushinnang on ligikaudu 1269 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2049583"
+      },
+      {
+        "id": "hip-50583",
+        "hip": 50583,
         "name": "Algieba",
-        "catalogName": "* gam Leo",
-        "raHours": 10.332875,
-        "declinationDegrees": 19.841485,
-        "apparentMagnitude": 2.28,
+        "catalogName": "HIP 50583",
+        "designation": "γ 1 Leo",
+        "aliases": [],
+        "raHours": 10.332873,
+        "declinationDegrees": 19.841489,
+        "apparentMagnitude": 2.01,
         "distanceLightYears": 130,
-        "spectralType": "K1-III+G7IIIb",
-        "description": "Algieba on Lõvi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,28 ja see asub ligikaudu 130 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "K0III",
+        "description": "Algieba paikneb tähtkujus Lõvi. Näiv tähesuurus on 2,01 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 130 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2050583"
       },
       {
-        "id": "leo-4",
+        "id": "hip-54872",
+        "hip": 54872,
         "name": "Zosma",
-        "catalogName": "* del Leo",
-        "raHours": 11.235139,
-        "declinationDegrees": 20.523718,
+        "catalogName": "HIP 54872",
+        "designation": "δ Leo",
+        "aliases": [],
+        "raHours": 11.235138,
+        "declinationDegrees": 20.523717,
         "apparentMagnitude": 2.56,
         "distanceLightYears": 58,
-        "spectralType": "A5IV(n)",
-        "description": "Zosma on Lõvi tähtkuju joonisesse kuuluv valge allhiid. Tähe näiv tähesuurus on 2,56 ja see asub ligikaudu 58 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "A4V",
+        "description": "Zosma paikneb tähtkujus Lõvi. Näiv tähesuurus on 2,56 ja spektriklass A4V. Kataloogi kaugushinnang on ligikaudu 58 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2054872"
       },
       {
-        "id": "leo-5",
-        "name": "Chertan",
-        "catalogName": "* tet Leo",
-        "raHours": 11.237335,
-        "declinationDegrees": 15.429571,
-        "apparentMagnitude": 3.33,
-        "distanceLightYears": 161,
-        "spectralType": "A2IV",
-        "description": "Chertan on Lõvi tähtkuju joonisesse kuuluv valge allhiid. Tähe näiv tähesuurus on 3,33 ja see asub ligikaudu 161 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-50335",
+        "hip": 50335,
+        "name": "Adhafera",
+        "catalogName": "HIP 50335",
+        "designation": "ζ Leo",
+        "aliases": [],
+        "raHours": 10.278171,
+        "declinationDegrees": 23.417311,
+        "apparentMagnitude": 3.43,
+        "distanceLightYears": 274,
+        "spectralType": "F0III",
+        "description": "Adhafera paikneb tähtkujus Lõvi. Näiv tähesuurus on 3,43 ja spektriklass F0III. Kataloogi kaugushinnang on ligikaudu 274 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2050335"
       },
       {
-        "id": "leo-6",
+        "id": "hip-48455",
+        "hip": 48455,
         "name": "Rasalas",
-        "catalogName": "* mu. Leo",
-        "raHours": 9.879394,
+        "catalogName": "HIP 48455",
+        "designation": "μ Leo",
+        "aliases": [],
+        "raHours": 9.879398,
         "declinationDegrees": 26.006951,
         "apparentMagnitude": 3.88,
-        "distanceLightYears": 125,
-        "spectralType": "K2IIIbCN1Ca1",
-        "description": "Rasalas on Lõvi tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 3,88 ja see asub ligikaudu 125 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 124,
+        "spectralType": "K0III",
+        "description": "Rasalas paikneb tähtkujus Lõvi. Näiv tähesuurus on 3,88 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 124 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2048455"
       },
       {
-        "id": "leo-7",
-        "name": "Adhafera",
-        "catalogName": "* zet Leo",
-        "raHours": 10.278171,
-        "declinationDegrees": 23.417317,
-        "apparentMagnitude": 3.44,
-        "distanceLightYears": 232,
-        "spectralType": "F0IIIa",
-        "description": "Adhafera on Lõvi tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 3,44 ja see asub ligikaudu 232 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-47908",
+        "hip": 47908,
+        "name": "ε Leo",
+        "catalogName": "HIP 47908",
+        "designation": "ε Leo",
+        "aliases": [],
+        "raHours": 9.764188,
+        "declinationDegrees": 23.774255,
+        "apparentMagnitude": 2.97,
+        "distanceLightYears": 247,
+        "spectralType": "G0II",
+        "description": "ε Leo paikneb tähtkujus Lõvi. Näiv tähesuurus on 2,97 ja spektriklass G0II. Kataloogi kaugushinnang on ligikaudu 247 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2047908"
       },
       {
-        "id": "leo-8",
+        "id": "hip-47508",
+        "hip": 47508,
         "name": "Subra",
-        "catalogName": "* omi Leo",
-        "raHours": 9.685842,
+        "catalogName": "HIP 47508",
+        "designation": "ο Leo",
+        "aliases": [],
+        "raHours": 9.685843,
         "declinationDegrees": 9.892308,
         "apparentMagnitude": 3.52,
-        "distanceLightYears": 135,
-        "spectralType": "F8-G0III+A7m",
-        "description": "Subra on Lõvi tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 3,52 ja see asub ligikaudu 135 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 130,
+        "spectralType": "A5V+...",
+        "description": "Subra paikneb tähtkujus Lõvi. Näiv tähesuurus on 3,52 ja spektriklass A5V+.... Kataloogi kaugushinnang on ligikaudu 130 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2047508"
       }
     ],
     "lines": [
       [
-        7,
-        0
-      ],
-      [
         0,
+        1
+      ],
+      [
+        1,
         2
-      ],
-      [
-        2,
-        6
-      ],
-      [
-        6,
-        5
       ],
       [
         2,
@@ -696,17 +1198,39 @@
       ],
       [
         3,
-        1
-      ],
-      [
-        3,
         4
       ],
       [
         4,
+        5
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        5,
         1
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "virgo",
@@ -738,116 +1262,254 @@
     "area": 1294,
     "stars": [
       {
-        "id": "virgo-1",
+        "id": "hip-57380",
+        "hip": 57380,
+        "name": "ν Vir",
+        "catalogName": "HIP 57380",
+        "designation": "ν Vir",
+        "aliases": [],
+        "raHours": 11.764322,
+        "declinationDegrees": 6.529376,
+        "apparentMagnitude": 4.04,
+        "distanceLightYears": 294,
+        "spectralType": "M0III",
+        "description": "ν Vir paikneb tähtkujus Neitsi. Näiv tähesuurus on 4,04 ja spektriklass M0III. Kataloogi kaugushinnang on ligikaudu 294 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2057380"
+      },
+      {
+        "id": "hip-60129",
+        "hip": 60129,
+        "name": "Zaniah",
+        "catalogName": "HIP 60129",
+        "designation": "η Vir",
+        "aliases": [],
+        "raHours": 12.331766,
+        "declinationDegrees": -0.666803,
+        "apparentMagnitude": 3.89,
+        "distanceLightYears": 265,
+        "spectralType": "A2IV",
+        "description": "Zaniah paikneb tähtkujus Neitsi. Näiv tähesuurus on 3,89 ja spektriklass A2IV. Kataloogi kaugushinnang on ligikaudu 265 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2060129"
+      },
+      {
+        "id": "hip-61941",
+        "hip": 61941,
+        "name": "Porrima",
+        "catalogName": "HIP 61941",
+        "designation": "γ Vir",
+        "aliases": [],
+        "raHours": 12.694345,
+        "declinationDegrees": -1.449375,
+        "apparentMagnitude": 2.74,
+        "distanceLightYears": 38,
+        "spectralType": "F0V+...",
+        "description": "Porrima paikneb tähtkujus Neitsi. Näiv tähesuurus on 2,74 ja spektriklass F0V+.... Kataloogi kaugushinnang on ligikaudu 38 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2061941"
+      },
+      {
+        "id": "hip-65474",
+        "hip": 65474,
         "name": "Spica",
-        "catalogName": "* alf Vir",
+        "catalogName": "HIP 65474",
+        "designation": "α Vir",
+        "aliases": [],
         "raHours": 13.419883,
-        "declinationDegrees": -11.161319,
+        "declinationDegrees": -11.161322,
         "apparentMagnitude": 0.98,
         "distanceLightYears": 250,
         "spectralType": "B1V",
-        "description": "Spica on Neitsi tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 0,98 ja see asub ligikaudu 250 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Spica paikneb tähtkujus Neitsi. Näiv tähesuurus on 0,98 ja spektriklass B1V. Kataloogi kaugushinnang on ligikaudu 250 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2065474"
       },
       {
-        "id": "virgo-2",
-        "name": "Porrima",
-        "catalogName": "* gam Vir",
-        "raHours": 12.694341,
-        "declinationDegrees": -1.449404,
-        "apparentMagnitude": 2.74,
-        "distanceLightYears": 39,
-        "spectralType": "F1-F2V",
-        "description": "Porrima on Neitsi tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 2,74 ja see asub ligikaudu 39 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-69427",
+        "hip": 69427,
+        "name": "Kang",
+        "catalogName": "HIP 69427",
+        "designation": "κ Vir",
+        "aliases": [],
+        "raHours": 14.214929,
+        "declinationDegrees": -10.273702,
+        "apparentMagnitude": 4.18,
+        "distanceLightYears": 255,
+        "spectralType": "K3III",
+        "description": "Kang paikneb tähtkujus Neitsi. Näiv tähesuurus on 4,18 ja spektriklass K3III. Kataloogi kaugushinnang on ligikaudu 255 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2069427"
       },
       {
-        "id": "virgo-3",
-        "name": "Vindemiatrix",
-        "catalogName": "* eps Vir",
-        "raHours": 13.036277,
-        "declinationDegrees": 10.959149,
-        "apparentMagnitude": 2.83,
-        "distanceLightYears": 108,
-        "spectralType": "G8III-IIIb",
-        "description": "Vindemiatrix on Neitsi tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 2,83 ja see asub ligikaudu 108 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "virgo-4",
-        "name": "Heze",
-        "catalogName": "* zet Vir",
-        "raHours": 13.57822,
-        "declinationDegrees": -0.595816,
-        "apparentMagnitude": 3.38,
-        "distanceLightYears": 75,
-        "spectralType": "A2Van",
-        "description": "Heze on Neitsi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 3,38 ja see asub ligikaudu 75 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "virgo-5",
-        "name": "Zavijava",
-        "catalogName": "* bet Vir",
-        "raHours": 11.844922,
-        "declinationDegrees": 1.764723,
-        "apparentMagnitude": 3.61,
-        "distanceLightYears": 36,
-        "spectralType": "F9V",
-        "description": "Zavijava on Neitsi tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 3,61 ja see asub ligikaudu 36 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "virgo-6",
-        "name": "Minelauva",
-        "catalogName": "* del Vir",
-        "raHours": 12.926725,
-        "declinationDegrees": 3.397469,
-        "apparentMagnitude": 3.38,
-        "distanceLightYears": 187,
-        "spectralType": "M3+III",
-        "description": "Minelauva on Neitsi tähtkuju joonisesse kuuluv punakas ülisuur täht. Tähe näiv tähesuurus on 3,38 ja see asub ligikaudu 187 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "virgo-7",
+        "id": "hip-69701",
+        "hip": 69701,
         "name": "Syrma",
-        "catalogName": "* iot Vir",
+        "catalogName": "HIP 69701",
+        "designation": "ι Vir",
+        "aliases": [],
         "raHours": 14.266908,
         "declinationDegrees": -6.000547,
-        "apparentMagnitude": 4.08,
-        "distanceLightYears": 72,
-        "spectralType": "F7III",
-        "description": "Syrma on Neitsi tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 4,08 ja see asub ligikaudu 72 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "apparentMagnitude": 4.07,
+        "distanceLightYears": 73,
+        "spectralType": "F7V",
+        "description": "Syrma paikneb tähtkujus Neitsi. Näiv tähesuurus on 4,07 ja spektriklass F7V. Kataloogi kaugushinnang on ligikaudu 73 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2069701"
+      },
+      {
+        "id": "hip-71957",
+        "hip": 71957,
+        "name": "μ Vir",
+        "catalogName": "HIP 71957",
+        "designation": "μ Vir",
+        "aliases": [],
+        "raHours": 14.717673,
+        "declinationDegrees": -5.658207,
+        "apparentMagnitude": 3.87,
+        "distanceLightYears": 60,
+        "spectralType": "F2III",
+        "description": "μ Vir paikneb tähtkujus Neitsi. Näiv tähesuurus on 3,87 ja spektriklass F2III. Kataloogi kaugushinnang on ligikaudu 60 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2071957"
+      },
+      {
+        "id": "hip-66249",
+        "hip": 66249,
+        "name": "Heze",
+        "catalogName": "HIP 66249",
+        "designation": "ζ Vir",
+        "aliases": [],
+        "raHours": 13.57822,
+        "declinationDegrees": -0.59582,
+        "apparentMagnitude": 3.38,
+        "distanceLightYears": 74,
+        "spectralType": "A3V",
+        "description": "Heze paikneb tähtkujus Neitsi. Näiv tähesuurus on 3,38 ja spektriklass A3V. Kataloogi kaugushinnang on ligikaudu 74 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2066249"
+      },
+      {
+        "id": "hip-68520",
+        "hip": 68520,
+        "name": "τ Vir",
+        "catalogName": "HIP 68520",
+        "designation": "τ Vir",
+        "aliases": [],
+        "raHours": 14.027443,
+        "declinationDegrees": 1.544532,
+        "apparentMagnitude": 4.23,
+        "distanceLightYears": 225,
+        "spectralType": "A3V",
+        "description": "τ Vir paikneb tähtkujus Neitsi. Näiv tähesuurus on 4,23 ja spektriklass A3V. Kataloogi kaugushinnang on ligikaudu 225 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2068520"
+      },
+      {
+        "id": "hip-72220",
+        "hip": 72220,
+        "name": "Maenalus",
+        "catalogName": "HIP 72220",
+        "designation": "109 Vir",
+        "aliases": [],
+        "raHours": 14.770812,
+        "declinationDegrees": 1.892885,
+        "apparentMagnitude": 3.73,
+        "distanceLightYears": 134,
+        "spectralType": "A0V",
+        "description": "Maenalus paikneb tähtkujus Neitsi. Näiv tähesuurus on 3,73 ja spektriklass A0V. Kataloogi kaugushinnang on ligikaudu 134 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2072220"
+      },
+      {
+        "id": "hip-63090",
+        "hip": 63090,
+        "name": "Minelauva",
+        "catalogName": "HIP 63090",
+        "designation": "δ Vir",
+        "aliases": [],
+        "raHours": 12.926725,
+        "declinationDegrees": 3.39747,
+        "apparentMagnitude": 3.39,
+        "distanceLightYears": 198,
+        "spectralType": "M3III",
+        "description": "Minelauva paikneb tähtkujus Neitsi. Näiv tähesuurus on 3,39 ja spektriklass M3III. Kataloogi kaugushinnang on ligikaudu 198 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2063090"
+      },
+      {
+        "id": "hip-63608",
+        "hip": 63608,
+        "name": "Vindemiatrix",
+        "catalogName": "HIP 63608",
+        "designation": "ε Vir",
+        "aliases": [],
+        "raHours": 13.036278,
+        "declinationDegrees": 10.95915,
+        "apparentMagnitude": 2.85,
+        "distanceLightYears": 110,
+        "spectralType": "G8IIIvar",
+        "description": "Vindemiatrix paikneb tähtkujus Neitsi. Näiv tähesuurus on 2,85 ja spektriklass G8IIIvar. Kataloogi kaugushinnang on ligikaudu 110 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2063608"
       }
     ],
     "lines": [
       [
-        4,
+        0,
         1
       ],
       [
         1,
-        5
-      ],
-      [
-        5,
         2
       ],
       [
-        5,
+        2,
         3
       ],
       [
         3,
-        0
+        4
       ],
       [
-        0,
+        4,
+        5
+      ],
+      [
+        5,
         6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        2
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "libra",
@@ -879,104 +1541,130 @@
     "area": 538,
     "stars": [
       {
-        "id": "libra-1",
+        "id": "hip-77853",
+        "hip": 77853,
+        "name": "θ Lib",
+        "catalogName": "HIP 77853",
+        "designation": "θ Lib",
+        "aliases": [],
+        "raHours": 15.897093,
+        "declinationDegrees": -16.729293,
+        "apparentMagnitude": 4.13,
+        "distanceLightYears": 168,
+        "spectralType": "K0III",
+        "description": "θ Lib paikneb tähtkujus Kaalud. Näiv tähesuurus on 4,13 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 168 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2077853"
+      },
+      {
+        "id": "hip-76333",
+        "hip": 76333,
+        "name": "Zubenelhakrabi",
+        "catalogName": "HIP 76333",
+        "designation": "γ Lib",
+        "aliases": [],
+        "raHours": 15.592105,
+        "declinationDegrees": -14.789537,
+        "apparentMagnitude": 3.91,
+        "distanceLightYears": 163,
+        "spectralType": "K0III",
+        "description": "Zubenelhakrabi paikneb tähtkujus Kaalud. Näiv tähesuurus on 3,91 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 163 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2076333"
+      },
+      {
+        "id": "hip-74785",
+        "hip": 74785,
         "name": "Zubeneschamali",
-        "catalogName": "* bet Lib",
-        "raHours": 15.283448,
-        "declinationDegrees": -9.382914,
+        "catalogName": "HIP 74785",
+        "designation": "β Lib",
+        "aliases": [],
+        "raHours": 15.283449,
+        "declinationDegrees": -9.382917,
         "apparentMagnitude": 2.61,
         "distanceLightYears": 185,
-        "spectralType": "B8Vn",
-        "description": "Zubeneschamali on Kaalude tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,61 ja see asub ligikaudu 185 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "B8V",
+        "description": "Zubeneschamali paikneb tähtkujus Kaalud. Näiv tähesuurus on 2,61 ja spektriklass B8V. Kataloogi kaugushinnang on ligikaudu 185 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2074785"
       },
       {
-        "id": "libra-2",
+        "id": "hip-72622",
+        "hip": 72622,
         "name": "Zubenelgenubi",
-        "catalogName": "* alf02 Lib",
-        "raHours": 14.847976,
-        "declinationDegrees": -16.041777,
+        "catalogName": "HIP 72622",
+        "designation": "α 2 Lib",
+        "aliases": [],
+        "raHours": 14.847977,
+        "declinationDegrees": -16.041778,
         "apparentMagnitude": 2.75,
         "distanceLightYears": 76,
-        "spectralType": "kA2hA5mA4IV-V",
-        "description": "Zubenelgenubi on Kaalude tähtkuju joonisesse kuuluv oranžikas allhiid. Tähe näiv tähesuurus on 2,75 ja see asub ligikaudu 76 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "A3IV",
+        "description": "Zubenelgenubi paikneb tähtkujus Kaalud. Näiv tähesuurus on 2,75 ja spektriklass A3IV. Kataloogi kaugushinnang on ligikaudu 76 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2072622"
       },
       {
-        "id": "libra-3",
+        "id": "hip-73714",
+        "hip": 73714,
         "name": "Brachium",
-        "catalogName": "* sig Lib",
-        "raHours": 15.067837,
-        "declinationDegrees": -25.28197,
-        "apparentMagnitude": 3.29,
-        "distanceLightYears": 260,
-        "spectralType": "M2.5III",
-        "description": "Brachium on Kaalude tähtkuju joonisesse kuuluv punakas ülisuur täht. Tähe näiv tähesuurus on 3,29 ja see asub ligikaudu 260 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "catalogName": "HIP 73714",
+        "designation": "σ Lib",
+        "aliases": [],
+        "raHours": 15.067839,
+        "declinationDegrees": -25.281965,
+        "apparentMagnitude": 3.25,
+        "distanceLightYears": 288,
+        "spectralType": "M3/M4III",
+        "description": "Brachium paikneb tähtkujus Kaalud. Näiv tähesuurus on 3,25 ja spektriklass M3/M4III. Kataloogi kaugushinnang on ligikaudu 288 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2073714"
       },
       {
-        "id": "libra-4",
-        "name": "Zubenelhakrabi",
-        "catalogName": "* gam Lib",
-        "raHours": 15.592105,
-        "declinationDegrees": -14.789536,
-        "apparentMagnitude": 3.91,
-        "distanceLightYears": 161,
-        "spectralType": "G8.5III",
-        "description": "Zubenelhakrabi on Kaalude tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,91 ja see asub ligikaudu 161 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "libra-5",
-        "name": "Theta Lib",
-        "catalogName": "* tet Lib",
-        "raHours": 15.897094,
-        "declinationDegrees": -16.729297,
-        "apparentMagnitude": 4.14,
-        "distanceLightYears": 167,
-        "spectralType": "G9IIIb",
-        "description": "Theta Lib on Kaalude tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,14 ja see asub ligikaudu 167 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "libra-6",
-        "name": "Upsilon Lib",
-        "catalogName": "* ups Lib",
-        "raHours": 15.617069,
-        "declinationDegrees": -28.13511,
-        "apparentMagnitude": 3.58,
-        "distanceLightYears": 210,
-        "spectralType": "K3.5III",
-        "description": "Upsilon Lib on Kaalude tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 3,58 ja see asub ligikaudu 210 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-76470",
+        "hip": 76470,
+        "name": "υ Lib",
+        "catalogName": "HIP 76470",
+        "designation": "υ Lib",
+        "aliases": [],
+        "raHours": 15.61707,
+        "declinationDegrees": -28.135079,
+        "apparentMagnitude": 3.6,
+        "distanceLightYears": 224,
+        "spectralType": "K3III",
+        "description": "υ Lib paikneb tähtkujus Kaalud. Näiv tähesuurus on 3,60 ja spektriklass K3III. Kataloogi kaugushinnang on ligikaudu 224 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2076470"
       }
     ],
     "lines": [
       [
-        1,
-        0
-      ],
-      [
         0,
-        3
+        1
       ],
       [
-        3,
+        1,
         2
       ],
       [
         2,
-        1
+        3
       ],
       [
         3,
         4
       ],
       [
-        2,
-        5
+        4,
+        1
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "scorpius",
@@ -1008,132 +1696,302 @@
     "area": 497,
     "stars": [
       {
-        "id": "scorpius-1",
-        "name": "Antares",
-        "catalogName": "* alf Sco",
-        "raHours": 16.490128,
-        "declinationDegrees": -26.432003,
-        "apparentMagnitude": 1.06,
-        "distanceLightYears": 554,
-        "spectralType": "M1.5Iab+B2Vn",
-        "description": "Antares on Skorpioni tähtkuju joonisesse kuuluv punakas peajada täht. Tähe näiv tähesuurus on 1,06 ja see asub ligikaudu 554 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "scorpius-2",
+        "id": "hip-85927",
+        "hip": 85927,
         "name": "Shaula",
-        "catalogName": "* lam Sco",
-        "raHours": 17.560144,
-        "declinationDegrees": -37.103824,
+        "catalogName": "HIP 85927",
+        "designation": "λ Sco",
+        "aliases": [],
+        "raHours": 17.560145,
+        "declinationDegrees": -37.103821,
         "apparentMagnitude": 1.62,
         "distanceLightYears": 571,
-        "spectralType": "B2IV+DA7.9",
-        "description": "Shaula on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 1,62 ja see asub ligikaudu 571 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "B1.5IV+...",
+        "description": "Shaula paikneb tähtkujus Skorpion. Näiv tähesuurus on 1,62 ja spektriklass B1.5IV+.... Kataloogi kaugushinnang on ligikaudu 571 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2085927"
       },
       {
-        "id": "scorpius-3",
+        "id": "hip-86670",
+        "hip": 86670,
+        "name": "κ Sco",
+        "catalogName": "HIP 86670",
+        "designation": "κ Sco",
+        "aliases": [],
+        "raHours": 17.708132,
+        "declinationDegrees": -39.029983,
+        "apparentMagnitude": 2.39,
+        "distanceLightYears": 483,
+        "spectralType": "B1.5III",
+        "description": "κ Sco paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,39 ja spektriklass B1.5III. Kataloogi kaugushinnang on ligikaudu 483 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2086670"
+      },
+      {
+        "id": "hip-87073",
+        "hip": 87073,
+        "name": "ι 1 Sco",
+        "catalogName": "HIP 87073",
+        "designation": "ι 1 Sco",
+        "aliases": [],
+        "raHours": 17.793078,
+        "declinationDegrees": -40.126997,
+        "apparentMagnitude": 2.99,
+        "distanceLightYears": 1930,
+        "spectralType": "F3Ia",
+        "description": "ι 1 Sco paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,99 ja spektriklass F3Ia. Kataloogi kaugushinnang on ligikaudu 1930 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2087073"
+      },
+      {
+        "id": "hip-86228",
+        "hip": 86228,
         "name": "Sargas",
-        "catalogName": "* tet Sco",
-        "raHours": 17.621981,
-        "declinationDegrees": -42.997828,
+        "catalogName": "HIP 86228",
+        "designation": "θ Sco",
+        "aliases": [],
+        "raHours": 17.62198,
+        "declinationDegrees": -42.997824,
         "apparentMagnitude": 1.86,
         "distanceLightYears": 300,
-        "spectralType": "F1III",
-        "description": "Sargas on Skorpioni tähtkuju joonisesse kuuluv kollakasvalge ülisuur täht. Tähe näiv tähesuurus on 1,86 ja see asub ligikaudu 300 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "F1II",
+        "description": "Sargas paikneb tähtkujus Skorpion. Näiv tähesuurus on 1,86 ja spektriklass F1II. Kataloogi kaugushinnang on ligikaudu 300 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2086228"
       },
       {
-        "id": "scorpius-4",
+        "id": "hip-84143",
+        "hip": 84143,
+        "name": "η Sco",
+        "catalogName": "HIP 84143",
+        "designation": "η Sco",
+        "aliases": [],
+        "raHours": 17.202552,
+        "declinationDegrees": -43.239189,
+        "apparentMagnitude": 3.32,
+        "distanceLightYears": 73,
+        "spectralType": "F3p",
+        "description": "η Sco paikneb tähtkujus Skorpion. Näiv tähesuurus on 3,32 ja spektriklass F3p. Kataloogi kaugushinnang on ligikaudu 73 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2084143"
+      },
+      {
+        "id": "hip-82671",
+        "hip": 82671,
+        "name": "ζ 1 Sco",
+        "catalogName": "HIP 82671",
+        "designation": "ζ 1 Sco",
+        "aliases": [],
+        "raHours": 16.899924,
+        "declinationDegrees": -42.362025,
+        "apparentMagnitude": 4.7,
+        "distanceLightYears": 2568,
+        "spectralType": "B1Iae",
+        "description": "ζ 1 Sco paikneb tähtkujus Skorpion. Näiv tähesuurus on 4,70 ja spektriklass B1Iae. Kataloogi kaugushinnang on ligikaudu 2568 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2082671"
+      },
+      {
+        "id": "hip-82514",
+        "hip": 82514,
+        "name": "Xamidimura",
+        "catalogName": "HIP 82514",
+        "designation": "μ 1 Sco",
+        "aliases": [],
+        "raHours": 16.864509,
+        "declinationDegrees": -38.04738,
+        "apparentMagnitude": 3,
+        "distanceLightYears": 501,
+        "spectralType": "B1.5IV + B",
+        "description": "Xamidimura paikneb tähtkujus Skorpion. Näiv tähesuurus on 3,00 ja spektriklass B1.5IV + B. Kataloogi kaugushinnang on ligikaudu 501 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2082514"
+      },
+      {
+        "id": "hip-82396",
+        "hip": 82396,
+        "name": "Larawag",
+        "catalogName": "HIP 82396",
+        "designation": "ε Sco",
+        "aliases": [],
+        "raHours": 16.83608,
+        "declinationDegrees": -34.293232,
+        "apparentMagnitude": 2.29,
+        "distanceLightYears": 64,
+        "spectralType": "K2IIIb",
+        "description": "Larawag paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,29 ja spektriklass K2IIIb. Kataloogi kaugushinnang on ligikaudu 64 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2082396"
+      },
+      {
+        "id": "hip-81266",
+        "hip": 81266,
+        "name": "Paikauhale",
+        "catalogName": "HIP 81266",
+        "designation": "τ Sco",
+        "aliases": [],
+        "raHours": 16.598043,
+        "declinationDegrees": -28.216016,
+        "apparentMagnitude": 2.82,
+        "distanceLightYears": 474,
+        "spectralType": "B0V",
+        "description": "Paikauhale paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,82 ja spektriklass B0V. Kataloogi kaugushinnang on ligikaudu 474 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2081266"
+      },
+      {
+        "id": "hip-80763",
+        "hip": 80763,
+        "name": "Antares",
+        "catalogName": "HIP 80763",
+        "designation": "α Sco",
+        "aliases": [],
+        "raHours": 16.490128,
+        "declinationDegrees": -26.432002,
+        "apparentMagnitude": 1.06,
+        "distanceLightYears": 554,
+        "spectralType": "M1Ib + B2.5V",
+        "description": "Antares paikneb tähtkujus Skorpion. Näiv tähesuurus on 1,06 ja spektriklass M1Ib + B2.5V. Kataloogi kaugushinnang on ligikaudu 554 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2080763"
+      },
+      {
+        "id": "hip-78401",
+        "hip": 78401,
         "name": "Dschubba",
-        "catalogName": "* del Sco",
+        "catalogName": "HIP 78401",
+        "designation": "δ Sco",
+        "aliases": [],
         "raHours": 16.005557,
-        "declinationDegrees": -22.621706,
-        "apparentMagnitude": 2.31,
+        "declinationDegrees": -22.62171,
+        "apparentMagnitude": 2.29,
         "distanceLightYears": 491,
-        "spectralType": "B0.3IV",
-        "description": "Dschubba on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 2,31 ja see asub ligikaudu 491 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "B0.2IV",
+        "description": "Dschubba paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,29 ja spektriklass B0.2IV. Kataloogi kaugushinnang on ligikaudu 491 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2078401"
       },
       {
-        "id": "scorpius-5",
+        "id": "hip-78265",
+        "hip": 78265,
+        "name": "Fang",
+        "catalogName": "HIP 78265",
+        "designation": "π Sco",
+        "aliases": [],
+        "raHours": 15.980865,
+        "declinationDegrees": -26.114105,
+        "apparentMagnitude": 2.89,
+        "distanceLightYears": 586,
+        "spectralType": "B1V + B2V",
+        "description": "Fang paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,89 ja spektriklass B1V + B2V. Kataloogi kaugushinnang on ligikaudu 586 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2078265"
+      },
+      {
+        "id": "hip-78820",
+        "hip": 78820,
         "name": "Acrab",
-        "catalogName": "* bet Sco",
-        "raHours": 16.090619,
-        "declinationDegrees": -19.805389,
+        "catalogName": "HIP 78820",
+        "designation": "β 1 Sco",
+        "aliases": [],
+        "raHours": 16.09062,
+        "declinationDegrees": -19.805453,
         "apparentMagnitude": 2.56,
-        "distanceLightYears": null,
-        "spectralType": "B1V+B2V",
-        "description": "Acrab on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,56.",
-        "source": "SIMBAD"
+        "distanceLightYears": 404,
+        "spectralType": "B0.5V",
+        "description": "Acrab paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,56 ja spektriklass B0.5V. Kataloogi kaugushinnang on ligikaudu 404 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2078820"
       },
       {
-        "id": "scorpius-6",
+        "id": "hip-80112",
+        "hip": 80112,
+        "name": "Alniyat",
+        "catalogName": "HIP 80112",
+        "designation": "σ Sco",
+        "aliases": [],
+        "raHours": 16.353143,
+        "declinationDegrees": -25.592796,
+        "apparentMagnitude": 2.9,
+        "distanceLightYears": 697,
+        "spectralType": "B1III",
+        "description": "Alniyat paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,90 ja spektriklass B1III. Kataloogi kaugushinnang on ligikaudu 697 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2080112"
+      },
+      {
+        "id": "hip-85696",
+        "hip": 85696,
         "name": "Lesath",
-        "catalogName": "* ups Sco",
-        "raHours": 17.512733,
-        "declinationDegrees": -37.295813,
+        "catalogName": "HIP 85696",
+        "designation": "υ Sco",
+        "aliases": [],
+        "raHours": 17.512732,
+        "declinationDegrees": -37.295811,
         "apparentMagnitude": 2.7,
         "distanceLightYears": 576,
         "spectralType": "B2IV",
-        "description": "Lesath on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 2,70 ja see asub ligikaudu 576 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "scorpius-7",
-        "name": "Alniyat",
-        "catalogName": "* sig Sco",
-        "raHours": 16.353143,
-        "declinationDegrees": -25.592792,
-        "apparentMagnitude": 2.89,
-        "distanceLightYears": 697,
-        "spectralType": "B1III+B1:V",
-        "description": "Alniyat on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge ülisuur täht. Tähe näiv tähesuurus on 2,89 ja see asub ligikaudu 697 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "scorpius-8",
-        "name": "Fang",
-        "catalogName": "* pi. Sco",
-        "raHours": 15.980865,
-        "declinationDegrees": -26.114108,
-        "apparentMagnitude": 2.89,
-        "distanceLightYears": 586,
-        "spectralType": "B1V+B2:V:",
-        "description": "Fang on Skorpioni tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,89 ja see asub ligikaudu 586 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Lesath paikneb tähtkujus Skorpion. Näiv tähesuurus on 2,70 ja spektriklass B2IV. Kataloogi kaugushinnang on ligikaudu 576 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2085696"
       }
     ],
     "lines": [
       [
-        4,
-        3
-      ],
-      [
-        3,
-        7
-      ],
-      [
-        7,
-        6
-      ],
-      [
-        6,
-        0
-      ],
-      [
         0,
-        2
-      ],
-      [
-        2,
         1
       ],
       [
         1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
         5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        12
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eestist on nähtav ainult osa tähtkujust; lõunapoolsed tähed jäävad horisondi alla."
   },
   {
     "id": "sagittarius",
@@ -1165,93 +2023,349 @@
     "area": 867,
     "stars": [
       {
-        "id": "sagittarius-1",
+        "id": "hip-89931",
+        "hip": 89931,
+        "name": "Kaus Media",
+        "catalogName": "HIP 89931",
+        "designation": "δ Sgr",
+        "aliases": [],
+        "raHours": 18.3499,
+        "declinationDegrees": -29.828103,
+        "apparentMagnitude": 2.72,
+        "distanceLightYears": 348,
+        "spectralType": "K3III",
+        "description": "Kaus Media paikneb tähtkujus Ambur. Näiv tähesuurus on 2,72 ja spektriklass K3III. Kataloogi kaugushinnang on ligikaudu 348 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2089931"
+      },
+      {
+        "id": "hip-90496",
+        "hip": 90496,
+        "name": "Kaus Borealis",
+        "catalogName": "HIP 90496",
+        "designation": "λ Sgr",
+        "aliases": [],
+        "raHours": 18.466179,
+        "declinationDegrees": -25.4217,
+        "apparentMagnitude": 2.82,
+        "distanceLightYears": 78,
+        "spectralType": "K1IIIb",
+        "description": "Kaus Borealis paikneb tähtkujus Ambur. Näiv tähesuurus on 2,82 ja spektriklass K1IIIb. Kataloogi kaugushinnang on ligikaudu 78 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2090496"
+      },
+      {
+        "id": "hip-89642",
+        "hip": 89642,
+        "name": "Heryibwia",
+        "catalogName": "HIP 89642",
+        "designation": "η Sgr",
+        "aliases": [],
+        "raHours": 18.293793,
+        "declinationDegrees": -36.761686,
+        "apparentMagnitude": 3.1,
+        "distanceLightYears": 146,
+        "spectralType": "M2III",
+        "description": "Heryibwia paikneb tähtkujus Ambur. Näiv tähesuurus on 3,10 ja spektriklass M2III. Kataloogi kaugushinnang on ligikaudu 146 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2089642"
+      },
+      {
+        "id": "hip-90185",
+        "hip": 90185,
         "name": "Kaus Australis",
-        "catalogName": "* eps Sgr",
-        "raHours": 18.402866,
+        "catalogName": "HIP 90185",
+        "designation": "ε Sgr",
+        "aliases": [],
+        "raHours": 18.402868,
         "declinationDegrees": -34.384616,
         "apparentMagnitude": 1.79,
         "distanceLightYears": 143,
-        "spectralType": "B9IVp_lB?",
-        "description": "Kaus Australis on Amburi tähtkuju joonisesse kuuluv sinakasvalge allhiid. Tähe näiv tähesuurus on 1,79 ja see asub ligikaudu 143 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "B9.5III",
+        "description": "Kaus Australis paikneb tähtkujus Ambur. Näiv tähesuurus on 1,79 ja spektriklass B9.5III. Kataloogi kaugushinnang on ligikaudu 143 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2090185"
       },
       {
-        "id": "sagittarius-2",
+        "id": "hip-88635",
+        "hip": 88635,
+        "name": "Alnasl",
+        "catalogName": "HIP 88635",
+        "designation": "γ 2 Sgr",
+        "aliases": [],
+        "raHours": 18.096803,
+        "declinationDegrees": -30.424091,
+        "apparentMagnitude": 2.98,
+        "distanceLightYears": 97,
+        "spectralType": "K0III",
+        "description": "Alnasl paikneb tähtkujus Ambur. Näiv tähesuurus on 2,98 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 97 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2088635"
+      },
+      {
+        "id": "hip-87072",
+        "hip": 87072,
+        "name": "3 Sgr",
+        "catalogName": "HIP 87072",
+        "designation": "3 Sgr",
+        "aliases": [],
+        "raHours": 17.792674,
+        "declinationDegrees": -27.830788,
+        "apparentMagnitude": 4.53,
+        "distanceLightYears": 985,
+        "spectralType": "F7II",
+        "description": "3 Sgr paikneb tähtkujus Ambur. Näiv tähesuurus on 4,53 ja spektriklass F7II. Kataloogi kaugushinnang on ligikaudu 985 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2087072"
+      },
+      {
+        "id": "hip-93506",
+        "hip": 93506,
+        "name": "Ascella",
+        "catalogName": "HIP 93506",
+        "designation": "ζ Sgr",
+        "aliases": [],
+        "raHours": 19.043532,
+        "declinationDegrees": -29.880105,
+        "apparentMagnitude": 2.6,
+        "distanceLightYears": 88,
+        "spectralType": "A3IV",
+        "description": "Ascella paikneb tähtkujus Ambur. Näiv tähesuurus on 2,60 ja spektriklass A3IV. Kataloogi kaugushinnang on ligikaudu 88 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2093506"
+      },
+      {
+        "id": "hip-92041",
+        "hip": 92041,
+        "name": "Nandou",
+        "catalogName": "HIP 92041",
+        "designation": "φ Sgr",
+        "aliases": [],
+        "raHours": 18.76094,
+        "declinationDegrees": -26.990778,
+        "apparentMagnitude": 3.17,
+        "distanceLightYears": 239,
+        "spectralType": "B8.5III",
+        "description": "Nandou paikneb tähtkujus Ambur. Näiv tähesuurus on 3,17 ja spektriklass B8.5III. Kataloogi kaugushinnang on ligikaudu 239 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2092041"
+      },
+      {
+        "id": "hip-89341",
+        "hip": 89341,
+        "name": "Polis",
+        "catalogName": "HIP 89341",
+        "designation": "μ Sgr",
+        "aliases": [],
+        "raHours": 18.229392,
+        "declinationDegrees": -21.058834,
+        "apparentMagnitude": 3.84,
+        "distanceLightYears": null,
+        "spectralType": "B2III:",
+        "description": "Polis paikneb tähtkujus Ambur. Näiv tähesuurus on 3,84 ja spektriklass B2III:. Usaldusväärne kaugushinnang selles kataloogis puudub.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2089341"
+      },
+      {
+        "id": "hip-93864",
+        "hip": 93864,
+        "name": "τ Sgr",
+        "catalogName": "HIP 93864",
+        "designation": "τ Sgr",
+        "aliases": [],
+        "raHours": 19.11567,
+        "declinationDegrees": -27.670423,
+        "apparentMagnitude": 3.32,
+        "distanceLightYears": 122,
+        "spectralType": "K1/K2III",
+        "description": "τ Sgr paikneb tähtkujus Ambur. Näiv tähesuurus on 3,32 ja spektriklass K1/K2III. Kataloogi kaugushinnang on ligikaudu 122 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2093864"
+      },
+      {
+        "id": "hip-92855",
+        "hip": 92855,
         "name": "Nunki",
-        "catalogName": "* sig Sgr",
-        "raHours": 18.921091,
-        "declinationDegrees": -26.296724,
+        "catalogName": "HIP 92855",
+        "designation": "σ Sgr",
+        "aliases": [],
+        "raHours": 18.92109,
+        "declinationDegrees": -26.296722,
         "apparentMagnitude": 2.05,
         "distanceLightYears": 228,
         "spectralType": "B2.5V",
-        "description": "Nunki on Amburi tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 2,05 ja see asub ligikaudu 228 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Nunki paikneb tähtkujus Ambur. Näiv tähesuurus on 2,05 ja spektriklass B2.5V. Kataloogi kaugushinnang on ligikaudu 228 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2092855"
       },
       {
-        "id": "sagittarius-3",
-        "name": "Ascella",
-        "catalogName": "* zet Sgr",
-        "raHours": 19.043536,
-        "declinationDegrees": -29.880063,
-        "apparentMagnitude": 2.6,
-        "distanceLightYears": 88,
-        "spectralType": "A2.5Va",
-        "description": "Ascella on Amburi tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 2,60 ja see asub ligikaudu 88 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-93085",
+        "hip": 93085,
+        "name": "Jian",
+        "catalogName": "HIP 93085",
+        "designation": "ξ 2 Sgr",
+        "aliases": [],
+        "raHours": 18.962167,
+        "declinationDegrees": -21.106654,
+        "apparentMagnitude": 3.52,
+        "distanceLightYears": 365,
+        "spectralType": "G8/K0II/III",
+        "description": "Jian paikneb tähtkujus Ambur. Näiv tähesuurus on 3,52 ja spektriklass G8/K0II/III. Kataloogi kaugushinnang on ligikaudu 365 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2093085"
       },
       {
-        "id": "sagittarius-4",
-        "name": "Kaus Media",
-        "catalogName": "* del Sgr",
-        "raHours": 18.349901,
-        "declinationDegrees": -29.828102,
-        "apparentMagnitude": 2.72,
-        "distanceLightYears": 416,
-        "spectralType": "K2.5IIIaCN0.5",
-        "description": "Kaus Media on Amburi tähtkuju joonisesse kuuluv oranžikas hiidtäht. Tähe näiv tähesuurus on 2,72 ja see asub ligikaudu 416 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-93683",
+        "hip": 93683,
+        "name": "Alqiladah",
+        "catalogName": "HIP 93683",
+        "designation": "ο Sgr",
+        "aliases": [],
+        "raHours": 19.07805,
+        "declinationDegrees": -21.741496,
+        "apparentMagnitude": 3.76,
+        "distanceLightYears": 142,
+        "spectralType": "K0III",
+        "description": "Alqiladah paikneb tähtkujus Ambur. Näiv tähesuurus on 3,76 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 142 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2093683"
       },
       {
-        "id": "sagittarius-5",
-        "name": "Kaus Borealis",
-        "catalogName": "* lam Sgr",
-        "raHours": 18.466178,
-        "declinationDegrees": -25.421699,
-        "apparentMagnitude": 2.82,
-        "distanceLightYears": 76,
-        "spectralType": "K1IIIb",
-        "description": "Kaus Borealis on Amburi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,82 ja see asub ligikaudu 76 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-94820",
+        "hip": 94820,
+        "name": "43 Sgr",
+        "catalogName": "HIP 94820",
+        "designation": "43 Sgr",
+        "aliases": [],
+        "raHours": 19.293911,
+        "declinationDegrees": -18.952908,
+        "apparentMagnitude": 4.88,
+        "distanceLightYears": 482,
+        "spectralType": "K0III",
+        "description": "43 Sgr paikneb tähtkujus Ambur. Näiv tähesuurus on 4,88 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 482 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2094820"
       },
       {
-        "id": "sagittarius-6",
-        "name": "Alnasl",
-        "catalogName": "* gam02 Sgr",
-        "raHours": 18.096802,
-        "declinationDegrees": -30.42409,
-        "apparentMagnitude": 2.98,
-        "distanceLightYears": 101,
-        "spectralType": "K0+III",
-        "description": "Alnasl on Amburi tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,98 ja see asub ligikaudu 101 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-95168",
+        "hip": 95168,
+        "name": "Kenemu",
+        "catalogName": "HIP 95168",
+        "designation": "ρ 1 Sgr",
+        "aliases": [],
+        "raHours": 19.361211,
+        "declinationDegrees": -17.847197,
+        "apparentMagnitude": 3.92,
+        "distanceLightYears": 127,
+        "spectralType": "F0III/IV",
+        "description": "Kenemu paikneb tähtkujus Ambur. Näiv tähesuurus on 3,92 ja spektriklass F0III/IV. Kataloogi kaugushinnang on ligikaudu 127 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2095168"
       },
       {
-        "id": "sagittarius-7",
-        "name": "Arkab Prior",
-        "catalogName": "* bet01 Sgr",
-        "raHours": 19.377305,
-        "declinationDegrees": -44.458958,
+        "id": "hip-96406",
+        "hip": 96406,
+        "name": "51 Sgr",
+        "catalogName": "HIP 96406",
+        "designation": "51 Sgr",
+        "aliases": [],
+        "raHours": 19.600459,
+        "declinationDegrees": -24.719081,
+        "apparentMagnitude": 5.64,
+        "distanceLightYears": 294,
+        "spectralType": "A1m...",
+        "description": "51 Sgr paikneb tähtkujus Ambur. Näiv tähesuurus on 5,64 ja spektriklass A1m.... Kataloogi kaugushinnang on ligikaudu 294 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2096406"
+      },
+      {
+        "id": "hip-98688",
+        "hip": 98688,
+        "name": "Gouguo",
+        "catalogName": "HIP 98688",
+        "designation": "62 Sgr",
+        "aliases": [],
+        "raHours": 20.044299,
+        "declinationDegrees": -27.709845,
+        "apparentMagnitude": 4.43,
+        "distanceLightYears": 449,
+        "spectralType": "M4III",
+        "description": "Gouguo paikneb tähtkujus Ambur. Näiv tähesuurus on 4,43 ja spektriklass M4III. Kataloogi kaugushinnang on ligikaudu 449 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2098688"
+      },
+      {
+        "id": "hip-98412",
+        "hip": 98412,
+        "name": "θ 1 Sgr",
+        "catalogName": "HIP 98412",
+        "designation": "θ 1 Sgr",
+        "aliases": [],
+        "raHours": 19.995605,
+        "declinationDegrees": -35.276305,
+        "apparentMagnitude": 4.37,
+        "distanceLightYears": 519,
+        "spectralType": "B2.5IV",
+        "description": "θ 1 Sgr paikneb tähtkujus Ambur. Näiv tähesuurus on 4,37 ja spektriklass B2.5IV. Kataloogi kaugushinnang on ligikaudu 519 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2098412"
+      },
+      {
+        "id": "hip-98032",
+        "hip": 98032,
+        "name": "ι Sgr",
+        "catalogName": "HIP 98032",
+        "designation": "ι Sgr",
+        "aliases": [],
+        "raHours": 19.921026,
+        "declinationDegrees": -41.868288,
+        "apparentMagnitude": 4.12,
+        "distanceLightYears": 182,
+        "spectralType": "K0III",
+        "description": "ι Sgr paikneb tähtkujus Ambur. Näiv tähesuurus on 4,12 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 182 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2098032"
+      },
+      {
+        "id": "hip-95347",
+        "hip": 95347,
+        "name": "Rukbat",
+        "catalogName": "HIP 95347",
+        "designation": "α Sgr",
+        "aliases": [],
+        "raHours": 19.398103,
+        "declinationDegrees": -40.61594,
         "apparentMagnitude": 3.96,
-        "distanceLightYears": 389,
-        "spectralType": "B9V",
-        "description": "Arkab Prior on Amburi tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 3,96 ja see asub ligikaudu 389 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 182,
+        "spectralType": "B8V",
+        "description": "Rukbat paikneb tähtkujus Ambur. Näiv tähesuurus on 3,96 ja spektriklass B8V. Kataloogi kaugushinnang on ligikaudu 182 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2095347"
+      },
+      {
+        "id": "hip-95294",
+        "hip": 95294,
+        "name": "Arkab Posterior",
+        "catalogName": "HIP 95294",
+        "designation": "β 2 Sgr",
+        "aliases": [],
+        "raHours": 19.386976,
+        "declinationDegrees": -44.799778,
+        "apparentMagnitude": 4.27,
+        "distanceLightYears": 134,
+        "spectralType": "F2III",
+        "description": "Arkab Posterior paikneb tähtkujus Ambur. Näiv tähesuurus on 4,27 ja spektriklass F2III. Kataloogi kaugushinnang on ligikaudu 134 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%2095294"
       }
     ],
     "lines": [
       [
-        5,
+        0,
+        1
+      ],
+      [
+        2,
         3
       ],
       [
@@ -1260,14 +2374,10 @@
       ],
       [
         4,
-        1
+        5
       ],
       [
-        1,
-        2
-      ],
-      [
-        2,
+        4,
         0
       ],
       [
@@ -1275,10 +2385,84 @@
         3
       ],
       [
-        2,
+        3,
         6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        18,
+        20
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eestist on nähtav ainult osa tähtkujust; lõunapoolsed tähed jäävad horisondi alla."
   },
   {
     "id": "capricornus",
@@ -1310,104 +2494,194 @@
     "area": 414,
     "stars": [
       {
-        "id": "capricornus-1",
-        "name": "Deneb Algedi",
-        "catalogName": "* del Cap",
-        "raHours": 21.784012,
-        "declinationDegrees": -16.127287,
-        "apparentMagnitude": 2.85,
-        "distanceLightYears": 39,
-        "spectralType": "kA5hF0mF2III",
-        "description": "Deneb Algedi on Kaljukitse tähtkuju joonisesse kuuluv oranžikas ülisuur täht. Tähe näiv tähesuurus on 2,85 ja see asub ligikaudu 39 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "capricornus-2",
-        "name": "Dabih",
-        "catalogName": "* bet01 Cap",
-        "raHours": 20.350185,
-        "declinationDegrees": -14.781408,
-        "apparentMagnitude": 3.05,
-        "distanceLightYears": 388,
-        "spectralType": "G9II:+B8p:Si:",
-        "description": "Dabih on Kaljukitse tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,05 ja see asub ligikaudu 388 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "capricornus-3",
-        "name": "Nashira",
-        "catalogName": "* gam Cap",
-        "raHours": 21.668179,
-        "declinationDegrees": -16.662371,
-        "apparentMagnitude": 3.68,
-        "distanceLightYears": 171,
-        "spectralType": "kF0hF1VmF2",
-        "description": "Nashira on Kaljukitse tähtkuju joonisesse kuuluv oranžikas peajada täht. Tähe näiv tähesuurus on 3,68 ja see asub ligikaudu 171 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "capricornus-4",
+        "id": "hip-100064",
+        "hip": 100064,
         "name": "Algedi",
-        "catalogName": "* alf02 Cap",
+        "catalogName": "HIP 100064",
+        "designation": "α 2 Cap",
+        "aliases": [],
         "raHours": 20.300904,
         "declinationDegrees": -12.544852,
         "apparentMagnitude": 3.58,
-        "distanceLightYears": 109,
-        "spectralType": "G9III",
-        "description": "Algedi on Kaljukitse tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 3,58 ja see asub ligikaudu 109 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 106,
+        "spectralType": "G6/G8III",
+        "description": "Algedi paikneb tähtkujus Kaljukits. Näiv tähesuurus on 3,58 ja spektriklass G6/G8III. Kataloogi kaugushinnang on ligikaudu 106 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20100064"
       },
       {
-        "id": "capricornus-5",
-        "name": "Omega Cap",
-        "catalogName": "* ome Cap",
-        "raHours": 20.863692,
-        "declinationDegrees": -26.919135,
-        "apparentMagnitude": 4.11,
-        "distanceLightYears": 553,
-        "spectralType": "M0IIIBa0.5",
-        "description": "Omega Cap on Kaljukitse tähtkuju joonisesse kuuluv punakas hiidtäht. Tähe näiv tähesuurus on 4,11 ja see asub ligikaudu 553 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-100345",
+        "hip": 100345,
+        "name": "Dabih",
+        "catalogName": "HIP 100345",
+        "designation": "β Cap",
+        "aliases": [],
+        "raHours": 20.350187,
+        "declinationDegrees": -14.781367,
+        "apparentMagnitude": 3.05,
+        "distanceLightYears": 327,
+        "spectralType": "A5:n",
+        "description": "Dabih paikneb tähtkujus Kaljukits. Näiv tähesuurus on 3,05 ja spektriklass A5:n. Kataloogi kaugushinnang on ligikaudu 327 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20100345"
       },
       {
-        "id": "capricornus-6",
-        "name": "Psi Cap",
-        "catalogName": "* psi Cap",
-        "raHours": 20.768259,
+        "id": "hip-104139",
+        "hip": 104139,
+        "name": "Udang",
+        "catalogName": "HIP 104139",
+        "designation": "θ Cap",
+        "aliases": [],
+        "raHours": 21.099118,
+        "declinationDegrees": -17.232861,
+        "apparentMagnitude": 4.08,
+        "distanceLightYears": 162,
+        "spectralType": "A1V",
+        "description": "Udang paikneb tähtkujus Kaljukits. Näiv tähesuurus on 4,08 ja spektriklass A1V. Kataloogi kaugushinnang on ligikaudu 162 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20104139"
+      },
+      {
+        "id": "hip-105515",
+        "hip": 105515,
+        "name": "ι Cap",
+        "catalogName": "HIP 105515",
+        "designation": "ι Cap",
+        "aliases": [],
+        "raHours": 21.370776,
+        "declinationDegrees": -16.834542,
+        "apparentMagnitude": 4.28,
+        "distanceLightYears": 197,
+        "spectralType": "G8III",
+        "description": "ι Cap paikneb tähtkujus Kaljukits. Näiv tähesuurus on 4,28 ja spektriklass G8III. Kataloogi kaugushinnang on ligikaudu 197 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20105515"
+      },
+      {
+        "id": "hip-106985",
+        "hip": 106985,
+        "name": "Nashira",
+        "catalogName": "HIP 106985",
+        "designation": "γ Cap",
+        "aliases": [],
+        "raHours": 21.668181,
+        "declinationDegrees": -16.662308,
+        "apparentMagnitude": 3.69,
+        "distanceLightYears": 157,
+        "spectralType": "A7III:mp...",
+        "description": "Nashira paikneb tähtkujus Kaljukits. Näiv tähesuurus on 3,69 ja spektriklass A7III:mp.... Kataloogi kaugushinnang on ligikaudu 157 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20106985"
+      },
+      {
+        "id": "hip-107556",
+        "hip": 107556,
+        "name": "Deneb Algedi",
+        "catalogName": "HIP 107556",
+        "designation": "δ Cap",
+        "aliases": [],
+        "raHours": 21.784011,
+        "declinationDegrees": -16.127286,
+        "apparentMagnitude": 2.85,
+        "distanceLightYears": 39,
+        "spectralType": "A5mF2 (IV)",
+        "description": "Deneb Algedi paikneb tähtkujus Kaljukits. Näiv tähesuurus on 2,85 ja spektriklass A5mF2 (IV). Kataloogi kaugushinnang on ligikaudu 39 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20107556"
+      },
+      {
+        "id": "hip-105881",
+        "hip": 105881,
+        "name": "ζ Cap",
+        "catalogName": "HIP 105881",
+        "designation": "ζ Cap",
+        "aliases": [],
+        "raHours": 21.444452,
+        "declinationDegrees": -22.411332,
+        "apparentMagnitude": 3.77,
+        "distanceLightYears": 386,
+        "spectralType": "G4Ibp...",
+        "description": "ζ Cap paikneb tähtkujus Kaljukits. Näiv tähesuurus on 3,77 ja spektriklass G4Ibp.... Kataloogi kaugushinnang on ligikaudu 386 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20105881"
+      },
+      {
+        "id": "hip-102485",
+        "hip": 102485,
+        "name": "ψ Cap",
+        "catalogName": "HIP 102485",
+        "designation": "ψ Cap",
+        "aliases": [],
+        "raHours": 20.76826,
         "declinationDegrees": -25.270898,
         "apparentMagnitude": 4.13,
         "distanceLightYears": 48,
         "spectralType": "F5V",
-        "description": "Psi Cap on Kaljukitse tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,13 ja see asub ligikaudu 48 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "ψ Cap paikneb tähtkujus Kaljukits. Näiv tähesuurus on 4,13 ja spektriklass F5V. Kataloogi kaugushinnang on ligikaudu 48 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20102485"
+      },
+      {
+        "id": "hip-102978",
+        "hip": 102978,
+        "name": "ω Cap",
+        "catalogName": "HIP 102978",
+        "designation": "ω Cap",
+        "aliases": [],
+        "raHours": 20.863692,
+        "declinationDegrees": -26.919133,
+        "apparentMagnitude": 4.12,
+        "distanceLightYears": 843,
+        "spectralType": "K4III",
+        "description": "ω Cap paikneb tähtkujus Kaljukits. Näiv tähesuurus on 4,12 ja spektriklass K4III. Kataloogi kaugushinnang on ligikaudu 843 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20102978"
       }
     ],
     "lines": [
       [
-        3,
+        0,
         1
       ],
       [
         1,
-        5
-      ],
-      [
-        5,
-        4
-      ],
-      [
-        4,
-        0
-      ],
-      [
-        0,
         2
       ],
       [
         2,
         3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        8
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "aquarius",
@@ -1439,101 +2713,263 @@
     "area": 980,
     "stars": [
       {
-        "id": "aquarius-1",
+        "id": "hip-106278",
+        "hip": 106278,
         "name": "Sadalsuud",
-        "catalogName": "* bet Aqr",
-        "raHours": 21.525981,
-        "declinationDegrees": -5.571175,
-        "apparentMagnitude": 2.87,
-        "distanceLightYears": 546,
+        "catalogName": "HIP 106278",
+        "designation": "β Aqr",
+        "aliases": [],
+        "raHours": 21.525982,
+        "declinationDegrees": -5.571172,
+        "apparentMagnitude": 2.9,
+        "distanceLightYears": 537,
         "spectralType": "G0Ib",
-        "description": "Sadalsuud on Veevalaja tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 2,87 ja see asub ligikaudu 546 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Sadalsuud paikneb tähtkujus Veevalaja. Näiv tähesuurus on 2,90 ja spektriklass G0Ib. Kataloogi kaugushinnang on ligikaudu 537 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20106278"
       },
       {
-        "id": "aquarius-2",
+        "id": "hip-109074",
+        "hip": 109074,
         "name": "Sadalmelik",
-        "catalogName": "* alf Aqr",
+        "catalogName": "HIP 109074",
+        "designation": "α Aqr",
+        "aliases": [],
         "raHours": 22.096399,
         "declinationDegrees": -0.319851,
         "apparentMagnitude": 2.95,
-        "distanceLightYears": 660,
+        "distanceLightYears": 524,
         "spectralType": "G2Ib",
-        "description": "Sadalmelik on Veevalaja tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 2,95 ja see asub ligikaudu 660 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "Sadalmelik paikneb tähtkujus Veevalaja. Näiv tähesuurus on 2,95 ja spektriklass G2Ib. Kataloogi kaugushinnang on ligikaudu 524 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20109074"
       },
       {
-        "id": "aquarius-3",
+        "id": "hip-110395",
+        "hip": 110395,
+        "name": "Sadachbia",
+        "catalogName": "HIP 110395",
+        "designation": "γ Aqr",
+        "aliases": [],
+        "raHours": 22.360938,
+        "declinationDegrees": -1.387331,
+        "apparentMagnitude": 3.86,
+        "distanceLightYears": 164,
+        "spectralType": "A0V",
+        "description": "Sadachbia paikneb tähtkujus Veevalaja. Näiv tähesuurus on 3,86 ja spektriklass A0V. Kataloogi kaugushinnang on ligikaudu 164 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20110395"
+      },
+      {
+        "id": "hip-110960",
+        "hip": 110960,
+        "name": "ζ 1 Aqr",
+        "catalogName": "HIP 110960",
+        "designation": "ζ 1 Aqr",
+        "aliases": [],
+        "raHours": 22.480531,
+        "declinationDegrees": -0.019972,
+        "apparentMagnitude": 3.65,
+        "distanceLightYears": 92,
+        "spectralType": "F3III-IV",
+        "description": "ζ 1 Aqr paikneb tähtkujus Veevalaja. Näiv tähesuurus on 3,65 ja spektriklass F3III-IV. Kataloogi kaugushinnang on ligikaudu 92 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20110960"
+      },
+      {
+        "id": "hip-111497",
+        "hip": 111497,
+        "name": "η Aqr",
+        "catalogName": "HIP 111497",
+        "designation": "η Aqr",
+        "aliases": [],
+        "raHours": 22.589272,
+        "declinationDegrees": -0.117498,
+        "apparentMagnitude": 4.04,
+        "distanceLightYears": 168,
+        "spectralType": "B9IV-Vn",
+        "description": "η Aqr paikneb tähtkujus Veevalaja. Näiv tähesuurus on 4,04 ja spektriklass B9IV-Vn. Kataloogi kaugushinnang on ligikaudu 168 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20111497"
+      },
+      {
+        "id": "hip-112961",
+        "hip": 112961,
+        "name": "Shatabhisha",
+        "catalogName": "HIP 112961",
+        "designation": "λ Aqr",
+        "aliases": [
+          "Lambda Aquarii"
+        ],
+        "raHours": 22.87691,
+        "declinationDegrees": -7.579599,
+        "apparentMagnitude": 3.73,
+        "distanceLightYears": 385,
+        "spectralType": "M2IIIvar",
+        "description": "Shatabhisha paikneb tähtkujus Veevalaja. Näiv tähesuurus on 3,73 ja spektriklass M2IIIvar. Kataloogi kaugushinnang on ligikaudu 385 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20112961"
+      },
+      {
+        "id": "hip-114855",
+        "hip": 114855,
+        "name": "ψ 1 Aqr",
+        "catalogName": "HIP 114855",
+        "designation": "ψ 1 Aqr",
+        "aliases": [],
+        "raHours": 23.264859,
+        "declinationDegrees": -9.087737,
+        "apparentMagnitude": 4.24,
+        "distanceLightYears": 150,
+        "spectralType": "K0III",
+        "description": "ψ 1 Aqr paikneb tähtkujus Veevalaja. Näiv tähesuurus on 4,24 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 150 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20114855"
+      },
+      {
+        "id": "hip-115438",
+        "hip": 115438,
+        "name": "98 Aqr",
+        "catalogName": "HIP 115438",
+        "designation": "98 Aqr",
+        "aliases": [],
+        "raHours": 23.382842,
+        "declinationDegrees": -20.10058,
+        "apparentMagnitude": 3.96,
+        "distanceLightYears": 163,
+        "spectralType": "K0III",
+        "description": "98 Aqr paikneb tähtkujus Veevalaja. Näiv tähesuurus on 3,96 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 163 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20115438"
+      },
+      {
+        "id": "hip-110003",
+        "hip": 110003,
+        "name": "Ancha",
+        "catalogName": "HIP 110003",
+        "designation": "θ Aqr",
+        "aliases": [],
+        "raHours": 22.280565,
+        "declinationDegrees": -7.78329,
+        "apparentMagnitude": 4.17,
+        "distanceLightYears": 187,
+        "spectralType": "G8III-IV",
+        "description": "Ancha paikneb tähtkujus Veevalaja. Näiv tähesuurus on 4,17 ja spektriklass G8III-IV. Kataloogi kaugushinnang on ligikaudu 187 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20110003"
+      },
+      {
+        "id": "hip-109139",
+        "hip": 109139,
+        "name": "ι Aqr",
+        "catalogName": "HIP 109139",
+        "designation": "ι Aqr",
+        "aliases": [],
+        "raHours": 22.107286,
+        "declinationDegrees": -13.869679,
+        "apparentMagnitude": 4.29,
+        "distanceLightYears": 175,
+        "spectralType": "B8V",
+        "description": "ι Aqr paikneb tähtkujus Veevalaja. Näiv tähesuurus on 4,29 ja spektriklass B8V. Kataloogi kaugushinnang on ligikaudu 175 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20109139"
+      },
+      {
+        "id": "hip-111123",
+        "hip": 111123,
+        "name": "σ Aqr",
+        "catalogName": "HIP 111123",
+        "designation": "σ Aqr",
+        "aliases": [],
+        "raHours": 22.510782,
+        "declinationDegrees": -10.67795,
+        "apparentMagnitude": 4.82,
+        "distanceLightYears": 290,
+        "spectralType": "A0IVs",
+        "description": "σ Aqr paikneb tähtkujus Veevalaja. Näiv tähesuurus on 4,82 ja spektriklass A0IVs. Kataloogi kaugushinnang on ligikaudu 290 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20111123"
+      },
+      {
+        "id": "hip-112716",
+        "hip": 112716,
+        "name": "τ 2 Aqr",
+        "catalogName": "HIP 112716",
+        "designation": "τ 2 Aqr",
+        "aliases": [],
+        "raHours": 22.826528,
+        "declinationDegrees": -13.592632,
+        "apparentMagnitude": 4.05,
+        "distanceLightYears": 318,
+        "spectralType": "K5III",
+        "description": "τ 2 Aqr paikneb tähtkujus Veevalaja. Näiv tähesuurus on 4,05 ja spektriklass K5III. Kataloogi kaugushinnang on ligikaudu 318 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20112716"
+      },
+      {
+        "id": "hip-113136",
+        "hip": 113136,
         "name": "Skat",
-        "catalogName": "* del Aqr",
-        "raHours": 22.910835,
+        "catalogName": "HIP 113136",
+        "designation": "δ Aqr",
+        "aliases": [],
+        "raHours": 22.910837,
         "declinationDegrees": -15.82082,
         "apparentMagnitude": 3.27,
-        "distanceLightYears": 141,
-        "spectralType": "A3Vp",
-        "description": "Skat on Veevalaja tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 3,27 ja see asub ligikaudu 141 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "distanceLightYears": 161,
+        "spectralType": "A3V",
+        "description": "Skat paikneb tähtkujus Veevalaja. Näiv tähesuurus on 3,27 ja spektriklass A3V. Kataloogi kaugushinnang on ligikaudu 161 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20113136"
       },
       {
-        "id": "aquarius-4",
+        "id": "hip-114341",
+        "hip": 114341,
+        "name": "Safina",
+        "catalogName": "HIP 114341",
+        "designation": "88 Aqr",
+        "aliases": [],
+        "raHours": 23.157443,
+        "declinationDegrees": -21.17241,
+        "apparentMagnitude": 3.68,
+        "distanceLightYears": 271,
+        "spectralType": "K1III",
+        "description": "Safina paikneb tähtkujus Veevalaja. Näiv tähesuurus on 3,68 ja spektriklass K1III. Kataloogi kaugushinnang on ligikaudu 271 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20114341"
+      },
+      {
+        "id": "hip-102618",
+        "hip": 102618,
         "name": "Albali",
-        "catalogName": "* eps Aqr",
-        "raHours": 20.794597,
-        "declinationDegrees": -9.495777,
-        "apparentMagnitude": 3.77,
-        "distanceLightYears": 244,
-        "spectralType": "B9.5V",
-        "description": "Albali on Veevalaja tähtkuju joonisesse kuuluv sinakasvalge peajada täht. Tähe näiv tähesuurus on 3,77 ja see asub ligikaudu 244 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aquarius-5",
-        "name": "Sadachbia",
-        "catalogName": "* gam Aqr",
-        "raHours": 22.360937,
-        "declinationDegrees": -1.387349,
-        "apparentMagnitude": 3.86,
-        "distanceLightYears": 126,
-        "spectralType": "A0V",
-        "description": "Sadachbia on Veevalaja tähtkuju joonisesse kuuluv valge peajada täht. Tähe näiv tähesuurus on 3,86 ja see asub ligikaudu 126 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aquarius-6",
-        "name": "Ancha",
-        "catalogName": "* tet Aqr",
-        "raHours": 22.280566,
-        "declinationDegrees": -7.783289,
-        "apparentMagnitude": 4.17,
-        "distanceLightYears": 191,
-        "spectralType": "G9II",
-        "description": "Ancha on Veevalaja tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,17 ja see asub ligikaudu 191 valgusaasta kaugusel.",
-        "source": "SIMBAD"
-      },
-      {
-        "id": "aquarius-7",
-        "name": "Hydor",
-        "catalogName": "* lam Aqr",
-        "raHours": 22.876909,
-        "declinationDegrees": -7.579597,
-        "apparentMagnitude": 3.74,
-        "distanceLightYears": 365,
-        "spectralType": "M2.5IIIFe-0.5",
-        "description": "Hydor on Veevalaja tähtkuju joonisesse kuuluv punakas hiidtäht. Tähe näiv tähesuurus on 3,74 ja see asub ligikaudu 365 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "catalogName": "HIP 102618",
+        "designation": "ε Aqr",
+        "aliases": [],
+        "raHours": 20.794598,
+        "declinationDegrees": -9.495776,
+        "apparentMagnitude": 3.78,
+        "distanceLightYears": 208,
+        "spectralType": "A1V",
+        "description": "Albali paikneb tähtkujus Veevalaja. Näiv tähesuurus on 3,78 ja spektriklass A1V. Kataloogi kaugushinnang on ligikaudu 208 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20102618"
       }
     ],
     "lines": [
-      [
-        3,
-        0
-      ],
       [
         0,
         1
       ],
       [
         1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
         4
       ],
       [
@@ -1542,13 +2978,47 @@
       ],
       [
         5,
-        2
+        6
       ],
       [
-        5,
-        6
+        6,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        14,
+        0
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   },
   {
     "id": "pisces",
@@ -1580,115 +3050,435 @@
     "area": 889,
     "stars": [
       {
-        "id": "pisces-1",
-        "name": "Alpherg",
-        "catalogName": "SDSS J011353.55+152447.9",
-        "raHours": 1.231542,
-        "declinationDegrees": 15.413304,
-        "apparentMagnitude": 3.62,
-        "distanceLightYears": 4359,
-        "spectralType": "F9",
-        "description": "Alpherg on Kalade tähtkuju joonisesse kuuluv kollakasvalge täht. Tähe näiv tähesuurus on 3,62 ja see asub ligikaudu 4359 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-4889",
+        "hip": 4889,
+        "name": "σ Psc",
+        "catalogName": "HIP 4889",
+        "designation": "σ Psc",
+        "aliases": [],
+        "raHours": 1.046971,
+        "declinationDegrees": 31.804263,
+        "apparentMagnitude": 5.5,
+        "distanceLightYears": 434,
+        "spectralType": "B9.5V",
+        "description": "σ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 5,50 ja spektriklass B9.5V. Kataloogi kaugushinnang on ligikaudu 434 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%204889"
       },
       {
-        "id": "pisces-2",
+        "id": "hip-5742",
+        "hip": 5742,
+        "name": "φ Psc",
+        "catalogName": "HIP 5742",
+        "designation": "φ Psc",
+        "aliases": [],
+        "raHours": 1.229152,
+        "declinationDegrees": 24.583713,
+        "apparentMagnitude": 4.67,
+        "distanceLightYears": 446,
+        "spectralType": "K0III...",
+        "description": "φ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,67 ja spektriklass K0III.... Kataloogi kaugushinnang on ligikaudu 446 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%205742"
+      },
+      {
+        "id": "hip-6193",
+        "hip": 6193,
+        "name": "υ Psc",
+        "catalogName": "HIP 6193",
+        "designation": "υ Psc",
+        "aliases": [],
+        "raHours": 1.324443,
+        "declinationDegrees": 27.264059,
+        "apparentMagnitude": 4.74,
+        "distanceLightYears": 308,
+        "spectralType": "A3V",
+        "description": "υ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,74 ja spektriklass A3V. Kataloogi kaugushinnang on ligikaudu 308 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%206193"
+      },
+      {
+        "id": "hip-7097",
+        "hip": 7097,
+        "name": "Alpherg",
+        "catalogName": "HIP 7097",
+        "designation": "η Psc",
+        "aliases": [
+          "Kullat Nunu"
+        ],
+        "raHours": 1.524725,
+        "declinationDegrees": 15.345823,
+        "apparentMagnitude": 3.62,
+        "distanceLightYears": 350,
+        "spectralType": "G8III",
+        "description": "Alpherg paikneb tähtkujus Kalad. Näiv tähesuurus on 3,62 ja spektriklass G8III. Kataloogi kaugushinnang on ligikaudu 350 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%207097"
+      },
+      {
+        "id": "hip-8198",
+        "hip": 8198,
+        "name": "Torcular",
+        "catalogName": "HIP 8198",
+        "designation": "ο Psc",
+        "aliases": [],
+        "raHours": 1.756564,
+        "declinationDegrees": 9.157736,
+        "apparentMagnitude": 4.26,
+        "distanceLightYears": 279,
+        "spectralType": "K0III",
+        "description": "Torcular paikneb tähtkujus Kalad. Näiv tähesuurus on 4,26 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 279 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%208198"
+      },
+      {
+        "id": "hip-9487",
+        "hip": 9487,
         "name": "Alrescha",
-        "catalogName": "* alf Psc",
+        "catalogName": "HIP 9487",
+        "designation": "α Psc",
+        "aliases": [],
         "raHours": 2.034117,
-        "declinationDegrees": 2.763761,
+        "declinationDegrees": 2.763759,
         "apparentMagnitude": 3.82,
         "distanceLightYears": 151,
-        "spectralType": "kA0hA7Sr+kA2hF2mF2(IV)",
-        "description": "Alrescha on Kalade tähtkuju joonisesse kuuluv oranžikas allhiid. Tähe näiv tähesuurus on 3,82 ja see asub ligikaudu 151 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "spectralType": "A2",
+        "description": "Alrescha paikneb tähtkujus Kalad. Näiv tähesuurus on 3,82 ja spektriklass A2. Kataloogi kaugushinnang on ligikaudu 151 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%209487"
       },
       {
-        "id": "pisces-3",
-        "name": "Fumalsamakah",
-        "catalogName": "* iot Psc",
-        "raHours": 23.665845,
-        "declinationDegrees": 5.626293,
-        "apparentMagnitude": 4.01,
-        "distanceLightYears": 45,
-        "spectralType": "F7V",
-        "description": "Fumalsamakah on Kalade tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,01 ja see asub ligikaudu 45 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-8833",
+        "hip": 8833,
+        "name": "ξ Psc",
+        "catalogName": "HIP 8833",
+        "designation": "ξ Psc",
+        "aliases": [],
+        "raHours": 1.892597,
+        "declinationDegrees": 3.187536,
+        "apparentMagnitude": 4.61,
+        "distanceLightYears": 179,
+        "spectralType": "K0III SB",
+        "description": "ξ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,61 ja spektriklass K0III SB. Kataloogi kaugushinnang on ligikaudu 179 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%208833"
       },
       {
-        "id": "pisces-4",
-        "name": "Torcular",
-        "catalogName": "UCAC4 470-001664",
-        "raHours": 1.206906,
-        "declinationDegrees": 3.913751,
-        "apparentMagnitude": 4.26,
-        "distanceLightYears": 859,
-        "spectralType": "G9",
-        "description": "Torcular on Kalade tähtkuju joonisesse kuuluv kollane täht. Tähe näiv tähesuurus on 4,26 ja see asub ligikaudu 859 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-7884",
+        "hip": 7884,
+        "name": "ν Psc",
+        "catalogName": "HIP 7884",
+        "designation": "ν Psc",
+        "aliases": [],
+        "raHours": 1.690526,
+        "declinationDegrees": 5.487613,
+        "apparentMagnitude": 4.45,
+        "distanceLightYears": 363,
+        "spectralType": "K3III",
+        "description": "ν Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,45 ja spektriklass K3III. Kataloogi kaugushinnang on ligikaudu 363 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%207884"
       },
       {
-        "id": "pisces-5",
-        "name": "Kullat Nunu",
-        "catalogName": "* eta Psc",
-        "raHours": 1.524724,
-        "declinationDegrees": 15.345832,
-        "apparentMagnitude": 4.5,
-        "distanceLightYears": 373,
-        "spectralType": "G7IIIa",
-        "description": "Kullat Nunu on Kalade tähtkuju joonisesse kuuluv kollane ülisuur täht. Tähe näiv tähesuurus on 4,50 ja see asub ligikaudu 373 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-7007",
+        "hip": 7007,
+        "name": "μ Psc",
+        "catalogName": "HIP 7007",
+        "designation": "μ Psc",
+        "aliases": [],
+        "raHours": 1.503087,
+        "declinationDegrees": 6.14382,
+        "apparentMagnitude": 4.84,
+        "distanceLightYears": 304,
+        "spectralType": "K4III",
+        "description": "μ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,84 ja spektriklass K4III. Kataloogi kaugushinnang on ligikaudu 304 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%207007"
       },
       {
-        "id": "pisces-6",
-        "name": "Iota Psc",
-        "catalogName": "* iot Psc",
-        "raHours": 23.665845,
-        "declinationDegrees": 5.626293,
+        "id": "hip-4906",
+        "hip": 4906,
+        "name": "ε Psc",
+        "catalogName": "HIP 4906",
+        "designation": "ε Psc",
+        "aliases": [],
+        "raHours": 1.049058,
+        "declinationDegrees": 7.890135,
+        "apparentMagnitude": 4.27,
+        "distanceLightYears": 182,
+        "spectralType": "K0III",
+        "description": "ε Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,27 ja spektriklass K0III. Kataloogi kaugushinnang on ligikaudu 182 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%204906"
+      },
+      {
+        "id": "hip-3760",
+        "hip": 3760,
+        "name": "62 Psc",
+        "catalogName": "HIP 3760",
+        "designation": "62 Psc",
+        "aliases": [],
+        "raHours": 0.804836,
+        "declinationDegrees": 7.299928,
+        "apparentMagnitude": 5.92,
+        "distanceLightYears": 579,
+        "spectralType": "G8III",
+        "description": "62 Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 5,92 ja spektriklass G8III. Kataloogi kaugushinnang on ligikaudu 579 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%203760"
+      },
+      {
+        "id": "hip-1645",
+        "hip": 1645,
+        "name": "41 Psc",
+        "catalogName": "HIP 1645",
+        "designation": "41 Psc",
+        "aliases": [],
+        "raHours": 0.343295,
+        "declinationDegrees": 8.190271,
+        "apparentMagnitude": 5.38,
+        "distanceLightYears": 408,
+        "spectralType": "K3III",
+        "description": "41 Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 5,38 ja spektriklass K3III. Kataloogi kaugushinnang on ligikaudu 408 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%201645"
+      },
+      {
+        "id": "hip-118268",
+        "hip": 118268,
+        "name": "ω Psc",
+        "catalogName": "HIP 118268",
+        "designation": "ω Psc",
+        "aliases": [],
+        "raHours": 23.988525,
+        "declinationDegrees": 6.863321,
+        "apparentMagnitude": 4.03,
+        "distanceLightYears": 104,
+        "spectralType": "F4IV",
+        "description": "ω Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,03 ja spektriklass F4IV. Kataloogi kaugushinnang on ligikaudu 104 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20118268"
+      },
+      {
+        "id": "hip-116771",
+        "hip": 116771,
+        "name": "ι Psc",
+        "catalogName": "HIP 116771",
+        "designation": "ι Psc",
+        "aliases": [],
+        "raHours": 23.665844,
+        "declinationDegrees": 5.626292,
         "apparentMagnitude": 4.13,
         "distanceLightYears": 45,
         "spectralType": "F7V",
-        "description": "Iota Psc on Kalade tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,13 ja see asub ligikaudu 45 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "description": "ι Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,13 ja spektriklass F7V. Kataloogi kaugushinnang on ligikaudu 45 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20116771"
       },
       {
-        "id": "pisces-7",
-        "name": "Omega Psc",
-        "catalogName": "* ome Psc",
-        "raHours": 23.988525,
-        "declinationDegrees": 6.863322,
-        "apparentMagnitude": 4.01,
-        "distanceLightYears": 108,
-        "spectralType": "F4V",
-        "description": "Omega Psc on Kalade tähtkuju joonisesse kuuluv kollakasvalge peajada täht. Tähe näiv tähesuurus on 4,01 ja see asub ligikaudu 108 valgusaasta kaugusel.",
-        "source": "SIMBAD"
+        "id": "hip-117245",
+        "hip": 117245,
+        "name": "19 Psc",
+        "catalogName": "HIP 117245",
+        "designation": "19 Psc",
+        "aliases": [],
+        "raHours": 23.773199,
+        "declinationDegrees": 3.486811,
+        "apparentMagnitude": 4.95,
+        "distanceLightYears": 899,
+        "spectralType": "C5II",
+        "description": "19 Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,95 ja spektriklass C5II. Kataloogi kaugushinnang on ligikaudu 899 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20117245"
+      },
+      {
+        "id": "hip-116928",
+        "hip": 116928,
+        "name": "λ Psc",
+        "catalogName": "HIP 116928",
+        "designation": "λ Psc",
+        "aliases": [],
+        "raHours": 23.700779,
+        "declinationDegrees": 1.780041,
+        "apparentMagnitude": 4.49,
+        "distanceLightYears": 107,
+        "spectralType": "A7V",
+        "description": "λ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,49 ja spektriklass A7V. Kataloogi kaugushinnang on ligikaudu 107 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20116928"
+      },
+      {
+        "id": "hip-115738",
+        "hip": 115738,
+        "name": "κ Psc",
+        "catalogName": "HIP 115738",
+        "designation": "κ Psc",
+        "aliases": [],
+        "raHours": 23.448876,
+        "declinationDegrees": 1.255608,
+        "apparentMagnitude": 4.95,
+        "distanceLightYears": 153,
+        "spectralType": "A0p",
+        "description": "κ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,95 ja spektriklass A0p. Kataloogi kaugushinnang on ligikaudu 153 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20115738"
+      },
+      {
+        "id": "hip-114971",
+        "hip": 114971,
+        "name": "γ Psc",
+        "catalogName": "HIP 114971",
+        "designation": "γ Psc",
+        "aliases": [],
+        "raHours": 23.286094,
+        "declinationDegrees": 3.282289,
+        "apparentMagnitude": 3.7,
+        "distanceLightYears": 138,
+        "spectralType": "G7III",
+        "description": "γ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 3,70 ja spektriklass G7III. Kataloogi kaugushinnang on ligikaudu 138 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20114971"
+      },
+      {
+        "id": "hip-115227",
+        "hip": 115227,
+        "name": "7 Psc",
+        "catalogName": "HIP 115227",
+        "designation": "7 Psc",
+        "aliases": [],
+        "raHours": 23.339051,
+        "declinationDegrees": 5.381307,
+        "apparentMagnitude": 5.05,
+        "distanceLightYears": 433,
+        "spectralType": "K2III",
+        "description": "7 Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 5,05 ja spektriklass K2III. Kataloogi kaugushinnang on ligikaudu 433 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20115227"
+      },
+      {
+        "id": "hip-115830",
+        "hip": 115830,
+        "name": "θ Psc",
+        "catalogName": "HIP 115830",
+        "designation": "θ Psc",
+        "aliases": [],
+        "raHours": 23.466138,
+        "declinationDegrees": 6.378992,
+        "apparentMagnitude": 4.27,
+        "distanceLightYears": 149,
+        "spectralType": "K1III",
+        "description": "θ Psc paikneb tähtkujus Kalad. Näiv tähesuurus on 4,27 ja spektriklass K1III. Kataloogi kaugushinnang on ligikaudu 149 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20115830"
+      },
+      {
+        "id": "hip-113889",
+        "hip": 113889,
+        "name": "Fumalsamakah",
+        "catalogName": "HIP 113889",
+        "designation": "β Psc",
+        "aliases": [],
+        "raHours": 23.064615,
+        "declinationDegrees": 3.820045,
+        "apparentMagnitude": 4.48,
+        "distanceLightYears": 408,
+        "spectralType": "B6Ve",
+        "description": "Fumalsamakah paikneb tähtkujus Kalad. Näiv tähesuurus on 4,48 ja spektriklass B6Ve. Kataloogi kaugushinnang on ligikaudu 408 valgusaastat.",
+        "source": "HYG v4.1 (Hipparcos)",
+        "sourceUrl": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20113889"
       }
     ],
     "lines": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        1
+      ],
       [
         1,
         3
       ],
       [
         3,
-        0
-      ],
-      [
-        0,
         4
       ],
       [
-        1,
+        4,
+        5
+      ],
+      [
+        5,
         6
       ],
       [
         6,
-        2
+        7
       ],
       [
-        2,
-        5
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        19,
+        13
       ]
-    ]
+    ],
+    "figureSource": {
+      "name": "Stellarium Modern",
+      "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+      "license": "CC BY-SA 4.0"
+    },
+    "visibilityNote": "Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist."
   }
 ]

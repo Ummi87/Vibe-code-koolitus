@@ -2,6 +2,8 @@
 
 let CONSTELLATIONS = [];
 let skyData = [];
+let ambientStars = [];
+let backgroundScreenPoints = [];
 
 const $ = selector => document.querySelector(selector);
 const html = document.documentElement;
@@ -19,16 +21,18 @@ function starVector(raHours, decDegrees) {
 }
 
 
-function seededRandom(seed) {
-  const x = Math.sin(seed * 999.13) * 43758.5453;
-  return x - Math.floor(x);
+// Great-circle edges on the celestial sphere, sampled before projection.
+function arcPoints(a, b) {
+  const angle = Math.acos(Math.max(-1, Math.min(1, a.x * b.x + a.y * b.y + a.z * b.z)));
+  const steps = Math.max(2, Math.ceil(angle / (Math.PI / 180)));
+  const sin = Math.sin(angle);
+  return Array.from({ length: steps + 1 }, (_, i) => {
+    const t = i / steps;
+    const u = sin > 1e-8 ? Math.sin((1 - t) * angle) / sin : 1 - t;
+    const v = sin > 1e-8 ? Math.sin(t * angle) / sin : t;
+    return { x: a.x * u + b.x * v, y: a.y * u + b.y * v, z: a.z * u + b.z * v };
+  });
 }
-
-const ambientStars = Array.from({ length: 520 }, (_, index) => {
-  const ra = seededRandom(index + 3) * 24;
-  const dec = Math.asin(seededRandom(index + 77) * 2 - 1) * 180 / Math.PI;
-  return { ...starVector(ra, dec), mag: 3.6 + seededRandom(index + 191) * 2.4 };
-});
 
 function project(point, width, height) {
   const cy = Math.cos(state.yaw), sy = Math.sin(state.yaw);
@@ -38,8 +42,8 @@ function project(point, width, height) {
   const y2 = point.y * cp - z1 * sp;
   const z2 = point.y * sp + z1 * cp;
   const radius = Math.min(width, height) * 0.44 * state.zoom;
-  const perspective = 1 / (1.22 - z2 * 0.22);
-  return { x: width / 2 + x1 * radius * perspective, y: height / 2 - y2 * radius * perspective, z: z2, visible: z2 > -0.32 };
+  // Orthographic hemisphere: no back-side stars folded over front-side stars.
+  return { x: width / 2 + x1 * radius, y: height / 2 - y2 * radius, z: z2, visible: z2 >= 0 };
 }
 
 function drawSky() {
@@ -63,15 +67,20 @@ function drawSky() {
 
   drawGrid(width, height, isLight);
 
-  ambientStars.forEach((star, index) => {
+  backgroundScreenPoints = [];
+  ambientStars.forEach(star => {
     const p = project(star, width, height);
     if (!p.visible) return;
-    const alpha = Math.max(.08, (p.z + .35) / 1.35) * (isLight ? .34 : .66);
-    const twinkle = html.dataset.motion === 'enhanced' && !reduceMotion.matches ? .72 + Math.sin(state.frame * .018 + index) * .18 : 1;
+    const alpha = (.3 + .7 * p.z) * (isLight ? .6 : .85);
+    backgroundScreenPoints.push({ star, point: p });
     ctx.beginPath();
-    ctx.fillStyle = isLight ? `rgba(22,67,124,${alpha * twinkle})` : `rgba(211,234,255,${alpha * twinkle})`;
-    ctx.arc(p.x, p.y, Math.max(.45, 1.35 - (star.mag - 3.6) * .34), 0, Math.PI * 2);
+    ctx.fillStyle = isLight ? `rgba(22,67,124,${alpha})` : `rgba(211,234,255,${alpha})`;
+    ctx.arc(p.x, p.y, Math.max(.55, 2.8 - star.apparentMagnitude * .42), 0, Math.PI * 2);
     ctx.fill();
+    if (state.selectedStar?.starId === star.id) {
+      ctx.strokeStyle = isLight ? '#0078b2' : '#73e6ff';
+      ctx.beginPath(); ctx.arc(p.x, p.y, 8, 0, Math.PI * 2); ctx.stroke();
+    }
   });
 
   skyData.forEach(group => drawConstellation(group, width, height, isLight, group.id === state.selected));
@@ -109,14 +118,20 @@ function drawGrid(width, height, isLight) {
 
 function drawConstellation(group, width, height, isLight, selected) {
   const points = group.points.map(point => project(point, width, height));
+  group.screenPoints = points;
+  group.screenSegments = [];
   ctx.save();
   ctx.strokeStyle = selected ? (isLight ? 'rgba(0,120,178,.9)' : 'rgba(0,217,255,.9)') : (isLight ? 'rgba(10,66,216,.24)' : 'rgba(80,138,222,.28)');
   ctx.lineWidth = selected ? 1.8 : 1;
   if (selected) { ctx.shadowColor = isLight ? 'rgba(0,135,210,.32)' : 'rgba(0,217,255,.55)'; ctx.shadowBlur = 8; }
-  group.lines.forEach(([a, b]) => {
-    const p1 = points[a], p2 = points[b];
-    if (!p1.visible || !p2.visible || Math.abs(p1.x - p2.x) > width * .55) return;
-    ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+  group.arcs.forEach(arc => {
+    const projected = arc.map(p => project(p, width, height));
+    for (let i = 1; i < projected.length; i++) {
+      const p1 = projected[i - 1], p2 = projected[i];
+      if (!p1.visible || !p2.visible) continue;
+      group.screenSegments.push([p1, p2]);
+      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+    }
   });
   ctx.shadowBlur = 0;
   points.forEach((p, index) => {
@@ -137,12 +152,26 @@ function drawConstellation(group, width, height, isLight, selected) {
       ctx.lineWidth = 1.5;
       ctx.beginPath(); ctx.arc(p.x, p.y, size + 6, 0, Math.PI * 2); ctx.stroke();
     }
-    if (selected && (star.apparentMagnitude < 3.1 || isSelectedStar)) {
-      ctx.font = '600 11px Inter, system-ui, sans-serif';
-      ctx.fillStyle = isLight ? 'rgba(11,48,93,.82)' : 'rgba(223,243,255,.82)';
-      ctx.fillText(star.name, p.x + size + 6, p.y - size - 3);
-    }
   });
+  if (selected) {
+    ctx.font = '600 11px Inter, system-ui, sans-serif';
+    ctx.fillStyle = isLight ? 'rgba(11,48,93,.92)' : 'rgba(223,243,255,.92)';
+    const placed = [];
+    const labels = group.points.map((star, i) => ({ star, p: points[i], active: state.selectedStar?.starId === star.id }))
+      .filter(s => s.p.visible && (s.active || s.star.apparentMagnitude < 3.1))
+      .sort((a, b) => Number(b.active) - Number(a.active) || a.star.apparentMagnitude - b.star.apparentMagnitude);
+    for (const { star, p } of labels) {
+      const w = ctx.measureText(star.name).width;
+      const positions = [[p.x+10,p.y-10],[p.x-w-10,p.y-10],[p.x+10,p.y+19],[p.x-w-10,p.y+19]];
+      for (const [x, y] of positions) {
+        const rect = { x:x-3, y:y-12, w:w+6, h:17 };
+        if (rect.x < 0 || rect.x + rect.w > width || rect.y < 0 || rect.y + rect.h > height) continue;
+        if (placed.some(b => rect.x < b.x+b.w && rect.x+rect.w > b.x && rect.y < b.y+b.h && rect.y+rect.h > b.y)) continue;
+        if (points.some(q => q.visible && q.x > rect.x && q.x < rect.x+rect.w && q.y > rect.y && q.y < rect.y+rect.h)) continue;
+        ctx.fillText(star.name,x,y); placed.push(rect); break;
+      }
+    }
+  }
   if (!selected) {
     const visible = points.filter(p => p.visible);
     if (visible.length >= Math.max(3, points.length * .55)) {
@@ -184,6 +213,7 @@ function updateMapSelection(group, openMenu = false) {
   $('#markerLocation').textContent = group.location;
   $('#markerDescription').textContent = group.description;
   $('#constellationMenu').hidden = !openMenu;
+  $('#starSelect').replaceChildren(new Option('Vali täht kaardilt või nimekirjast', ''), ...group.stars.map(star => new Option(star.name, star.id)));
   updateDetails(group);
 }
 
@@ -214,23 +244,24 @@ function distanceToSegment(px, py, a, b) {
 
 function findConstellationAt(clientX, clientY) {
   const rect = canvas.getBoundingClientRect();
-  const x = clientX - rect.left, y = clientY - rect.top;
+  const x = (clientX - rect.left) * canvas.clientWidth / rect.width, y = (clientY - rect.top) * canvas.clientHeight / rect.height;
   const coarsePointer = matchMedia('(pointer: coarse)').matches;
   const starRadius = coarsePointer ? 26 : 17;
   const lineRadius = coarsePointer ? 18 : 11;
   let closest = null;
 
   skyData.forEach(group => {
-    const points = group.points.map(point => project(point, rect.width, rect.height));
+    const points = group.screenPoints || [];
     let distance = Infinity;
     points.forEach(point => {
       if (point.visible) distance = Math.min(distance, Math.hypot(x - point.x, y - point.y));
     });
-    group.lines.forEach(([a, b]) => {
-      if (points[a].visible && points[b].visible) distance = Math.min(distance, distanceToSegment(x, y, points[a], points[b]));
-    });
-    const threshold = distance <= starRadius ? starRadius : lineRadius;
-    if (distance <= threshold && (!closest || distance < closest.distance)) closest = { group, distance };
+    if (distance > starRadius) distance = Infinity;
+    for (const [a, b] of group.screenSegments || []) {
+      const lineDistance = distanceToSegment(x, y, a, b);
+      if (lineDistance <= lineRadius) distance = Math.min(distance, lineDistance);
+    }
+    if (Number.isFinite(distance) && (!closest || distance < closest.distance)) closest = { group, distance };
   });
 
   return closest?.group || null;
@@ -238,17 +269,20 @@ function findConstellationAt(clientX, clientY) {
 
 function findStarAt(clientX, clientY) {
   const rect = canvas.getBoundingClientRect();
-  const x = clientX - rect.left, y = clientY - rect.top;
-  const radius = matchMedia('(pointer: coarse)').matches ? 34 : 24;
+  const x = (clientX - rect.left) * canvas.clientWidth / rect.width, y = (clientY - rect.top) * canvas.clientHeight / rect.height;
+  const radius = matchMedia('(pointer: coarse)').matches ? 20 : 12;
   let closest = null;
 
-  skyData.forEach(group => group.points.forEach(star => {
-    const point = project(star, rect.width, rect.height);
-    if (!point.visible) return;
+  skyData.forEach(group => group.points.forEach((star, i) => {
+    const point = group.screenPoints?.[i];
+    if (!point?.visible) return;
     const distance = Math.hypot(x - point.x, y - point.y);
     if (distance <= radius && (!closest || distance < closest.distance)) closest = { group, star, distance };
   }));
-
+  if (!closest) for (const { star, point } of backgroundScreenPoints) {
+    const distance = Math.hypot(x - point.x, y - point.y);
+    if (distance <= 5 && (!closest || distance < closest.distance)) closest = { group: null, star, distance };
+  }
   return closest;
 }
 
@@ -259,33 +293,30 @@ function openConstellationMenu(group) {
   updateMapSelection(group, true);
 }
 
-function formatCatalogName(value) {
-  const greek = { alf: 'α', bet: 'β', gam: 'γ', del: 'δ', eps: 'ε', zet: 'ζ', eta: 'η', tet: 'θ', iot: 'ι', kap: 'κ', lam: 'λ', mu: 'μ', nu: 'ν', ksi: 'ξ', omi: 'ο', pi: 'π', rho: 'ρ', sig: 'σ', tau: 'τ', ups: 'υ', phi: 'φ', khi: 'χ', psi: 'ψ', ome: 'ω' };
-  return (value || 'Kataloogitähis puudub').replace(/^\*\s*/, '').replace(/\b(alf|bet|gam|del|eps|zet|eta|tet|iot|kap|lam|mu|nu|ksi|omi|pi|rho|sig|tau|ups|phi|khi|psi|ome)\b/gi, match => greek[match.toLowerCase()]);
-}
-
 function formatStarCoordinates(star) {
-  const totalMinutes = Math.round(star.raHours * 60);
-  const hours = Math.floor(totalMinutes / 60) % 24;
-  const minutes = totalMinutes % 60;
-  const declination = `${star.declinationDegrees >= 0 ? '+' : '−'}${Math.abs(star.declinationDegrees).toFixed(2).replace('.', ',')}°`;
-  return `RA ${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m · DEC ${declination}`;
+  const ra = Math.round(star.raHours * 3600) % 86400;
+  const dec = Math.round(Math.abs(star.declinationDegrees) * 3600);
+  const pad = value => String(value).padStart(2, '0');
+  return `RA ${pad(Math.floor(ra/3600))}h ${pad(Math.floor(ra/60)%60)}m ${pad(ra%60)}s · DEC ${star.declinationDegrees >= 0 ? '+' : '−'}${pad(Math.floor(dec/3600))}° ${pad(Math.floor(dec/60)%60)}′ ${pad(dec%60)}″`;
 }
 
 function openStarMenu(group, star) {
-  state.selected = group.id;
-  state.selectedStar = { groupId: group.id, starId: star.id };
-  updateMapSelection(group, false);
+  if (group) { state.selected = group.id; updateMapSelection(group, false); }
+  state.selectedStar = { groupId: group?.id || null, starId: star.id };
+  $('#starSelect').value = group ? star.id : '';
   $('#starName').textContent = star.name;
-  $('#starCatalogName').textContent = `${formatCatalogName(star.catalogName)} · ${group.name}`;
+  $('#starCatalogName').textContent = [star.catalogName, star.designation, group?.name].filter(Boolean).join(' · ');
   $('#starDescription').textContent = star.description;
   $('#starMagnitude').textContent = star.apparentMagnitude.toFixed(2).replace('.', ',');
   $('#starDistance').textContent = star.distanceLightYears ? `${star.distanceLightYears.toLocaleString('et-EE')} valgusaastat` : 'Kataloogis puudub';
   $('#starSpectralType').textContent = star.spectralType || 'Kataloogis puudub';
   $('#starCoordinates').textContent = formatStarCoordinates(star);
+  $('#starSource').href = star.sourceUrl;
+  $('#starSource').textContent = `${star.source} · kataloogikirje ↗`;
+  $('#backToConstellation').hidden = !group;
   $('#constellationMenu').hidden = true;
   $('#starMenu').hidden = false;
-  updateDetails(group);
+  if (group) updateDetails(group);
 }
 
 function updateDetails(group) {
@@ -299,6 +330,7 @@ function updateDetails(group) {
   $('#brightestStar').textContent = brightest.name;
   $('#brightestMagnitude').textContent = `${brightest.apparentMagnitude.toFixed(2).replace('.', ',')} tähesuurust`;
   $('#bestMonth').textContent = group.best;
+  $('#visibilityNote').textContent = group.visibilityNote || 'Eesti laiuskraadidel';
   $('#hemisphere').textContent = group.location;
   $('#constellationArea').textContent = `${group.area} ruutkraadi`;
 }
@@ -371,7 +403,16 @@ function setBirthMethod(method) {
 function setupControls() {
   $('#constellationSelect').innerHTML = CONSTELLATIONS.map(c => `<option value="${c.id}">${c.glyph} ${c.name}</option>`).join('');
   $('#starCount').textContent = `${CONSTELLATIONS.reduce((sum, c) => sum + c.stars.length, 0)} kaardistatud tähte`;
+  $('#starCount').textContent += ` · ${ambientStars.length} taustatähte`;
   $('#constellationSelect').addEventListener('change', event => focusConstellation(event.target.value, false, true));
+  $('#starSelect').addEventListener('change', event => {
+    const group = skyData.find(c => c.id === state.selected);
+    const star = group.points.find(s => s.id === event.target.value);
+    if (!star) return;
+    state.targetYaw = Math.PI / 2 - star.raHours * Math.PI / 12;
+    state.targetPitch = star.declinationDegrees * Math.PI / 180;
+    openStarMenu(group, star);
+  });
 
   $('#dateMethodButton').addEventListener('click', () => setBirthMethod('date'));
   $('#ageMethodButton').addEventListener('click', () => setBirthMethod('age'));
@@ -499,14 +540,22 @@ async function init() {
   html.dataset.motion = motionModes.includes(savedMotion) ? savedMotion : 'standard';
   $('#motionLabel').textContent = motionLabels[html.dataset.motion];
   try {
-    const response = await fetch('./constellations.json', { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const [response, backgroundResponse] = await Promise.all([
+      fetch('./constellations.json', { cache: 'no-cache' }), fetch('./data/sky-catalog.json', { cache: 'no-cache' })
+    ]);
+    if (!response.ok || !backgroundResponse.ok) throw new Error('Kaardi JSON-faili ei õnnestunud laadida');
     CONSTELLATIONS = await response.json();
+    const catalog = await backgroundResponse.json();
     const valid = Array.isArray(CONSTELLATIONS) && CONSTELLATIONS.length === 12 && CONSTELLATIONS.every(item =>
       item.id && item.name && item.latinName && item.abbreviation && item.description && item.location && Array.isArray(item.stars) && item.stars.every(star =>
         star.id && star.name && Number.isFinite(star.raHours) && Number.isFinite(star.declinationDegrees) && Number.isFinite(star.apparentMagnitude) && star.description) && Array.isArray(item.lines));
     if (!valid) throw new Error('Vigane tähtkujude andmestik');
-    skyData = CONSTELLATIONS.map(c => ({ ...c, points: c.stars.map(star => ({ ...starVector(star.raHours, star.declinationDegrees), ...star })) }));
+    skyData = CONSTELLATIONS.map(c => {
+      const points = c.stars.map(star => ({ ...starVector(star.raHours, star.declinationDegrees), ...star }));
+      return { ...c, points, arcs: c.lines.map(([a, b]) => arcPoints(points[a], points[b])) };
+    });
+    if (!Array.isArray(catalog.backgroundStars) || !catalog.backgroundStars.length) throw new Error('Puuduvad taustatähed');
+    ambientStars = catalog.backgroundStars.map(star => ({ ...starVector(star.raHours, star.declinationDegrees), ...star }));
     setupControls();
     focusConstellation('aries', false, false);
     drawSky();

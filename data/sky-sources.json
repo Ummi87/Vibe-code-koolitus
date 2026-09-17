@@ -1,0 +1,40 @@
+{
+  "hyg": {
+    "name": "HYG Database v4.1",
+    "author": "David Nash / Astronexus",
+    "revision": "c7f7f883fe678cc7680169a50ccd7dcc49b060ce",
+    "url": "https://raw.githubusercontent.com/astronexus/HYG-Database/c7f7f883fe678cc7680169a50ccd7dcc49b060ce/hyg/CURRENT/hygdata_v41.csv",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "figures": {
+    "name": "Stellarium Modern sky culture",
+    "author": "Stellarium's team",
+    "revision": "5e51e0245128a8e18fdcaeecdc8a20f13268ca84",
+    "url": "https://raw.githubusercontent.com/Stellarium/stellarium/5e51e0245128a8e18fdcaeecdc8a20f13268ca84/skycultures/modern/index.json",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "names": {
+    "name": "IAU Working Group on Star Names",
+    "url": "https://exopla.net/star-names/modern-iau-star-names/",
+    "note": "Names matched by HIP identifiers only. Positions come from HYG, not the name table."
+  },
+  "backgroundMagnitudeLimit": 5.5,
+  "aliases": {
+    "13209": ["41 Ari"],
+    "7097": ["Kullat Nunu"],
+    "20205": ["Hyadum I"],
+    "40526": ["Altarf"],
+    "112961": ["Lambda Aquarii"]
+  },
+  "extraHipIds": {
+    "Ari": [14838],
+    "Tau": [17702, 17847, 17499],
+    "Cnc": [40167],
+    "Leo": [47508],
+    "Lib": [76470],
+    "Sco": [80112, 85696],
+    "Psc": [113889]
+  }
+}

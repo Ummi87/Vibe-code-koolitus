@@ -1,115 +1,99 @@
+// Rebuild the bundled astronomical data from fixed, attributed catalog releases.
+// Every figure vertex is a Hipparcos ID. Never guess identity from proximity.
 import { readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
-const fileUrl = new URL('../constellations.json', import.meta.url);
-const constellations = JSON.parse(await readFile(fileUrl, 'utf8'));
-const tasks = constellations.flatMap(constellation => constellation.stars.map((star, index) => ({ constellation, star, index })));
-
-const decodeXml = value => value
-  ?.replaceAll('&amp;', '&')
-  .replaceAll('&lt;', '<')
-  .replaceAll('&gt;', '>')
-  .replaceAll('&quot;', '"')
-  .trim() || null;
-
-const tag = (xml, name) => decodeXml(xml.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`))?.[1]?.replace(/<[^>]+>/g, ''));
-const numberTag = (xml, name) => {
-  const value = Number(tag(xml, name));
-  return Number.isFinite(value) ? value : null;
+const root = new URL('../', import.meta.url);
+const sources = JSON.parse(await readFile(new URL('data/sky-sources.json', root), 'utf8'));
+const groups = JSON.parse(await readFile(new URL('constellations.json', root), 'utf8'));
+const fetchText = async url => {
+  const response = await fetch(url, { signal: AbortSignal.timeout(120000) });
+  if (!response.ok) throw new Error(`${response.status}: ${url}`);
+  return response.text();
 };
-
-async function fetchByCoordinates(raHours, decDegrees) {
-  const raDegrees = raHours * 15;
-  const query = `select top 1 main_id,ra,dec,plx_value,sp_type,DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',${raDegrees},${decDegrees})) as separation from basic where sp_type is not null and CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',${raDegrees},${decDegrees},0.35))=1 order by separation asc`;
-  const url = `https://simbad.cds.unistra.fr/simbad/sim-tap/sync?request=doQuery&lang=adql&format=json&query=${encodeURIComponent(query)}`;
-  const response = await fetch(url, { signal: AbortSignal.timeout(30_000) });
-  if (!response.ok) return null;
-  const payload = await response.json();
-  const row = payload.data?.[0];
-  if (!row) return null;
-  const [catalogName, raDegreesResult, declinationDegrees, parallaxMas, spectralType] = row;
-  return { catalogName, raDegrees: raDegreesResult, declinationDegrees, parallaxMas, spectralType };
-}
-
-function stellarDescription(name, constellationName, spectralType, magnitude, distance) {
-  const genitives = { Jäär: 'Jäära', Sõnn: 'Sõnni', Kaksikud: 'Kaksikute', Vähk: 'Vähi', Lõvi: 'Lõvi', Neitsi: 'Neitsi', Kaalud: 'Kaalude', Skorpion: 'Skorpioni', Ambur: 'Amburi', Kaljukits: 'Kaljukitse', Veevalaja: 'Veevalaja', Kalad: 'Kalade' };
-  const classLetter = spectralType?.match(/[OBAFGKM]/i)?.[0]?.toUpperCase();
-  const colors = { O: 'sinine', B: 'sinakasvalge', A: 'valge', F: 'kollakasvalge', G: 'kollane', K: 'oranžikas', M: 'punakas' };
-  let stage = 'täht';
-  if (/I[a|b]?\b/.test(spectralType || '')) stage = 'ülisuur täht';
-  else if (/III/.test(spectralType || '')) stage = 'hiidtäht';
-  else if (/IV/.test(spectralType || '')) stage = 'allhiid';
-  else if (/V/.test(spectralType || '')) stage = 'peajada täht';
-  const kind = colors[classLetter] ? `${colors[classLetter]} ${stage}` : stage;
-  const distanceText = distance ? ` ja see asub ligikaudu ${distance.toLocaleString('et-EE')} valgusaasta kaugusel` : '';
-  return `${name} on ${genitives[constellationName] || constellationName} tähtkuju joonisesse kuuluv ${kind}. Tähe näiv tähesuurus on ${magnitude.toFixed(2).replace('.', ',')}${distanceText}.`;
-}
-
-async function fetchStar(task) {
-  if (!Array.isArray(task.star)) {
-    return {
-      ...task.star,
-      description: stellarDescription(task.star.name, task.constellation.name, task.star.spectralType, task.star.apparentMagnitude, task.star.distanceLightYears)
-    };
+function csvRow(line) {
+  const cells = []; let value = '', quoted = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"' && line[i + 1] === '"' && quoted) { value += '"'; i++; }
+    else if (ch === '"') quoted = !quoted;
+    else if (ch === ',' && !quoted) { cells.push(value); value = ''; }
+    else value += ch;
   }
-  const [name, fallbackRa, fallbackDec, magnitude] = task.star;
-  const url = `https://cds.unistra.fr/cgi-bin/nph-sesame/-oxp/SNV?${encodeURIComponent(name)}`;
-  let response;
-  for (let attempt = 0; attempt < 3; attempt++) {
-    try {
-      response = await fetch(url, { signal: AbortSignal.timeout(30_000) });
-      if (response.ok) break;
-    } catch (error) {
-      if (attempt === 2) throw error;
-      await new Promise(resolve => setTimeout(resolve, 800 * (attempt + 1)));
-    }
+  cells.push(value); return cells;
+}
+const [csv, cultureText, namesHtml] = await Promise.all([
+  fetchText(sources.hyg.url), fetchText(sources.figures.url), fetchText(sources.names.url)
+]);
+console.log('Source catalogs downloaded.');
+const culture = JSON.parse(cultureText);
+const lines = csv.trim().split(/\r?\n/);
+const headers = csvRow(lines.shift());
+const rows = lines.map(line => Object.fromEntries(csvRow(line).map((v, i) => [headers[i], v])));
+const byHip = new Map(rows.filter(s => s.hip).map(s => [Number(s.hip), s]));
+const nameRows = [...namesHtml.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)].map(m =>
+  [...m[1].matchAll(/<t[dh]\b[^>]*>([\s\S]*?)<\/t[dh]>/gi)].map(c => c[1].replace(/<[^>]*>/g, '').replace(/&[^;]+;/g, ' ').trim()));
+const nameByHip = new Map();
+for (const row of nameRows) {
+  const hip = Number(row[3]);
+  if (Number.isInteger(hip) && hip > 0 && row[0]) nameByHip.set(hip, row[0]);
+}
+if (nameByHip.size < 300) throw new Error('IAU name catalog format changed; refusing partial data.');
+const number = value => value === '' || value === undefined ? null : Number(value);
+const greek = { Alp:'α', Bet:'β', Gam:'γ', Del:'δ', Eps:'ε', Zet:'ζ', Eta:'η', The:'θ', Iot:'ι', Kap:'κ', Lam:'λ', Mu:'μ', Nu:'ν', Xi:'ξ', Omi:'ο', Pi:'π', Rho:'ρ', Sig:'σ', Tau:'τ', Ups:'υ', Phi:'φ', Chi:'χ', Psi:'ψ', Ome:'ω' };
+function designation(row) {
+  if (row.bayer) return `${row.bayer.replace(/[A-Za-z]+/, code => greek[code] || code).replaceAll('-', ' ')} ${row.con}`;
+  if (row.flam) return `${row.flam} ${row.con}`;
+  return null;
+}
+function makeStar(hip, group) {
+  const row = byHip.get(hip);
+  if (!row) throw new Error(`HIP ${hip} missing from HYG`);
+  if (group && row.con !== group.abbreviation) throw new Error(`HIP ${hip} belongs to ${row.con}, not ${group.abbreviation}`);
+  const raHours = number(row.ra), declinationDegrees = number(row.dec), apparentMagnitude = number(row.mag);
+  if (![raHours, declinationDegrees, apparentMagnitude].every(Number.isFinite)) throw new Error(`Invalid HIP ${hip}`);
+  const dist = number(row.dist);
+  // 100000 pc is HYG's sentinel for missing/unphysical parallax.
+  const distanceLightYears = dist > 0 && dist < 100000 ? Math.round(dist * 3.26156) : null;
+  const name = nameByHip.get(hip) || designation(row) || `HIP ${hip}`;
+  const spectralType = row.spect || null;
+  const description = `${name} paikneb ${group ? 'tähtkujus ' + group.name : 'taevas'}. Näiv tähesuurus on ${apparentMagnitude.toFixed(2).replace('.', ',')}${spectralType ? ` ja spektriklass ${spectralType}` : ''}.${distanceLightYears ? ` Kataloogi kaugushinnang on ligikaudu ${distanceLightYears.toLocaleString('et-EE')} valgusaastat.` : ' Usaldusväärne kaugushinnang selles kataloogis puudub.'}`;
+  return { id: `hip-${hip}`, hip, name, catalogName: `HIP ${hip}`, designation: designation(row),
+    aliases: sources.aliases[String(hip)] || [], raHours, declinationDegrees, apparentMagnitude,
+    distanceLightYears, spectralType, description, source: 'HYG v4.1 (Hipparcos)',
+    sourceUrl: `https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HIP%20${hip}` };
+}
+const figureStars = new Set();
+for (const group of groups) {
+  const figure = culture.constellations.find(c => c.id === `CON modern ${group.abbreviation}`);
+  if (!figure) throw new Error(`No reference figure for ${group.id}`);
+  const hips = [...new Set([...figure.lines.flat(), ...(sources.extraHipIds[group.abbreviation] || [])])];
+  if (!hips.every(Number.isInteger)) throw new Error(`Unsupported identifier in ${group.id}`);
+  group.stars = hips.map(hip => makeStar(hip, group));
+  hips.forEach(hip => figureStars.add(hip));
+  const indices = new Map(hips.map((hip, index) => [hip, index]));
+  const edges = new Map();
+  for (const chain of figure.lines) for (let i = 1; i < chain.length; i++) {
+    const pair = [indices.get(chain[i - 1]), indices.get(chain[i])];
+    if (pair[0] === pair[1]) throw new Error(`Zero-length edge in ${group.id}`);
+    edges.set([...pair].sort((a, b) => a - b).join('-'), pair);
   }
-  if (!response?.ok) throw new Error(`${name}: HTTP ${response?.status || 'unknown'}`);
-  const xml = await response.text();
-  const resolver = xml.match(/<Resolver name="[^"]*Simbad[^"]*">([\s\S]*?)<\/Resolver>/i)?.[1];
-  const resolvedRa = resolver ? numberTag(resolver, 'jradeg') : null;
-  const resolvedDec = resolver ? numberTag(resolver, 'jdedeg') : null;
-  const deltaRa = resolvedRa === null ? Infinity : Math.abs(resolvedRa - fallbackRa * 15) * Math.cos(fallbackDec * Math.PI / 180);
-  const separation = Math.hypot(deltaRa, (resolvedDec ?? Infinity) - fallbackDec);
-  const fallback = !resolver || separation > 1 ? await fetchByCoordinates(fallbackRa, fallbackDec) : null;
-  if (!resolver && !fallback) throw new Error(`${name}: SIMBAD kirjet ei leitud`);
-
-  const parallaxBlock = resolver?.match(/<plx>([\s\S]*?)<\/plx>/)?.[1] || '';
-  const parallaxMas = fallback?.parallaxMas ?? numberTag(parallaxBlock, 'v');
-  const distanceLightYears = parallaxMas && parallaxMas > 0 ? Math.round(3261.56 / parallaxMas) : null;
-  const spectralType = fallback?.spectralType ?? tag(resolver || '', 'spType');
-  const raDegrees = fallback?.raDegrees ?? resolvedRa;
-  const decDegrees = fallback?.declinationDegrees ?? resolvedDec;
-  const raHours = raDegrees === null ? fallbackRa : raDegrees / 15;
-
-  return {
-    id: `${task.constellation.id}-${task.index + 1}`,
-    name,
-    catalogName: fallback?.catalogName ?? tag(resolver || '', 'oname'),
-    raHours: Number(raHours.toFixed(6)),
-    declinationDegrees: Number((decDegrees ?? fallbackDec).toFixed(6)),
-    apparentMagnitude: magnitude,
-    distanceLightYears,
-    spectralType,
-    description: stellarDescription(name, task.constellation.name, spectralType, magnitude, distanceLightYears),
-    source: 'SIMBAD'
-  };
+  group.lines = [...edges.values()];
+  group.figureSource = { name: 'Stellarium Modern', revision: sources.figures.revision, license: 'CC BY-SA 4.0' };
+  group.visibilityNote = Math.min(...group.stars.map(s => s.declinationDegrees)) < -32
+    ? 'Eestist on nähtav ainult osa tähtkujust; lõunapoolsed tähed jäävad horisondi alla.'
+    : 'Eesti laiuskraadidel; täpne nähtavus sõltub vaatlusajast ja horisondist.';
 }
-
-const results = new Array(tasks.length);
-let cursor = 0;
-async function worker() {
-  while (cursor < tasks.length) {
-    const current = cursor++;
-    results[current] = await fetchStar(tasks[current]);
-    process.stdout.write(`\rSIMBAD ${current + 1}/${tasks.length}`);
-  }
+const backgroundStars = rows.filter(s => s.hip && Number(s.mag) <= sources.backgroundMagnitudeLimit && !figureStars.has(Number(s.hip)))
+  .map(s => makeStar(Number(s.hip), null));
+const catalog = { epoch: 'J2000', generatedAt: new Date().toISOString(), representation: 'Angular celestial sphere; distances are not radial positions',
+  backgroundMagnitudeLimit: sources.backgroundMagnitudeLimit,
+  sources, checksums: { hyg: createHash('sha256').update(csv).digest('hex'), figures: createHash('sha256').update(cultureText).digest('hex'), names: createHash('sha256').update(namesHtml).digest('hex') },
+  backgroundStars };
+for (const group of groups) {
+  if (new Set(group.stars.map(s => s.id)).size !== group.stars.length) throw new Error(`Duplicate stars in ${group.id}`);
+  for (const [a, b] of group.lines) if (!group.stars[a] || !group.stars[b]) throw new Error(`Invalid line in ${group.id}`);
 }
-
-await Promise.all(Array.from({ length: 6 }, worker));
-let resultIndex = 0;
-for (const constellation of constellations) {
-  constellation.stars = constellation.stars.map(() => results[resultIndex++]);
-}
-
-await writeFile(fileUrl, `${JSON.stringify(constellations, null, 2)}\n`, 'utf8');
-console.log(`\nUuendatud ${results.length} tähe andmed.`);
+await writeFile(new URL('constellations.json', root), JSON.stringify(groups, null, 2) + '\n');
+await writeFile(new URL('data/sky-catalog.json', root), JSON.stringify(catalog) + '\n');
+console.log(`${groups.length} constellations, ${figureStars.size} foreground stars, ${backgroundStars.length} real background stars.`);

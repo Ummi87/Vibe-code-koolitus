@@ -109,6 +109,7 @@
                   <div><dt>Spektriklass</dt><dd id="starSpectralType"></dd></div>
                   <div><dt>Asukoht</dt><dd id="starCoordinates"></dd></div>
                 </dl>
+                <a class="star-source" id="starSource" target="_blank" rel="noopener noreferrer"></a>
                 <button class="star-menu-back" type="button" id="backToConstellation">Vaata tähtkuju <span aria-hidden="true">→</span></button>
               </aside>
               <p class="map-data-error" id="mapDataError" role="alert" hidden>Taevakaardi andmeid ei õnnestunud laadida.</p>
@@ -120,6 +121,13 @@
               <span><i class="legend-line"></i> Tähtkuju põhijoonis</span>
               <span id="starCount">Kaardistatud tähed</span>
             </div>
+            <div class="star-picker"><label for="starSelect">Tähed valitud tähtkujus</label><select id="starSelect" class="field-control"></select></div>
+            <details class="sky-about">
+              <summary>Kaardi täpsus ja allikad</summary>
+              <p>Kaart näitab 12 traditsioonilise sodiaagimärgi tähtkuju ja tähtede J2000 asukohti taevaskeral. Sfääri pööramine näitab tähtede suundi Maalt; kaugused valgusaastates on tähe infopaneelis. See ei ole kindla vaatluskoha ja kellaaja horisondikaart.</p>
+              <p>Tähtkujude ühendusjooned järgivad Stellariumi „Modern” jooniseid. Need on kokkuleppelised kujundid, mitte IAU tähtkujude piirid. Päikese tegelik tee läbib lisaks ka Maokandjat; sünnikuupäeva valik kasutab siin 12 lääne astroloogia päikesemärki.</p>
+              <p>Tähed: <a href="https://github.com/astronexus/HYG-Database" target="_blank" rel="noopener noreferrer">HYG v4.1, David Nash / Astronexus</a>. Joonised: <a href="https://github.com/Stellarium/stellarium/tree/master/skycultures/modern" target="_blank" rel="noopener noreferrer">Stellariumi meeskond</a>. Mõlema andmestiku litsents: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Tähenimed: <a href="https://exopla.net/star-names/modern-iau-star-names/" target="_blank" rel="noopener noreferrer">IAU WGSN</a>. Andmestikud on valitud ja kohandatud selle kaardi jaoks.</p>
+            </details>
           </article>
 
           <aside class="birth-card" id="birth" aria-labelledby="birthTitle">
@@ -142,7 +150,7 @@
                   <input id="birthDate" name="birthDate" type="date" required aria-describedby="dateHelp dateError">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/></svg>
                 </div>
-                <p class="field-help" id="dateHelp">Kasuta täpset sünnikuupäeva.</p>
+                <p class="field-help" id="dateHelp">Leia lääne astroloogia päikesemärk sünnikuupäeva järgi.</p>
               </div>
 
               <div class="age-fields" id="ageFields" hidden>
@@ -225,7 +233,7 @@
               </div>
             </article>
             <article class="fact-card"><small>HELEDAIM TÄHT</small><strong id="brightestStar">Hamal</strong><span id="brightestMagnitude">2,00 tähesuurust</span></article>
-            <article class="fact-card"><small>PARIM VAATLUSAEG</small><strong id="bestMonth">Detsember</strong><span>Eesti laiuskraadidel</span></article>
+            <article class="fact-card"><small>VAATLUSHOOAEG</small><strong id="bestMonth">Detsember</strong><span id="visibilityNote">Eesti laiuskraadidel</span></article>
             <article class="fact-card"><small>TAEVAPIIRKOND</small><strong id="hemisphere">Põhjataevas</strong><span id="constellationArea">441 ruutkraadi</span></article>
           </div>
         </section>

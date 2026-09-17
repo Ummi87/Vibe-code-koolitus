@@ -1,16 +1,180 @@
 <!doctype html>
-<html lang="et">
+<html lang="et" data-theme="dark" data-motion="standard">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Vanakooli Tetris</title>
-  <style>
-    html,body { margin:0; overflow:hidden; background:#101721; }
-    canvas { display:block; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interaktiivne 3D-taevakaart päris tähekoordinaatidel ja sünnikuupäeva sodiaagimärk.">
+  <meta name="theme-color" content="#07101f">
+  <title>Astra Atlas — 3D-taevakaart</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.min.js"></script>
+  <a class="skip-link" href="#main">Liigu põhisisu juurde</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Põhinavigatsioon">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>Astra</strong><small>Taevakaart</small></span>
+      </div>
+
+      <nav class="nav-list">
+        <a class="active" href="#atlas"><span>01</span>Taevakaart</a>
+        <a href="#birth"><span>02</span>Sünnikaart</a>
+        <a href="#details"><span>03</span>Tähtkuju detailid</a>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="status-dot" aria-hidden="true"></span>
+        <div><strong>Reaalne täheandmestik</strong><small>J2000 ekvatoriaalkoordinaadid</small></div>
+      </div>
+
+      <p class="sidebar-foot">12 sodiaagi tähtkuju · põhitähtede asukohad</p>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menuButton" type="button" aria-label="Ava menüü" aria-controls="sidebar" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <div class="breadcrumb"><span>ASTRA ATLAS</span><b>/</b><strong>Taevaskera</strong></div>
+        <div class="top-actions">
+          <label class="constellation-jump">
+            <span class="sr-only">Vali tähtkuju</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+            <select id="constellationSelect" aria-label="Vali tähtkuju"></select>
+          </label>
+          <button class="mode-button" id="motionButton" type="button" aria-label="Muuda liikumise tugevust">
+            <span aria-hidden="true">◎</span><b id="motionLabel">Standard</b>
+          </button>
+          <button class="icon-button" id="themeButton" type="button" aria-label="Vaheta heledat ja tumedat teemat">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="intro" id="atlas" aria-labelledby="pageTitle">
+          <div>
+            <h1 id="pageTitle">Leia oma koht<br><em>tähtede keskel.</em></h1>
+          </div>
+          <p class="intro-copy">Uuri sodiaagi tähtkujusid päris taevakoordinaatidel. Lohista taevaskera, suumi ja vali tähtkuju, et näha selle heledamaid tähti.</p>
+        </section>
+
+        <section class="atlas-grid" aria-label="Taevakaart ja sünnikuupäeva analüüs">
+          <article class="sky-card" aria-labelledby="skyTitle">
+            <div class="card-head sky-head">
+              <div>
+                <h2 id="skyTitle">Sodiaagi vöö</h2>
+              </div>
+            </div>
+
+            <div class="sky-stage" id="skyStage">
+              <canvas id="skyCanvas" tabindex="0" aria-label="Pööratav ja suumitav kolmemõõtmeline taevakaart"></canvas>
+              <div class="sky-vignette" aria-hidden="true"></div>
+              <div class="coordinate-readout" aria-hidden="true">
+                <span id="raReadout">RA 00h 00m</span>
+                <span id="decReadout">DEC +00°</span>
+              </div>
+              <div class="map-controls" aria-label="Kaardi juhtnupud">
+                <button type="button" id="zoomIn" aria-label="Suurenda kaarti">+</button>
+                <button type="button" id="zoomOut" aria-label="Vähenda kaarti">−</button>
+                <button type="button" id="resetView" aria-label="Taasta kaardi vaade">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.34-5.66L4 8.67M4 4v4.67h4.67"/></svg>
+                </button>
+              </div>
+              <aside class="constellation-menu" id="constellationMenu" aria-label="Valitud tähtkuju" hidden>
+                <button class="constellation-menu-close" id="closeConstellationMenu" type="button" aria-label="Sulge tähtkuju menüü">×</button>
+                <span class="marker-glyph" id="markerGlyph" aria-hidden="true">♈</span>
+                <div class="constellation-menu-copy">
+                  <h3 id="markerName">Jäär</h3>
+                  <p class="constellation-menu-meta"><span id="markerLatin">Aries · Ari</span><span id="markerLocation">Põhjataevas</span></p>
+                  <p id="markerDescription">Jäär on põhjataeva tagasihoidlik tähtkuju.</p>
+                  <button type="button" id="openConstellationDetails">Vaata täielikke andmeid <span aria-hidden="true">↓</span></button>
+                </div>
+              </aside>
+              <p class="map-data-error" id="mapDataError" role="alert" hidden>Taevakaardi andmeid ei õnnestunud laadida.</p>
+              <div class="map-hint">Lohista pööramiseks · klõpsa tähtkujul · keri suumimiseks</div>
+            </div>
+
+            <div class="sky-footer">
+              <span><i class="legend-star"></i> Tähe suurus näitab näivat heledust</span>
+              <span><i class="legend-line"></i> Tähtkuju põhijoonis</span>
+              <span id="starCount">Kaardistatud tähed</span>
+            </div>
+          </article>
+
+          <aside class="birth-card" id="birth" aria-labelledby="birthTitle">
+            <div class="card-head">
+              <div>
+                <h2 id="birthTitle">Sinu sodiaagimärk</h2>
+              </div>
+              <span class="birth-orbit" aria-hidden="true"></span>
+            </div>
+
+            <form id="birthForm" novalidate>
+              <label for="birthDate">Sünnikuupäev</label>
+              <div class="date-control">
+                <input id="birthDate" name="birthDate" type="date" required aria-describedby="dateHelp dateError">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/></svg>
+              </div>
+              <p class="field-help" id="dateHelp">Kasutame lääne astroloogia päikesemärki.</p>
+              <p class="field-error" id="dateError" role="alert"></p>
+              <button class="primary-button" type="submit">
+                <span>Leia minu tähtkuju</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </form>
+
+            <div class="result-empty" id="resultEmpty">
+              <span aria-hidden="true">✦</span>
+              <p>Sisesta kuupäev, et avada sinu märgi iseloom, tugevused ja arengusuund.</p>
+            </div>
+
+            <div class="zodiac-result" id="zodiacResult" hidden aria-live="polite">
+              <div class="result-title-row">
+                <span class="result-glyph" id="resultGlyph">♈</span>
+                <div><p id="resultRange">21. märts – 19. aprill</p><h3 id="resultName">Jäär</h3></div>
+                <span class="element-badge" id="elementBadge">TULI</span>
+              </div>
+              <p class="result-summary" id="resultSummary"></p>
+              <div class="trait-grid">
+                <div><small>TUGEVUS</small><strong id="resultStrength"></strong></div>
+                <div><small>ARENGUKOHT</small><strong id="resultGrowth"></strong></div>
+                <div><small>RÜTM</small><strong id="resultMode"></strong></div>
+                <div><small>PLANEET</small><strong id="resultPlanet"></strong></div>
+              </div>
+              <button class="text-button" type="button" id="showOnMap">Näita taevakaardil <span>↗</span></button>
+            </div>
+
+            <p class="disclaimer">Astroloogiline tõlgendus on eneseanalüüsiks ja meelelahutuseks, mitte teaduslik isiksusehinnang.</p>
+          </aside>
+        </section>
+
+        <section class="details-section" id="details" aria-labelledby="detailsTitle">
+          <div class="section-heading">
+            <div><h2 id="detailsTitle">Jäär taevas</h2></div>
+            <p id="detailsDescription">Jäär on põhjataeva väike tähtkuju, mille kolm peamist tähte moodustavad selge kaare.</p>
+          </div>
+          <div class="detail-grid">
+            <article class="detail-main">
+              <div class="constellation-symbol" id="detailGlyph" aria-hidden="true">♈</div>
+              <div>
+                <p class="latin-name" id="latinName">ARIES · ARI</p>
+                <h3 id="detailName">Jäär</h3>
+                <p id="mythText"></p>
+              </div>
+            </article>
+            <article class="fact-card"><small>HELEDAIM TÄHT</small><strong id="brightestStar">Hamal</strong><span id="brightestMagnitude">2,00 tähesuurust</span></article>
+            <article class="fact-card"><small>PARIM VAATLUSAEG</small><strong id="bestMonth">Detsember</strong><span>Eesti laiuskraadidel</span></article>
+            <article class="fact-card"><small>TAEVAPIIRKOND</small><strong id="hemisphere">Põhjataevas</strong><span id="constellationArea">441 ruutkraadi</span></article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="menu-scrim" id="menuScrim" hidden></div>
   <script src="sketch.js"></script>
 </body>
 </html>

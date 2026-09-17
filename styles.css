@@ -1,0 +1,147 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --surface: rgba(255,255,255,.78);
+  --solid: #fff;
+  --surface-alt: #edf3fa;
+  --text: #0b1529;
+  --muted: #68758b;
+  --border: rgba(21,50,95,.11);
+  --signal: #0a42d8;
+  --signal-deep: #072e9f;
+  --energy: #00a9d7;
+  --shadow: 0 18px 55px rgba(30,66,120,.09);
+  --glass: rgba(255,255,255,.74);
+  --focus: 0 0 0 4px rgba(0,178,220,.2);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #07101f;
+  --surface: rgba(12,25,46,.74);
+  --solid: #0d1a2d;
+  --surface-alt: #101f35;
+  --text: #eef6ff;
+  --muted: #93a1b7;
+  --border: rgba(147,200,255,.14);
+  --signal: #3e72ff;
+  --signal-deep: #1846c5;
+  --energy: #00d9ff;
+  --shadow: 0 20px 65px rgba(0,0,0,.25);
+  --glass: rgba(10,22,40,.78);
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, sans-serif; min-width: 320px; }
+button, input, select { font: inherit; }
+button, select { cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible, canvas:focus-visible { outline: 2px solid var(--energy); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; z-index: 100; top: 12px; left: 12px; background: var(--solid); color: var(--text); padding: 12px 16px; border-radius: 10px; transform: translateY(-150%); }
+.skip-link:focus { transform: translateY(0); }
+
+.app-shell { min-height: 100vh; }
+.sidebar { position: fixed; inset: 0 auto 0 0; z-index: 20; width: 242px; display: flex; flex-direction: column; padding: 26px 18px 22px; background: color-mix(in srgb, var(--solid) 94%, transparent); border-right: 1px solid var(--border); }
+.brand { display: flex; align-items: center; gap: 12px; padding: 0 12px 30px; }
+.brand > span:last-child { display: grid; line-height: 1; }
+.brand strong { font-size: 1rem; letter-spacing: -.025em; }
+.brand small { margin-top: 5px; color: var(--muted); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; }
+.brand-mark { position: relative; width: 35px; height: 35px; border-radius: 12px; background: linear-gradient(145deg,var(--signal),var(--signal-deep)); box-shadow: 0 10px 25px rgba(10,66,216,.25); }
+.brand-mark i { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #fff; box-shadow: 0 0 8px var(--energy); }
+.brand-mark i:nth-child(1) { left: 9px; top: 20px; }.brand-mark i:nth-child(2) { left: 17px; top: 10px; }.brand-mark i:nth-child(3) { right: 7px; bottom: 8px; }
+.brand-mark::before,.brand-mark::after { content:""; position:absolute; height:1px; background:rgba(255,255,255,.7); transform-origin:left center; }
+.brand-mark::before { width:13px; left:10px; top:20px; transform:rotate(-46deg); }.brand-mark::after { width:11px; left:18px; top:11px; transform:rotate(63deg); }
+.nav-list { display: grid; gap: 5px; }
+.nav-list a { position: relative; display: flex; align-items: center; gap: 13px; min-height: 46px; padding: 0 13px; color: var(--muted); text-decoration: none; border-radius: 11px; font-size: .86rem; font-weight: 600; transition: 160ms ease; }
+.nav-list a span { font: 600 .6rem ui-monospace, monospace; opacity: .55; }
+.nav-list a:hover { color: var(--text); background: var(--surface-alt); transform: translateX(2px); }
+.nav-list a.active { color: var(--signal); background: color-mix(in srgb, var(--signal) 9%, transparent); }
+.nav-list a.active::before { content:""; position:absolute; left:-18px; width:2px; height:24px; background:var(--signal); box-shadow:0 0 12px var(--energy); }
+.sidebar-note { display: flex; align-items: flex-start; gap: 10px; margin-top: auto; padding: 14px; background: var(--surface-alt); border:1px solid var(--border); border-radius:14px; }
+.sidebar-note div { display:grid; gap:4px; }.sidebar-note strong { font-size:.71rem; }.sidebar-note small { color:var(--muted); font-size:.61rem; line-height:1.35; }
+.status-dot { flex: 0 0 auto; width:8px; height:8px; margin-top:3px; border-radius:50%; background:#14be81; box-shadow:0 0 0 4px rgba(20,190,129,.13); }
+.sidebar-foot { margin:16px 5px 0; color:var(--muted); font:500 .58rem/1.55 ui-monospace,monospace; letter-spacing:.05em; text-transform:uppercase; }
+
+.workspace { margin-left:242px; min-height:100vh; }
+.topbar { position:sticky; top:0; z-index:15; height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:0 clamp(24px,4vw,64px); background:var(--glass); border-bottom:1px solid var(--border); backdrop-filter:blur(18px); }
+.breadcrumb { display:flex; align-items:center; gap:10px; font-size:.74rem; }.breadcrumb span { color:var(--muted); font:600 .64rem ui-monospace,monospace; letter-spacing:.11em; }.breadcrumb b { color:var(--border); }.breadcrumb strong { font-size:.76rem; }
+.top-actions { display:flex; align-items:center; gap:8px; }
+.icon-button,.mode-button,.constellation-jump { height:42px; border:1px solid var(--border); background:var(--surface); color:var(--text); border-radius:12px; }
+.icon-button { width:42px; display:grid; place-items:center; padding:0; }
+.icon-button svg,.constellation-jump svg,.date-control svg { width:18px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.mode-button { display:flex; align-items:center; gap:7px; padding:0 13px; }.mode-button span { color:var(--energy); }.mode-button b { font-size:.72rem; }
+.constellation-jump { display:flex; align-items:center; gap:8px; padding:0 11px; }
+.constellation-jump svg { width:16px; color:var(--muted); }.constellation-jump select { min-width:130px; appearance:none; border:0; outline:0; background:transparent; color:var(--text); font-size:.75rem; font-weight:600; }
+.mobile-menu { display:none; }
+
+main { width:min(100%,1420px); margin:0 auto; padding:clamp(36px,5vw,72px) clamp(24px,5vw,74px) 90px; }
+.intro { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(260px,.6fr); align-items:end; gap:60px; margin-bottom:36px; }
+h1 { margin:0; font-size:clamp(2.65rem,5vw,5.25rem); line-height:.96; letter-spacing:-.065em; font-weight:650; }
+h1 em { color:var(--signal); font-style:normal; }
+.intro-copy { max-width:430px; margin:0 0 7px; color:var(--muted); font-size:.96rem; line-height:1.7; }
+
+.atlas-grid { display:grid; grid-template-columns:minmax(0,1.62fr) minmax(320px,.78fr); gap:18px; align-items:stretch; }
+.sky-card,.birth-card,.detail-main,.fact-card { background:var(--surface); border:1px solid var(--border); box-shadow:var(--shadow); }
+.sky-card,.birth-card { border-radius:22px; overflow:hidden; }
+.card-head { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:18px; padding:17px 22px; }
+.card-head h2,.section-heading h2 { margin:0; font-size:1.14rem; letter-spacing:-.02em; }
+.sky-stage { position:relative; height:clamp(430px,53vw,650px); min-height:430px; background:#050b16; overflow:hidden; cursor:grab; touch-action:none; }
+.sky-stage:active { cursor:grabbing; }.sky-stage canvas { width:100%; height:100%; display:block; }
+.sky-vignette { position:absolute; inset:0; pointer-events:none; box-shadow:inset 0 0 100px rgba(0,0,0,.42); }
+.coordinate-readout { position:absolute; top:18px; left:20px; display:flex; gap:14px; color:rgba(220,240,255,.65); font:600 .58rem ui-monospace,monospace; letter-spacing:.08em; }
+.map-controls { position:absolute; top:17px; right:17px; display:grid; gap:6px; }
+.map-controls button { width:36px; height:36px; display:grid; place-items:center; border:1px solid rgba(175,215,255,.18); border-radius:10px; background:rgba(8,22,42,.72); color:#eef8ff; backdrop-filter:blur(10px); font-size:1.1rem; }
+.map-controls svg { width:16px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.constellation-menu { position:absolute; left:20px; bottom:22px; width:min(360px,calc(100% - 40px)); display:grid; grid-template-columns:auto 1fr; align-items:start; gap:13px; padding:15px 42px 15px 15px; border:1px solid rgba(197,233,255,.22); border-radius:16px; background:rgba(7,20,38,.88); color:#eef8ff; backdrop-filter:blur(18px); box-shadow:0 18px 50px rgba(0,0,0,.32); animation:reveal 250ms ease; cursor:default; }
+.marker-glyph { display:grid; place-items:center; width:35px; height:35px; border-radius:10px; background:linear-gradient(145deg,#0a42d8,#00a9d7); font-size:1.2rem; }
+.constellation-menu-copy h3 { margin:1px 0 5px; font-size:.92rem; }
+.constellation-menu-meta { display:flex; flex-wrap:wrap; gap:4px 12px; margin:0 0 8px; color:#8eabc0; font-size:.67rem; }
+.constellation-menu-copy > p:last-of-type { margin:0; color:#c1d4e2; font-size:.7rem; line-height:1.5; }
+.constellation-menu-copy > button { display:flex; align-items:center; gap:8px; margin-top:11px; padding:0; border:0; background:transparent; color:#73e6ff; font-size:.69rem; font-weight:650; }
+.constellation-menu-close { position:absolute; top:9px; right:10px; width:30px; height:30px; border:0; border-radius:9px; background:rgba(255,255,255,.06); color:#c7d8e4; font-size:1.15rem; line-height:1; }
+.map-data-error { position:absolute; inset:auto 20px 20px; margin:0; padding:13px 15px; border:1px solid rgba(222,37,79,.35); border-radius:12px; background:rgba(52,10,25,.88); color:#ffd7e0; font-size:.75rem; }
+.map-hint { position:absolute; right:18px; bottom:18px; color:rgba(207,230,245,.56); font-size:.65rem; pointer-events:none; }
+.sky-footer { min-height:48px; display:flex; align-items:center; gap:22px; padding:0 20px; color:var(--muted); font-size:.64rem; }
+.sky-footer span:last-child { margin-left:auto; font-family:ui-monospace,monospace; }.legend-star { display:inline-block; width:5px; height:5px; margin-right:7px; border-radius:50%; background:var(--energy); box-shadow:0 0 7px var(--energy); }.legend-line { display:inline-block; width:16px; height:1px; margin:0 7px 2px 0; background:var(--signal); }
+
+.birth-card { display:flex; flex-direction:column; padding-bottom:18px; }
+.birth-orbit { width:34px; height:34px; border:1px solid color-mix(in srgb,var(--energy) 60%,transparent); border-radius:50%; box-shadow:0 0 24px color-mix(in srgb,var(--energy) 20%,transparent); position:relative; }.birth-orbit::after { content:""; position:absolute; width:5px; height:5px; border-radius:50%; top:2px; left:4px; background:var(--energy); box-shadow:0 0 8px var(--energy); }
+#birthForm { padding:5px 22px 18px; border-bottom:1px solid var(--border); }
+#birthForm label { display:block; margin-bottom:8px; font-size:.76rem; font-weight:650; }
+.date-control { position:relative; }.date-control input { width:100%; height:50px; padding:0 46px 0 14px; border:1px solid var(--border); border-radius:12px; background:var(--solid); color:var(--text); font-size:.86rem; }.date-control input:focus { border-color:var(--signal); box-shadow:var(--focus); outline:0; }.date-control input[aria-invalid="true"] { border-color:#de254f; }
+.date-control svg { position:absolute; right:15px; top:16px; color:var(--muted); pointer-events:none; }
+.field-help,.field-error { min-height:16px; margin:7px 1px 0; color:var(--muted); font-size:.64rem; line-height:1.4; }.field-error { color:#de254f; font-weight:600; }.field-error:not(:empty) + .primary-button { margin-top:6px; }
+.primary-button { width:100%; height:51px; margin-top:14px; display:flex; align-items:center; justify-content:space-between; padding:0 17px; border:0; border-radius:12px; color:#fff; background:linear-gradient(120deg,var(--signal-deep),#0a42d8 65%,#0668cb); box-shadow:0 12px 28px rgba(7,46,159,.24); font-size:.78rem; font-weight:650; transition:transform 160ms ease,box-shadow 160ms ease; }.primary-button:hover { transform:translateY(-1px); box-shadow:0 15px 35px rgba(7,46,159,.34); }.primary-button svg { width:18px; fill:none; stroke:currentColor; stroke-width:1.8; }
+.result-empty { flex:1; display:grid; place-items:center; align-content:center; gap:12px; min-height:230px; padding:24px; text-align:center; color:var(--muted); }.result-empty span { color:var(--energy); font-size:1.5rem; text-shadow:0 0 18px var(--energy); }.result-empty p { max-width:260px; margin:0; font-size:.77rem; line-height:1.65; }
+.zodiac-result { padding:21px 22px 12px; animation:reveal 500ms cubic-bezier(.2,.8,.2,1); }
+.result-title-row { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:12px; }.result-glyph { display:grid; place-items:center; width:49px; height:49px; border-radius:14px; color:#fff; background:linear-gradient(145deg,var(--signal),var(--signal-deep)); font-size:1.65rem; box-shadow:0 12px 30px rgba(10,66,216,.22); }.result-title-row p { margin:0 0 2px; color:var(--muted); font-size:.62rem; }.result-title-row h3 { margin:0; font-size:1.25rem; }.element-badge { align-self:start; padding:6px 8px; border:1px solid var(--border); border-radius:999px; color:var(--signal); font:700 .54rem ui-monospace,monospace; letter-spacing:.08em; }
+.result-summary { margin:18px 0; color:var(--muted); font-size:.77rem; line-height:1.65; }
+.trait-grid { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--border); border-radius:14px; overflow:hidden; }.trait-grid div { min-height:68px; display:grid; align-content:center; gap:5px; padding:11px 12px; }.trait-grid div:nth-child(odd) { border-right:1px solid var(--border); }.trait-grid div:nth-child(-n+2) { border-bottom:1px solid var(--border); }.trait-grid small,.fact-card small { color:var(--muted); font:650 .52rem ui-monospace,monospace; letter-spacing:.09em; }.trait-grid strong { font-size:.68rem; line-height:1.35; }
+.text-button { width:100%; display:flex; align-items:center; justify-content:space-between; padding:15px 2px 4px; border:0; background:transparent; color:var(--signal); font-size:.7rem; font-weight:650; }.text-button span { font-size:1rem; }
+.disclaimer { margin:auto 22px 0; padding:12px 0 0; border-top:1px solid var(--border); color:var(--muted); font-size:.59rem; line-height:1.55; }
+
+.details-section { padding-top:72px; }
+.section-heading { display:flex; align-items:end; justify-content:space-between; gap:35px; margin-bottom:20px; }.section-heading h2 { font-size:clamp(1.6rem,2.5vw,2.2rem); }.section-heading > p { max-width:490px; margin:0; color:var(--muted); font-size:.78rem; line-height:1.65; }
+.detail-grid { display:grid; grid-template-columns:1.65fr repeat(3,1fr); gap:14px; }.detail-main,.fact-card { min-height:170px; border-radius:18px; }.detail-main { display:flex; align-items:center; gap:20px; padding:24px; }.constellation-symbol { flex:0 0 auto; display:grid; place-items:center; width:78px; height:78px; border-radius:22px; background:linear-gradient(145deg,var(--signal-deep),var(--signal)); color:#fff; font-size:2.6rem; box-shadow:0 18px 38px rgba(10,66,216,.22); }.latin-name { margin:0 0 7px; color:var(--energy); font:650 .56rem ui-monospace,monospace; letter-spacing:.12em; }.detail-main h3 { margin:0 0 8px; font-size:1.25rem; }.detail-main p:last-child { max-width:520px; margin:0; color:var(--muted); font-size:.7rem; line-height:1.55; }
+.fact-card { display:flex; flex-direction:column; justify-content:center; gap:8px; padding:20px; }.fact-card strong { font-size:1rem; }.fact-card span { color:var(--muted); font-size:.65rem; }
+
+.menu-scrim { position:fixed; inset:0; z-index:18; background:rgba(1,8,18,.55); backdrop-filter:blur(3px); }
+@keyframes reveal { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:none; } }
+
+@media (max-width:1100px) {
+  .atlas-grid { grid-template-columns:1fr; }.birth-card { display:grid; grid-template-columns:1fr 1fr; align-items:start; }.birth-card .card-head,.birth-card .disclaimer { grid-column:1/-1; }.birth-card #birthForm { border-bottom:0; border-right:1px solid var(--border); }.result-empty,.zodiac-result { min-height:240px; }.detail-grid { grid-template-columns:1.5fr 1fr 1fr; }.fact-card:last-child { grid-column:2/4; min-height:110px; }.sky-stage { height:590px; }
+}
+@media (max-width:800px) {
+  .sidebar { transform:translateX(-105%); transition:transform 250ms ease; box-shadow:20px 0 60px rgba(0,0,0,.18); }.sidebar.open { transform:translateX(0); }.workspace { margin-left:0; }.mobile-menu { display:grid; }.breadcrumb span,.breadcrumb b { display:none; }.topbar { padding:0 18px; }.constellation-jump select { min-width:0; max-width:105px; }.mode-button b { display:none; }.intro { grid-template-columns:1fr; gap:18px; }.intro-copy { max-width:600px; }.detail-grid { grid-template-columns:1fr 1fr; }.detail-main { grid-column:1/-1; }.fact-card:last-child { grid-column:auto; min-height:150px; }.section-heading { align-items:start; flex-direction:column; gap:12px; }
+}
+@media (max-width:580px) {
+  .topbar { height:66px; }.workspace main { padding:30px 14px 60px; }.top-actions { gap:5px; }.constellation-jump { padding:0 8px; }.constellation-jump svg { display:none; }.mode-button { display:none; }.intro { margin-bottom:24px; }.intro h1 { font-size:clamp(2.45rem,13vw,3.8rem); }.atlas-grid { gap:12px; }.sky-card,.birth-card { border-radius:18px; }.card-head { min-height:64px; padding:14px 16px; }.sky-stage { height:480px; min-height:430px; }.sky-footer { padding:10px 15px; min-height:58px; flex-wrap:wrap; gap:8px 14px; }.sky-footer span:last-child { margin-left:0; }.map-hint { display:none; }.birth-card { display:flex; }.birth-card #birthForm { border-right:0; border-bottom:1px solid var(--border); padding-left:16px; padding-right:16px; }.zodiac-result { padding-left:16px; padding-right:16px; }.disclaimer { margin-left:16px; margin-right:16px; }.details-section { padding-top:54px; }.detail-grid { grid-template-columns:1fr; }.detail-main,.fact-card,.fact-card:last-child { grid-column:auto; min-height:140px; }.detail-main { align-items:flex-start; flex-direction:column; }.section-heading > p { font-size:.74rem; }.coordinate-readout { top:14px; left:14px; flex-direction:column; gap:3px; }.constellation-menu { left:14px; bottom:14px; width:calc(100% - 28px); }.map-controls { top:14px; right:14px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; }
+}
+[data-motion="reduced"] *,[data-motion="reduced"] *::before,[data-motion="reduced"] *::after { animation-duration:.01ms!important; transition-duration:.01ms!important; }
+[data-motion="enhanced"] .birth-orbit { animation:orbitPulse 4s ease-in-out infinite; }
+@keyframes orbitPulse { 50% { transform:rotate(180deg) scale(1.08); box-shadow:0 0 34px color-mix(in srgb,var(--energy) 32%,transparent); } }

@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "aries",
+    "name": "Jäär",
+    "latinName": "Aries",
+    "abbreviation": "Ari",
+    "glyph": "♈",
+    "range": "21. märts – 19. aprill",
+    "element": "Tuli",
+    "mode": "Algatav",
+    "planet": "Marss",
+    "months": [
+      [
+        3,
+        21
+      ],
+      [
+        4,
+        19
+      ]
+    ],
+    "summary": "Sa lähened elule otse, kiiresti ja algatuslikult. Sind kannustab tunne, et midagi uut saab kohe liikuma panna.",
+    "strength": "Julgus ja hoog",
+    "growth": "Kannatlikkus",
+    "description": "Jäär on põhjataeva tagasihoidlik tähtkuju, mille kolm peamist tähte moodustavad selge kaare.",
+    "myth": "Kreeka loos seostatakse Jäära kuldvillakut kandnud lendava jääraga. Astronoomias paikneb ta Kalade ja Sõnni vahel ning on sügis- ja talvetaevas kõige paremini nähtav.",
+    "best": "Detsember",
+    "location": "Põhjataevas",
+    "area": 441,
+    "stars": [
+      [
+        "Hamal",
+        2.119,
+        23.46,
+        2
+      ],
+      [
+        "Sheratan",
+        1.911,
+        20.81,
+        2.64
+      ],
+      [
+        "Mesarthim",
+        1.892,
+        19.29,
+        3.88
+      ],
+      [
+        "Bharani",
+        2.834,
+        27.26,
+        4.35
+      ],
+      [
+        "Botein",
+        3.194,
+        19.73,
+        4.35
+      ],
+      [
+        "41 Ari",
+        2.833,
+        27.26,
+        3.61
+      ]
+    ],
+    "lines": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        3,
+        5
+      ]
+    ]
+  },
+  {
+    "id": "taurus",
+    "name": "Sõnn",
+    "latinName": "Taurus",
+    "abbreviation": "Tau",
+    "glyph": "♉",
+    "range": "20. aprill – 20. mai",
+    "element": "Maa",
+    "mode": "Püsiv",
+    "planet": "Veenus",
+    "months": [
+      [
+        4,
+        20
+      ],
+      [
+        5,
+        20
+      ]
+    ],
+    "summary": "Sa väärtustad järjepidevust, meelte kaudu kogetud kvaliteeti ja tulemusi, millel on päriselt püsiv väärtus.",
+    "strength": "Püsivus ja meel",
+    "growth": "Paindlikkus",
+    "description": "Sõnni V-kujulist nägu märgib Hüaadide täheparv; särav Aldebaran paistab selle serval punaka silmana.",
+    "myth": "Sõnn kuulub taeva vanimate kujundite hulka. Tema alal paiknevad Plejaadid ja Hüaadid, kaks palja silmaga hästi nähtavat täheparve.",
+    "best": "Jaanuar",
+    "location": "Taevaekvaatori lähedal",
+    "area": 797,
+    "stars": [
+      [
+        "Aldebaran",
+        4.599,
+        16.51,
+        0.86
+      ],
+      [
+        "Elnath",
+        5.438,
+        28.61,
+        1.65
+      ],
+      [
+        "Alcyone",
+        3.791,
+        24.11,
+        2.87
+      ],
+      [
+        "Ain",
+        4.477,
+        19.18,
+        3.53
+      ],
+      [
+        "Hyadum I",
+        4.33,
+        15.63,
+        3.65
+      ],
+      [
+        "Tianguan",
+        5.627,
+        21.14,
+        3
+      ],
+      [
+        "Atlas",
+        3.82,
+        24.05,
+        3.62
+      ],
+      [
+        "Electra",
+        3.748,
+        24.11,
+        3.7
+      ]
+    ],
+    "lines": [
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        7
+      ]
+    ]
+  },
+  {
+    "id": "gemini",
+    "name": "Kaksikud",
+    "latinName": "Gemini",
+    "abbreviation": "Gem",
+    "glyph": "♊",
+    "range": "21. mai – 20. juuni",
+    "element": "Õhk",
+    "mode": "Muutlik",
+    "planet": "Merkuur",
+    "months": [
+      [
+        5,
+        21
+      ],
+      [
+        6,
+        20
+      ]
+    ],
+    "summary": "Sinu loomulik tööriist on uudishimu. Sa ühendad inimesi ja mõtteid ning vajad vaheldust, et tähelepanu elavana hoida.",
+    "strength": "Kiire taip",
+    "growth": "Süvenemine",
+    "description": "Kaksikute kaks heledat peatähte Castor ja Pollux juhatavad paralleelseid täheahelaid Linnutee poole.",
+    "myth": "Tähtkuju kujutab mütoloogilisi vendi Castorit ja Polluxit. Pollux on neist oranžikam ja veidi heledam; Castor on tegelikult kuuest tähest koosnev süsteem.",
+    "best": "Veebruar",
+    "location": "Põhjataevas",
+    "area": 514,
+    "stars": [
+      [
+        "Pollux",
+        7.755,
+        28.03,
+        1.14
+      ],
+      [
+        "Castor",
+        7.577,
+        31.89,
+        1.58
+      ],
+      [
+        "Alhena",
+        6.629,
+        16.4,
+        1.93
+      ],
+      [
+        "Tejat",
+        6.383,
+        22.51,
+        2.88
+      ],
+      [
+        "Mebsuta",
+        6.732,
+        25.13,
+        3.06
+      ],
+      [
+        "Mekbuda",
+        7.068,
+        20.57,
+        3.79
+      ],
+      [
+        "Wasat",
+        7.335,
+        21.98,
+        3.53
+      ]
+    ],
+    "lines": [
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        5,
+        2
+      ]
+    ]
+  },
+  {
+    "id": "cancer",
+    "name": "Vähk",
+    "latinName": "Cancer",
+    "abbreviation": "Cnc",
+    "glyph": "♋",
+    "range": "21. juuni – 22. juuli",
+    "element": "Vesi",
+    "mode": "Algatav",
+    "planet": "Kuu",
+    "months": [
+      [
+        6,
+        21
+      ],
+      [
+        7,
+        22
+      ]
+    ],
+    "summary": "Sa tajud kiiresti ruumi emotsionaalset temperatuuri. Turvalisus, kuuluvus ja hooliv järjepidevus annavad sulle jõu.",
+    "strength": "Hooliv vaist",
+    "growth": "Selged piirid",
+    "description": "Vähk on sodiaagi üks nõrgemaid tähtkujusid, kuid selle südames särab palja silmaga udune Sõime täheparv.",
+    "myth": "Heraklese loos saatis Hera vähi kangelast segama. Tähtkuju tähelepanuväärseim objekt on Praesepe ehk Sõim, noor avatud täheparv.",
+    "best": "Märts",
+    "location": "Põhjataevas",
+    "area": 506,
+    "stars": [
+      [
+        "Altarf",
+        8.275,
+        9.19,
+        3.52
+      ],
+      [
+        "Asellus Australis",
+        8.745,
+        18.15,
+        3.94
+      ],
+      [
+        "Acubens",
+        8.975,
+        11.86,
+        4.26
+      ],
+      [
+        "Asellus Borealis",
+        8.722,
+        21.47,
+        4.66
+      ],
+      [
+        "Tegmine",
+        8.204,
+        17.65,
+        4.64
+      ],
+      [
+        "Iota Cnc",
+        8.778,
+        28.76,
+        4.02
+      ]
+    ],
+    "lines": [
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        5
+      ]
+    ]
+  },
+  {
+    "id": "leo",
+    "name": "Lõvi",
+    "latinName": "Leo",
+    "abbreviation": "Leo",
+    "glyph": "♌",
+    "range": "23. juuli – 22. august",
+    "element": "Tuli",
+    "mode": "Püsiv",
+    "planet": "Päike",
+    "months": [
+      [
+        7,
+        23
+      ],
+      [
+        8,
+        22
+      ]
+    ],
+    "summary": "Sa lood soojust nähtavuse, loovuse ja isikliku kohaloluga. Parimas vormis aitad ka teistel julgelt esile astuda.",
+    "strength": "Loov enesekindlus",
+    "growth": "Jagatud tähelepanu",
+    "description": "Lõvi tunneb ära sirbikujulise pea ja kolmnurkse tagakeha järgi. Regulus paikneb peaaegu ekliptikal.",
+    "myth": "Lõvi seostatakse Nemea lõviga, kelle alistamine oli Heraklese esimene vägitöö. Regulus tähendab ladina keeles väikest kuningat.",
+    "best": "Aprill",
+    "location": "Taevaekvaatori lähedal",
+    "area": 947,
+    "stars": [
+      [
+        "Regulus",
+        10.139,
+        11.97,
+        1.35
+      ],
+      [
+        "Denebola",
+        11.818,
+        14.57,
+        2.14
+      ],
+      [
+        "Algieba",
+        10.333,
+        19.84,
+        2.28
+      ],
+      [
+        "Zosma",
+        11.235,
+        20.52,
+        2.56
+      ],
+      [
+        "Chertan",
+        11.237,
+        15.43,
+        3.33
+      ],
+      [
+        "Rasalas",
+        9.879,
+        26.01,
+        3.88
+      ],
+      [
+        "Adhafera",
+        10.278,
+        23.42,
+        3.44
+      ],
+      [
+        "Subra",
+        9.685,
+        9.89,
+        3.52
+      ]
+    ],
+    "lines": [
+      [
+        7,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        1
+      ]
+    ]
+  },
+  {
+    "id": "virgo",
+    "name": "Neitsi",
+    "latinName": "Virgo",
+    "abbreviation": "Vir",
+    "glyph": "♍",
+    "range": "23. august – 22. september",
+    "element": "Maa",
+    "mode": "Muutlik",
+    "planet": "Merkuur",
+    "months": [
+      [
+        8,
+        23
+      ],
+      [
+        9,
+        22
+      ]
+    ],
+    "summary": "Sa märkad mustreid, ebatäpsusi ja praktilisi viise olukorra paremaks tegemiseks. Tähendus tekib sinu jaoks meisterlikkusest.",
+    "strength": "Täpne hoolivus",
+    "growth": "Enesele leebus",
+    "description": "Neitsi on taeva suuruselt teine tähtkuju. Sinakas Spica on selle eredaim täht ja oluline kevadtaeva orientiir.",
+    "myth": "Neitsit on eri kultuurides seostatud viljasaagi ja õigluse jumalannadega. Spica nimi tähendab viljapead.",
+    "best": "Mai",
+    "location": "Taevaekvaatori lähedal",
+    "area": 1294,
+    "stars": [
+      [
+        "Spica",
+        13.42,
+        -11.16,
+        0.98
+      ],
+      [
+        "Porrima",
+        12.694,
+        -1.45,
+        2.74
+      ],
+      [
+        "Vindemiatrix",
+        13.036,
+        10.96,
+        2.83
+      ],
+      [
+        "Heze",
+        13.578,
+        -0.6,
+        3.38
+      ],
+      [
+        "Zavijava",
+        11.845,
+        1.76,
+        3.61
+      ],
+      [
+        "Minelauva",
+        12.927,
+        3.4,
+        3.38
+      ],
+      [
+        "Syrma",
+        14.267,
+        -6,
+        4.08
+      ]
+    ],
+    "lines": [
+      [
+        4,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        6
+      ]
+    ]
+  },
+  {
+    "id": "libra",
+    "name": "Kaalud",
+    "latinName": "Libra",
+    "abbreviation": "Lib",
+    "glyph": "♎",
+    "range": "23. september – 22. oktoober",
+    "element": "Õhk",
+    "mode": "Algatav",
+    "planet": "Veenus",
+    "months": [
+      [
+        9,
+        23
+      ],
+      [
+        10,
+        22
+      ]
+    ],
+    "summary": "Sa otsid head tasakaalu inimeste, ideede ja ilu vahel. Oskad näha mitut poolt ning luua ruumi läbimõeldud kokkuleppele.",
+    "strength": "Diplomaatiline meel",
+    "growth": "Otsustavus",
+    "description": "Kaalude nelinurk paikneb Neitsi ja Skorpioni vahel. Selle tähtede araabiapärased nimed viitavad vanasti Skorpioni sõrgadele.",
+    "myth": "Kaalud on ainus sodiaagimärk, mida kujutab elutu ese. Rooma traditsioonis sümboliseeris see õiglust ja sügisese võrdpäevsuse tasakaalu.",
+    "best": "Juuni",
+    "location": "Lõunataevas",
+    "area": 538,
+    "stars": [
+      [
+        "Zubeneschamali",
+        15.283,
+        -9.38,
+        2.61
+      ],
+      [
+        "Zubenelgenubi",
+        14.848,
+        -16.04,
+        2.75
+      ],
+      [
+        "Brachium",
+        15.068,
+        -25.28,
+        3.29
+      ],
+      [
+        "Zubenelhakrabi",
+        15.592,
+        -14.79,
+        3.91
+      ],
+      [
+        "Theta Lib",
+        15.898,
+        -16.73,
+        4.14
+      ],
+      [
+        "Upsilon Lib",
+        15.618,
+        -28.14,
+        3.58
+      ]
+    ],
+    "lines": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ]
+  },
+  {
+    "id": "scorpius",
+    "name": "Skorpion",
+    "latinName": "Scorpius",
+    "abbreviation": "Sco",
+    "glyph": "♏",
+    "range": "23. oktoober – 21. november",
+    "element": "Vesi",
+    "mode": "Püsiv",
+    "planet": "Pluuto",
+    "months": [
+      [
+        10,
+        23
+      ],
+      [
+        11,
+        21
+      ]
+    ],
+    "summary": "Sa otsid nähtava pinna alt tegelikku põhjust. Lojaalsus, sügavus ja muutumisvõime on sinu tugevad sisemised teljed.",
+    "strength": "Sügav keskendumine",
+    "growth": "Usalduse avamine",
+    "description": "Skorpion on üks selgemini äratuntavaid tähtkujusid: punane Antares märgib südant ja täheahel kaardub pika sabana lõunasse.",
+    "myth": "Müüdis saatis Gaia skorpioni kütt Orionit peatama. Seetõttu asuvad Orion ja Skorpion taeva vastaskülgedel.",
+    "best": "Juuli",
+    "location": "Lõunataevas",
+    "area": 497,
+    "stars": [
+      [
+        "Antares",
+        16.49,
+        -26.43,
+        1.06
+      ],
+      [
+        "Shaula",
+        17.56,
+        -37.1,
+        1.62
+      ],
+      [
+        "Sargas",
+        17.622,
+        -42.99,
+        1.86
+      ],
+      [
+        "Dschubba",
+        16.006,
+        -22.62,
+        2.31
+      ],
+      [
+        "Acrab",
+        16.091,
+        -19.81,
+        2.56
+      ],
+      [
+        "Lesath",
+        17.512,
+        -37.3,
+        2.7
+      ],
+      [
+        "Alniyat",
+        16.353,
+        -25.59,
+        2.89
+      ],
+      [
+        "Fang",
+        15.981,
+        -26.11,
+        2.89
+      ]
+    ],
+    "lines": [
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        5
+      ]
+    ]
+  },
+  {
+    "id": "sagittarius",
+    "name": "Ambur",
+    "latinName": "Sagittarius",
+    "abbreviation": "Sgr",
+    "glyph": "♐",
+    "range": "22. november – 21. detsember",
+    "element": "Tuli",
+    "mode": "Muutlik",
+    "planet": "Jupiter",
+    "months": [
+      [
+        11,
+        22
+      ],
+      [
+        12,
+        21
+      ]
+    ],
+    "summary": "Sind tõmbavad silmapiir, tähendus ja suurem pilt. Õpid kõige paremini liikumise, kogemuse ja ausa küsimise kaudu.",
+    "strength": "Avardav optimism",
+    "growth": "Detailide hoidmine",
+    "description": "Amburi teekannu-kujuline asterism osutab Linnutee keskmele, kus tähtede ja tumedate tolmupilvede tihedus on suur.",
+    "myth": "Amburit kujutatakse vibuga kentaurina. Tähtkuju suunas asub meie galaktika kese, kuigi nähtav valgus on tähtedevahelise tolmu varjus.",
+    "best": "August",
+    "location": "Lõunataevas",
+    "area": 867,
+    "stars": [
+      [
+        "Kaus Australis",
+        18.403,
+        -34.38,
+        1.79
+      ],
+      [
+        "Nunki",
+        18.921,
+        -26.3,
+        2.05
+      ],
+      [
+        "Ascella",
+        19.043,
+        -29.88,
+        2.6
+      ],
+      [
+        "Kaus Media",
+        18.35,
+        -29.83,
+        2.72
+      ],
+      [
+        "Kaus Borealis",
+        18.466,
+        -25.42,
+        2.82
+      ],
+      [
+        "Alnasl",
+        18.096,
+        -30.42,
+        2.98
+      ],
+      [
+        "Arkab Prior",
+        19.377,
+        -44.46,
+        3.96
+      ]
+    ],
+    "lines": [
+      [
+        5,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        6
+      ]
+    ]
+  },
+  {
+    "id": "capricornus",
+    "name": "Kaljukits",
+    "latinName": "Capricornus",
+    "abbreviation": "Cap",
+    "glyph": "♑",
+    "range": "22. detsember – 19. jaanuar",
+    "element": "Maa",
+    "mode": "Algatav",
+    "planet": "Saturn",
+    "months": [
+      [
+        12,
+        22
+      ],
+      [
+        1,
+        19
+      ]
+    ],
+    "summary": "Sa ehitad pika vaatega ja hindad usaldusväärset arengut. Sinu ambitsioon töötab kõige paremini selge struktuuri sees.",
+    "strength": "Vastupidav sihikindlus",
+    "growth": "Puhkuse lubamine",
+    "description": "Kaljukits moodustab lõunataevas laia kolmnurga. See on üks nõrgemaid sodiaagi tähtkujusid, kuid väga vana taevakujund.",
+    "myth": "Kaljukitse kujutatakse merekitsena, kitse esiosa ja kalasabaga olendina. Tema juured ulatuvad Babüloonia tähtkujude traditsiooni.",
+    "best": "September",
+    "location": "Lõunataevas",
+    "area": 414,
+    "stars": [
+      [
+        "Deneb Algedi",
+        21.784,
+        -16.13,
+        2.85
+      ],
+      [
+        "Dabih",
+        20.35,
+        -14.78,
+        3.05
+      ],
+      [
+        "Nashira",
+        21.669,
+        -16.66,
+        3.68
+      ],
+      [
+        "Algedi",
+        20.294,
+        -12.51,
+        3.58
+      ],
+      [
+        "Omega Cap",
+        20.864,
+        -26.92,
+        4.11
+      ],
+      [
+        "Psi Cap",
+        20.768,
+        -25.27,
+        4.13
+      ]
+    ],
+    "lines": [
+      [
+        3,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ]
+  },
+  {
+    "id": "aquarius",
+    "name": "Veevalaja",
+    "latinName": "Aquarius",
+    "abbreviation": "Aqr",
+    "glyph": "♒",
+    "range": "20. jaanuar – 18. veebruar",
+    "element": "Õhk",
+    "mode": "Püsiv",
+    "planet": "Uraan",
+    "months": [
+      [
+        1,
+        20
+      ],
+      [
+        2,
+        18
+      ]
+    ],
+    "summary": "Sa vaatad süsteeme eemalt ja märkad, mida saaks teisiti korraldada. Iseseisev mõtlemine seob sind tulevikku suunatud ideedega.",
+    "strength": "Originaalne vaade",
+    "growth": "Emotsionaalne kohalolu",
+    "description": "Veevalaja on suur, kuid nõrk tähtkuju taeva niinimetatud merelises piirkonnas. Selle Y-kujuline veekann on lihtsaim orientiir.",
+    "myth": "Kreeka loos samastatakse Veevalaja Ganymedesega, jumalate joogikallajaga. Tähtkuju lähedal paiknevad teised veega seotud kujundid.",
+    "best": "Oktoober",
+    "location": "Taevaekvaatori lähedal",
+    "area": 980,
+    "stars": [
+      [
+        "Sadalsuud",
+        21.526,
+        -5.57,
+        2.87
+      ],
+      [
+        "Sadalmelik",
+        22.096,
+        -0.32,
+        2.95
+      ],
+      [
+        "Skat",
+        22.911,
+        -15.82,
+        3.27
+      ],
+      [
+        "Albali",
+        20.795,
+        -9.5,
+        3.77
+      ],
+      [
+        "Sadachbia",
+        22.361,
+        -1.39,
+        3.86
+      ],
+      [
+        "Ancha",
+        22.28,
+        -7.78,
+        4.17
+      ],
+      [
+        "Hydor",
+        22.877,
+        -7.58,
+        3.74
+      ]
+    ],
+    "lines": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        6
+      ]
+    ]
+  },
+  {
+    "id": "pisces",
+    "name": "Kalad",
+    "latinName": "Pisces",
+    "abbreviation": "Psc",
+    "glyph": "♓",
+    "range": "19. veebruar – 20. märts",
+    "element": "Vesi",
+    "mode": "Muutlik",
+    "planet": "Neptuun",
+    "months": [
+      [
+        2,
+        19
+      ],
+      [
+        3,
+        20
+      ]
+    ],
+    "summary": "Sa tajud vihjeid, meeleolusid ja kujutluse võimalusi. Empaatia muutub sinu jõuks, kui sellele lisanduvad selged piirid.",
+    "strength": "Kujutlus ja empaatia",
+    "growth": "Praktiline selgus",
+    "description": "Kalade kaks tähtede ringi ühendab pikk nöör, mis kohtub Alrescha juures. Kevadpunkt asub tänapäeval selle tähtkuju piires.",
+    "myth": "Müüdis muutusid Aphrodite ja Eros kaladeks, et koletise eest põgeneda, ning sidusid end eksimise vältimiseks nööriga kokku.",
+    "best": "November",
+    "location": "Taevaekvaatori lähedal",
+    "area": 889,
+    "stars": [
+      [
+        "Alpherg",
+        1.23,
+        15.35,
+        3.62
+      ],
+      [
+        "Alrescha",
+        2.034,
+        2.76,
+        3.82
+      ],
+      [
+        "Fumalsamakah",
+        23.665,
+        5.63,
+        4.01
+      ],
+      [
+        "Torcular",
+        1.195,
+        3.81,
+        4.26
+      ],
+      [
+        "Kullat Nunu",
+        1.524,
+        15.35,
+        4.5
+      ],
+      [
+        "Iota Psc",
+        23.666,
+        5.63,
+        4.13
+      ],
+      [
+        "Omega Psc",
+        23.989,
+        6.86,
+        4.01
+      ]
+    ],
+    "lines": [
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        2,
+        5
+      ]
+    ]
+  }
+]

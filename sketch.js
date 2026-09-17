@@ -11,8 +11,6 @@ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const canvas = $('#skyCanvas');
 const ctx = canvas.getContext('2d');
 const state = { yaw: 0.2, pitch: 0.12, zoom: 1, selected: 'aries', selectedStar: null, birthMethod: 'date', dragging: false, dragDistance: 0, lastX: 0, lastY: 0, targetYaw: null, targetPitch: null, frame: 0 };
-const motionModes = ['reduced', 'standard', 'enhanced'];
-const motionLabels = { reduced: 'Vähendatud', standard: 'Standard', enhanced: 'Täiustatud' };
 
 function starVector(raHours, decDegrees) {
   const ra = raHours * Math.PI / 12;
@@ -185,7 +183,7 @@ function drawConstellation(group, width, height, isLight, selected) {
 }
 
 function animateFocus() {
-  const speed = html.dataset.motion === 'reduced' || reduceMotion.matches ? 1 : .065;
+  const speed = reduceMotion.matches ? 1 : .065;
   let dy = state.targetYaw - state.yaw;
   while (dy > Math.PI) dy -= Math.PI * 2;
   while (dy < -Math.PI) dy += Math.PI * 2;
@@ -513,11 +511,6 @@ function setupControls() {
     html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('astra-theme', html.dataset.theme);
   });
-  $('#motionButton').addEventListener('click', () => {
-    const next = motionModes[(motionModes.indexOf(html.dataset.motion) + 1) % motionModes.length];
-    html.dataset.motion = next; $('#motionLabel').textContent = motionLabels[next]; localStorage.setItem('astra-motion', next);
-  });
-
   const sidebar = $('#sidebar'), menuButton = $('#menuButton'), scrim = $('#menuScrim');
   const closeMenu = () => { sidebar.classList.remove('open'); scrim.hidden = true; menuButton.setAttribute('aria-expanded', 'false'); };
   menuButton.addEventListener('click', () => { const open = sidebar.classList.toggle('open'); scrim.hidden = !open; menuButton.setAttribute('aria-expanded', String(open)); });
@@ -535,10 +528,7 @@ function setupControls() {
 
 async function init() {
   const savedTheme = localStorage.getItem('astra-theme');
-  const savedMotion = localStorage.getItem('astra-motion');
   html.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-  html.dataset.motion = motionModes.includes(savedMotion) ? savedMotion : 'standard';
-  $('#motionLabel').textContent = motionLabels[html.dataset.motion];
   try {
     const [response, backgroundResponse] = await Promise.all([
       fetch('./constellations.json', { cache: 'no-cache' }), fetch('./data/sky-catalog.json', { cache: 'no-cache' })
